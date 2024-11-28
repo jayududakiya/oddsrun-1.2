@@ -1,0 +1,12 @@
+{
+  "BASE_URL": "https://oddsrun.com",
+  "DB_URL": "mongodb://KD_MASTER_2:MASTER_DB_PASS_1010_2@oddsrun.com:27017/ODDS_DB_21_MAY_2024_V1",
+  "DB_URL_LOCAL": "mongodb://localhost:27017/ODDS_DB_20_MARCH_2024_V1_TEST2",
+  "PORT": 3333,
+  "SECRET_KEY": "THIS_IS_JWT_VERIFY_KEY_WITH_CODENATIAL_1010!@#$%^&*()",
+  "MODE": "Production",
+  "DEBUG": true,
+  "CRON": true,
+  "APP_LOGO": "/assets/images/logo.jpeg",
+  "AUTH_HEADER": "Authorization"
+}

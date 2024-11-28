@@ -1,0 +1,632 @@
+@import "../../style.css";
+
+.activeAll {
+  background: #f0f1fe;
+  padding: 10px;
+  border-radius: 25px;
+}
+
+.droppingOddsBg {
+  background-color: var(--white);
+  padding: 25px 25px;
+  border-radius: var(--br-sm);
+  /* overflow-y: scroll !important; */
+  /* height: 105vh; */
+}
+
+.textCapitalize {
+  text-transform: capitalize;
+  margin: auto;
+}
+
+.droppingOddsBg::-webkit-scrollbar {
+  display: none;
+}
+
+.pointer:hover {
+  cursor: pointer;
+}
+
+.pages {
+  display: flex;
+  gap: 16px;
+}
+
+.toggleName {
+  display: flex;
+  color: var(--light-purple);
+}
+
+.toggleName1 {
+  color: var(--color-darkslateblue-900);
+  font-weight: 600;
+  display: flex;
+}
+
+.aboutDroppingOdds {
+  background-color: var(--light-purple-bg-light);
+  padding: 20px 20px;
+  border-radius: var(--br-sm);
+  margin-top: 18px;
+}
+
+.aboutDroppingOdds label {
+  font-size: var(--font-size-5xl);
+  font-weight: 500;
+  color: var(--color-darkslateblue-900);
+}
+
+.aboutDroppingOdds label span span {
+  color: var(--light-purple);
+}
+
+.aboutDroppingOdds p {
+  padding-top: 12px;
+  font-size: var(--font-size-sm);
+  /* width: 670px; */
+  /* letter-spacing: 1px; */
+  line-height: 25px;
+  font-size: var(--font-size-sm);
+}
+
+.filterData {
+  padding-top: 24px;
+}
+
+.filterData filter {
+  font-size: var(--font-size-sm);
+  color: var(--color-darkslateblue-900);
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.displayLastTime {
+  border-radius: var(--br-lsm) !important;
+  border: none;
+  padding: 10px 25px;
+  width: auto;
+  color: var(--light-purple);
+  background-color: var(--light-purple-bg);
+  font-size: var(--font-size-sm);
+}
+
+.displayLastTimeSearch {
+  color: black !important;
+  background-color: white !important;
+  height: 52px;
+  margin-top: 8px;
+}
+
+.dropdownDisplay {
+  border-radius: var(--br-lsm) !important;
+  border: none;
+  padding: 10px 25px;
+  width: auto;
+  color: var(--light-purple);
+  background-color: var(--light-purple-bg);
+  font-size: var(--font-size-sm);
+  display: none;
+}
+
+.dropdownMenu {
+  background-color: var(--light-purple-bg);
+}
+
+.dropdownMenu .dropdownItem :hover {
+  color: red;
+}
+
+/* .dropdownDisplay:active {
+  color: none;
+  text-decoration: none;
+  background-color: none;
+}
+.dropdownDisplay:hover {
+  background-color: var(--light-purple) !important;
+} */
+.setToggle {
+  display: none !important;
+}
+
+.allSportsDisplay {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 20px;
+}
+
+.allSportsDisplay h5 {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+
+.SportsMenu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.decoration {
+  border-bottom: 2px solid black;
+  width: 100px;
+}
+
+.decoration {
+  font-weight: 600;
+}
+
+.allSportsName {
+  color: var(--light-purple);
+  font-size: var(--font-size-sm);
+}
+
+.sportsAndCountry {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.subSportsAndCountry {
+  display: flex;
+  align-items: center;
+}
+
+.sportAndCountyName {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.matchSchedule {
+  padding: 16px 16px;
+  border: 1px solid var(--light-purple);
+  border-radius: 8px;
+  margin-top: 16px;
+}
+
+.teamName {
+  font-size: var(--font-size-sm);
+  /* font-weight: 500; */
+  font-weight: bolder;
+}
+
+.timeOfMatch {
+  border-radius: var(--br-medium);
+  border: none;
+  background-color: var(--light-purple-bg);
+  padding: 6px 16px;
+  width: 132px;
+  margin-top: 14px;
+}
+
+.timeOfMatch span {
+  font-size: 13px;
+  color: var(--light-purple);
+}
+
+.odds {
+  background-color: var(--light-odds);
+  text-align: center;
+  height: 85px;
+  width: 85px;
+  margin-left: 10px;
+  border-radius: 8px;
+  padding-top: 10px;
+}
+
+.odds_p {
+  color: var(--light-purple);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.floatingValue {
+  margin-bottom: 5px;
+  font-size: var(--font-size-xsm);
+  font-weight: 600;
+}
+
+.maxAvg {
+  background-color: #26b01a;
+  width: 65px;
+  margin: auto;
+  padding: 6px;
+  border-radius: 16px;
+  height: 30px;
+  color: var(--white);
+}
+
+.odds img {
+  border-radius: 36px;
+  width: 65px;
+}
+
+.oddsOne {
+  background-color: var(--red-bg-300);
+  text-align: center;
+  height: 85px;
+  width: 85px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+.oddsOne p {
+  color: var(--light-purple);
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: var(--font-size-xsm);
+}
+
+.plusTool {
+  background-color: var(--green-bg-300);
+  height: unset;
+  color: var(--green) !important;
+  margin-left: 10px;
+}
+
+.plusTool span {
+  color: var(--black);
+  margin-top: 10px;
+}
+
+.pointCount {
+  font-size: var(--font-size-xs);
+  font-weight: 500;
+}
+
+.setCountToggle {
+  margin: auto;
+  color: var(--red);
+  font-size: 20px;
+  margin-top: -3px;
+}
+
+.setCountToggleGreen {
+  color: var(--green);
+}
+
+.pointCount1 {
+  font-weight: 600;
+  font-size: var(--font-size-xs);
+  margin-top: -3px;
+}
+
+.pointInPercentage {
+  background-color: var(--red);
+  width: 44px;
+  height: 20px;
+  padding: 4px 5px;
+  border-radius: var(--br-lsm);
+  font-size: var(--font-size-4xs);
+  font-weight: 600;
+  position: relative;
+  left: -22%;
+  bottom: 75%;
+  color: var(--white);
+}
+
+.plusPointNextMatch {
+  background-color: var(--green);
+  color: var(--white);
+  border-radius: var(--br-medium);
+  width: 62px;
+  padding: 2px 10px;
+  font-size: var(--font-size-xsm);
+  font-style: 600;
+  /* margin: auto; */
+  margin-left: 11px;
+  /* margin-right: 12px;
+  margin-bottom: 8px; */
+}
+
+.searchTitle {
+  margin-top: 1.5rem;
+  font-size: 2.2rem !important;
+  line-height: 2.625rem;
+  color: rgb(47 47 47);
+  font-weight: bold;
+}
+
+.searchHeading {
+  background-color: var(--light-purple-bg-light);
+  padding: 10px;
+}
+
+.filterBg {
+  background-color: var(--light-purple-bg-light);
+  padding: 15px;
+}
+
+.searchFilterTitle {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .textmore {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .spaceAround {
+    justify-content: space-around !important;
+  }
+
+  .teamNameAndTime {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .justify-content-end {
+    justify-content: space-between !important;
+  }
+
+  .pages {
+    /* display: none; */
+    font-size: 0.8rem;
+    gap: 10px;
+
+  }
+
+  .bread-icon {}
+
+  .setToggle {
+    display: block !important;
+  }
+
+  .aboutdiscription {
+    display: none;
+  }
+
+  .aboutDroppingOdds p {
+    font-size: var(--font-size-xsm) !important;
+    margin: 0;
+  }
+
+  .aboutDroppingOdds p div {
+    margin-top: 5px !important;
+  }
+
+  .aboutDroppingOdds label {
+    font-size: var(--font-size-sm) !important;
+  }
+
+  .aboutDroppingOdds {
+    padding: 14px 18px !important;
+    width: fit-content !important;
+    border-radius: 8px !important;
+  }
+
+  .displayLastTime {
+    /* display: none !important; */
+  }
+
+  .dropdownDisplay {
+    display: block !important;
+  }
+
+  .dropdownFlex {
+    display: flex !important;
+  }
+
+  .sportAndCountyName {
+    font-size: var(--font-size-smi);
+  }
+
+  .oddsImg {
+    width: 55px;
+  }
+
+  .floatingValue {
+    /* padding-top: 6px; */
+  }
+
+  .odds {
+    width: 80px !important;
+    height: auto !important;
+    margin-inline-start: 0px !important;
+    padding-top: 5px !important;
+  }
+
+  .odds_p {
+    margin-bottom: 0px !important;
+  }
+
+  .oddsOne {
+    width: 75px !important;
+    margin-inline-start: 0px !important;
+  }
+
+  .plusTool {
+    height: 85px !important;
+  }
+
+  .plusTool span {
+    margin-top: 2px !important;
+  }
+
+  .filterData filter {
+    font-size: var(--font-size-xsm) !important;
+  }
+
+  .allSportsDisplay h5 {
+    font-size: var(--font-size-xsm) !important;
+  }
+
+  .iconFont {
+    font-size: var(--font-size-sm) !important;
+  }
+
+  .deshDisplay {
+    display: none !important;
+  }
+
+  .showMobile {
+    display: block;
+  }
+
+  .countryAndTime {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+  }
+
+  .contentAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .pointInPercentage {
+    width: 40px !important;
+    height: 17px !important;
+    padding: 4px 6px !important;
+    font-size: 8px !important;
+  }
+
+  .marginTop0 {
+    margin-top: 0px !important;
+  }
+
+  .marginTop {
+    margin-top: 10px !important;
+  }
+
+  .marginTop12 {
+    margin-top: 12px;
+  }
+
+  .teamName {
+    font-size: var(--font-size-xs);
+    line-height: 2;
+  }
+
+  .searchTitle {
+    font-size: 16px !important;
+  }
+
+  .spaceRemove {
+    margin-left: 0px !important;
+  }
+  .navLi{
+    margin: auto 0;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 650px) {
+  .pages {
+    font-size: 12px;
+    gap: 5px;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 500px) {
+  .pages {
+    font-size: 10px;
+    gap: 2px;
+  }
+}
+
+/* @media only screen and (min-width: 375px) and (max-width: 768px) {
+  .pages {
+    display: none;
+  }
+  .setToggle {
+    display: block !important;
+  }
+  .aboutdiscription {
+    display: none;
+  }
+  .aboutDroppingOdds p {
+    font-size: var(--font-size-xsm) !important;
+    margin: 0;
+  }
+  .aboutDroppingOdds p div {
+    margin-top: 5px !important;
+  }
+  .aboutDroppingOdds label {
+    font-size: var(--font-size-sm) !important;
+  }
+  .aboutDroppingOdds {
+    padding: 14px 18px !important;
+    width: fit-content !important;
+    border-radius: 8px !important;
+  }
+  .displayLastTime {
+    display: none !important;
+  }
+  .dropdownDisplay {
+    display: block !important;
+  }
+  .dropdownFlex {
+    display: flex !important;
+  }
+  .sportAndCountyName {
+    font-size: var(--font-size-smi);
+  }
+  .oddsImg {
+    width: 55px;
+  }
+  .odds_p {
+    margin-bottom: 0px;
+  }
+  .floatingValue {
+    padding-top: 6px;
+  }
+  .odds {
+    margin-inline-start: 0px !important;
+  }
+  .oddsOne {
+    width: 75px !important;
+  }
+  .plusTool {
+    height: 85px !important;
+  }
+  .plusTool span {
+    margin-top: 2px !important;
+  }
+  .filterData filter {
+    font-size: var(--font-size-xsm) !important;
+  }
+  .allSportsDisplay h5 {
+    font-size: var(--font-size-xsm) !important;
+  }
+  .iconFont {
+    font-size: var(--font-size-sm) !important;
+  }
+  .deshDisplay {
+    display: none !important;
+  }
+  .showMobile {
+    display: block;
+  }
+  .countryAndTime {
+    display: flex;
+    justify-content: space-between;
+  }
+  .contentAround {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .pointInPercentage {
+    width: 34px;
+    height: 15px;
+    padding: 4px 6px;
+    font-size: 8px;
+  }
+
+  .marginTop0 {
+    margin-top: 0px !important;
+  }
+  .marginTop {
+    margin-top: 10px !important;
+  }
+  .marginTop12 {
+    margin-top: 12px;
+  }
+} */

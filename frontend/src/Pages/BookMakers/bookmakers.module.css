@@ -1,0 +1,64 @@
+@import "../../style.css";
+
+.tableBookmakers {
+  border-radius: var(--br-sm) !important;
+}
+
+.showBorder thead,
+.showBorder tbody,
+.showBorder tr,
+.showBorder td {
+  border: 1px solid #656ef530 !important;
+  border-bottom: 1px solid #656ef530 !important;
+  /* border-top: 1px solid #656ef530 !important; */
+  border-right: 1px solid #656ef530 !important;
+  /* border-left: 1px solid #656ef530 !important; */
+}
+
+/*  */
+
+.tableOutLine {
+  outline: 1px solid var(--light-purple) !important;
+  border-radius: 9px;
+  border: 1px solid #656ef530;
+  /* overflow: hidden; */
+}
+.tableOutLine .table {
+  /* border: none; */
+  border-radius: 160px;
+}
+
+.tableOutLine table,
+.tableOutLine tr,
+.tableOutLine td {
+  border: 1px solid #656ef530 !important;
+  border-bottom: none !important;
+  /* border-top: none !important; */
+  border-right: none !important;
+  font-size: var(--font-size-xsm);
+  /* border-left: none !important; */
+}
+.tableOutLine table {
+  margin-bottom: 0;
+}
+
+.tableHeading {
+  width: 35%;
+  height: 50px;
+  font-size: var(--font-size-xsm);
+}
+.profitLossAmount {
+  /* width: 16.5%; */
+  text-align: center;
+  font-size: var(--font-size-xsm);
+}
+.bonus {
+  background-color: var(--light-purple);
+  color: white;
+  padding: 1px 5px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+.tooltip {
+  width: 200px;
+}

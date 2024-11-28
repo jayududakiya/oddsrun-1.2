@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Home Pages -->
+  <url>
+    <loc>https://oddsrun.com/</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/home</loc>
+  </url>
+
+  <!-- Content Pages -->
+  <url>
+    <loc>https://oddsrun.com/droppingOdds</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/sure-bets</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/book-makers</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/article</loc>
+  </url>
+
+  <!-- Dynamic Content Pages -->
+  <url>
+    <loc>https://oddsrun.com/article-details/title-id</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/matches/sport/country/league</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/match/sport/country/league/match/date</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/sport-name/next-matches</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/sport-name</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/sport-name/country-name</loc>
+  </url>
+
+  <!-- Authentication Pages -->
+  <url>
+    <loc>https://oddsrun.com/login</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/register</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/forgot-password</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/reset-password</loc>
+  </url>
+
+  <!-- Other Pages -->
+  <url>
+    <loc>https://oddsrun.com/save-coupon</loc>
+  </url>
+  <url>
+    <loc>https://oddsrun.com/search/team-name/sport/country/turnament</loc>
+  </url>
+</urlset>

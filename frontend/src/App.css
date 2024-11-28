@@ -1,0 +1,26 @@
+.pointer {
+  cursor: pointer !important;
+}
+
+.playerImage {
+  height: auto;
+  width: 25px;
+  object-fit: contain;
+}
+
+.search-input {
+  border-radius: 20px;
+  font-size: 11px;
+  width: 46%;
+  border: none;
+  height: 30px;
+  outline: none;
+  margin-right: 11px;
+  position: absolute;
+  left: 36%;
+  top: 3%;
+}
+
+.no-after::after {
+  display: none !important;
+}

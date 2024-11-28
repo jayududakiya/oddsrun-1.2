@@ -1,0 +1,10 @@
+{
+    "BASE_URL": "",
+    "DB_URL": "mongodb://KD_MASTER:MASTER_DB_PASS_1010@51.195.255.88:27017/ODDS_DB_20_MARCH_2024_V1",
+    "PORT": 3333,
+    "SECRET_KEY": "THIS_IS_JWT_VERIFY_KEY_WITH_CODENATIAL_1010!@#$%^&*()",
+    "MODE": "Development",
+    "DEBUG": true,
+    "APP_LOGO": "/assets/images/logo.jpeg",
+    "AUTH_HEADER": "Authorization"
+}

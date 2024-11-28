@@ -1,0 +1,49 @@
+@import "../../style.css";
+
+.nextMatches {
+  background-color: var(--white);
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: var(--br-sm);
+}
+b {
+  font-weight: 500;
+}
+
+.dataItemBorder {
+  border: 1px solid var(--light-purple);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .nextMatchesDisplay {
+    display: none !important;
+  }
+  .myMatches {
+    display: block !important;
+  }
+  .scMargin {
+    margin-top: 15px;
+  }
+  .msgBtn {
+    /* margin-top: 0px !important;
+    margin-bottom: 0px !important; */
+    margin: 3px !important;
+  }
+}
+
+/* @media only screen and (min-width: 375px) and (max-width: 768px) {
+  .nextMatchesDisplay {
+    display: none !important;
+  }
+  .myMatches {
+    display: block !important;
+  }
+  .scMargin {
+    margin-top: 15px;
+  }
+  .msgBtn {
+    margin: 3px !important;
+  }
+} */

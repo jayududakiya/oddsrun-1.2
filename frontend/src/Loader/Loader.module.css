@@ -1,0 +1,13 @@
+@import "../style.css";
+
+.loader {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.loaderMain {
+  display: flex;
+  justify-content: center;
+  margin-top: 18%;
+}

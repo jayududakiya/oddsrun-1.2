@@ -1,0 +1,9 @@
+const DOMAIN = "https://oddsrun.com";
+// const DOMAIN = "";
+// const DOMAIN = "http://localhost:3333";
+// const DOMAIN = window.location.origin;
+// export const API_URL = ``;
+export const API_URL = `${DOMAIN}/api/v1`;
+export const ASSETS_URL = `${DOMAIN}`;
+export const BROKER_SPORT_ASSEST = `https://oddsportal.com`; //"http://img.brokersports.club";
+// export const BROKER_SPORT_ASSEST = ``; //"http://img.brokersports.club";

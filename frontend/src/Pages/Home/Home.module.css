@@ -1,0 +1,101 @@
+@import "../../style.css";
+
+.bg {
+  background-color: var(--white);
+  padding: 16px 20px;
+  margin-top: 17px;
+  border-radius: var(--br-sm);
+}
+.nextMatchDetails {
+  padding: 08px 16px !important;
+}
+.redFont {
+  color: var(--red);
+  font-size: var(--font-size-xsm);
+  display: flex;
+  align-items: center;
+}
+.secondCountry {
+  display: none;
+}
+.alignItem {
+  display: flex;
+  align-items: center;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  .nextMatchDisplay {
+    display: block;
+  }
+  .colMdWidth {
+    width: 100% !important;
+  }
+  .secondCountry {
+    display: flex !important;
+  }
+  .flexReverse {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end;
+  }
+  .displayNone {
+    display: none;
+  }
+  .redFont {
+    margin-inline-start: 30% !important;
+  }
+  .flexWidthSm {
+    width: 65%;
+  }
+}
+
+/* @media only screen and (min-width: 375px) and (max-width: 768px) {
+  .nextMatchDisplay {
+    display: block;
+  }
+  .colMdWidth {
+    width: 100% !important;
+  }
+  .secondCountry {
+    display: block;
+  }
+  .flexReverse {
+    display: flex !important;
+    flex-direction: row-reverse !important;
+    justify-content: flex-end;
+  }
+  .displayNone {
+    display: none;
+  }
+  .redFont {
+    margin-inline-start: 30% !important;
+  }
+  .flexWidthSm {
+    width: 65%;
+  }
+} */

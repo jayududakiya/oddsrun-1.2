@@ -1,0 +1,127 @@
+exports.droppingOdds = async (req, res) => {
+  try {
+
+
+    const condition = {};
+
+    if (req.body.sport) {
+      condition.sport = req.body.sport;
+    }
+    if (req.body.market) {
+      condition.market = req.body.market;
+    }
+
+    const min = 4;
+    const max = 50;
+
+    const aggregate = [
+      {
+        $match: condition,
+      },
+      {
+        $unwind: "$matches",
+      },
+      {
+        $addFields: {
+          localOdds: {
+            $cond: {
+              if: { $isArray: "$matches.odds" },
+              then: { $arrayElemAt: ["$matches.odds", 0] },
+              else: null,
+            },
+          },
+        },
+      },
+      {
+        $match: {
+          // "localOdds.local.avg": { $exists: true },
+          // "localOdds.local.max": { $exists: true },
+          // "localOdds.visitor.avg": { $exists: true },
+          // "localOdds.visitor.max": { $exists: true },
+          // "localOdds.draw.avg": { $exists: true },
+          // "localOdds.draw.max": { $exists: true }
+        },
+      },
+      {
+        $addFields: {
+          localAvg: "$localOdds.local.avg",
+          localMax: "$localOdds.local.max",
+          visitorAvg: "$localOdds.visitor.avg",
+          visitorMax: "$localOdds.visitor.max",
+          drawAvg: "$localOdds.draw.avg",
+          drawMax: "$localOdds.draw.max",
+        },
+      },
+      {
+        $addFields: {
+          localDrops: {
+            $multiply: [
+              {
+                $subtract: [
+                  1,
+                  {
+                    $divide: ["$localAvg", "$localMax"],
+                  },
+                ],
+              },
+              100,
+            ],
+          },
+          visitorDrops: {
+            $multiply: [
+              {
+                $subtract: [
+                  1,
+                  {
+                    $divide: ["$visitorAvg", "$visitorMax"],
+                  },
+                ],
+              },
+              100,
+            ],
+          },
+          drawDrops: {
+            $multiply: [
+              {
+                $subtract: [
+                  1,
+                  {
+                    $divide: ["$drawAvg", "$drawMax"],
+                  },
+                ],
+              },
+              100,
+            ],
+          },
+        },
+      },
+      {
+        $addFields: {
+          maxDrop: {
+            $max: ["$localDrops", "$visitorDrops", "$drawDrops"],
+          },
+        },
+      },
+      {
+        $match: {
+          $and: [{ maxDrop: { $gte: min } }, { maxDrop: { $lte: max } }],
+        },
+      },
+      {
+        $sort: {
+          maxDrop: -1,
+        },
+      },
+      {
+        $limit: 200,
+      },
+    ];
+    
+    const matches = await _Matches.aggregate(aggregate);
+
+    __.res(res, matchOdds, 200);
+  } catch (error) {
+    console.log("error", error);
+    __.res(res, error.message, 500);
+  }
+};
