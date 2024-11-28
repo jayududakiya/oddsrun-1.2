@@ -10,9 +10,7 @@
 .showBorder td {
   border: 1px solid #656ef530 !important;
   border-bottom: 1px solid #656ef530 !important;
-  /* border-top: 1px solid #656ef530 !important; */
   border-right: 1px solid #656ef530 !important;
-  /* border-left: 1px solid #656ef530 !important; */
 }
 
 /*  */
@@ -21,10 +19,8 @@
   outline: 1px solid var(--light-purple) !important;
   border-radius: 9px;
   border: 1px solid #656ef530;
-  /* overflow: hidden; */
 }
 .tableOutLine .table {
-  /* border: none; */
   border-radius: 160px;
 }
 
@@ -33,10 +29,8 @@
 .tableOutLine td {
   border: 1px solid #656ef530 !important;
   border-bottom: none !important;
-  /* border-top: none !important; */
   border-right: none !important;
   font-size: var(--font-size-xsm);
-  /* border-left: none !important; */
 }
 .tableOutLine table {
   margin-bottom: 0;

@@ -1,11 +1,17 @@
 import React from "react";
-import { Icon } from "@iconify/react";
 import styles from "../../Pages/DroppingOdds/DroppingOdds.module.css";
 
 const AboutDroppingOdds = (props) => {
   return (
     <div className={styles.aboutDroppingOdds}>
-      <label> {props.title} {props.sureBets && (<span> {" "} - <span>{props.sureBets}</span> </span>)} </label>
+      <label>
+        {props.title}{" "}
+        {props.sureBets && (
+          <span>
+            - <span>{props.sureBets}</span>{" "}
+          </span>
+        )}{" "}
+      </label>
 
       <p className={!props.disciption && styles.aboutdiscription}>
         {props.description ??

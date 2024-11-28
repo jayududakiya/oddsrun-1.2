@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import styles from "../Header/Header.module.css";
-import { useSelector } from "react-redux";
 import searchStyle from "../SearchForm/SearchForm.module.css";
 import { NavLink } from "react-router-dom";
 import { Stack } from "react-bootstrap";
@@ -13,8 +12,6 @@ import { toast } from "react-toastify";
 const SearchBtn = (props) => {
   const [isSearchActive, setIsSearchActive] = useState("");
   const [searchResult, setSearchResult] = useState([]);
-  //   console.log("searchResult", searchResult);
-
   const getPlayer = async (event) => {
     if (event.target.value == "") {
       setIsSearchActive(false);
@@ -24,7 +21,7 @@ const SearchBtn = (props) => {
     try {
       const data = {
         search: event.target.value,
-        sport: props.sportName
+        sport: props.sportName,
       };
 
       const response = await PostRequest("/search", data);
@@ -32,7 +29,6 @@ const SearchBtn = (props) => {
       if (response) {
         setIsSearchActive(true);
         setSearchResult(response);
-
       }
     } catch (error) {
       toast.error(error);
@@ -45,7 +41,6 @@ const SearchBtn = (props) => {
         className={`${styles.searchTeam}`}
         onChange={getPlayer}
         style={{ backgroundColor: props.searchResult ? "white" : "" }}
-      // onClick={()}
       >
         <input type="text" placeholder="Search team/player" />
         <Icon icon="ri:search-2-line" color="#818398" fontSize={"20px"} />
@@ -58,7 +53,7 @@ const SearchBtn = (props) => {
               return (
                 <NavLink
                   onClick={() => {
-                    setIsSearchActive(false)
+                    setIsSearchActive(false);
                   }}
                   key={index}
                   to={`/search/${stringToSlug(

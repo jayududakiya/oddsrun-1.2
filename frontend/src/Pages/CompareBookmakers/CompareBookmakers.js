@@ -8,7 +8,6 @@ import myCouponstyles from "../../components/MyCoupon/MyCoupon.module.css";
 import bookmakersStyles from "../BookMakers/bookmakers.module.css";
 import matchWithoddStyle from "../MatchWithOdds/MatchWithOdds.module.css";
 import { OddsFormat, doFormatText, getDateAndTime } from "../../data/formater";
-import MycouponMsgBtn from "../../components/MyCoupon/MycouponMsgBtn";
 import { Icon } from "@iconify-icon/react/dist/iconify.mjs";
 import ReactTooltip from "react-tooltip";
 import ReactDOMServer from "react-dom/server";
@@ -27,7 +26,6 @@ const CompareBookmakers = () => {
   const [bookiesValues, setBookiesValues] = useState({});
   const [matchUpdatedResult, settMatchUpdatedResult] = useState({});
   const [bookieMatchOdds, setBookieMatchOdds] = useState({});
-  const [loader, setLoader] = useState(false);
   const [openResultIndex, setOpenResultIndex] = useState(null);
   const [bookies, setBookies] = useState([]);
 
@@ -154,7 +152,6 @@ const CompareBookmakers = () => {
   };
 
   const loadMatchOdds = async () => {
-    setLoader(true);
     const matchKeys = Object.keys(coupons);
     const mainOdds = [];
     const updatedResult = {};
@@ -231,7 +228,6 @@ const CompareBookmakers = () => {
     setBookiesOdds(sortedKeys);
     setBookiesValues(finalBookiesData);
     settMatchUpdatedResult(updatedResult);
-    setLoader(false);
   };
 
   useEffect(() => {

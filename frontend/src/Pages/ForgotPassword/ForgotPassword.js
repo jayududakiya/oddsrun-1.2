@@ -6,13 +6,10 @@ import PostRequest from "../../services/PostRequest";
 import { toast } from "react-toastify";
 
 const ForgotPassword = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const forgotPassFormData = async (event) => {
-
     try {
-
       event.preventDefault();
 
       const formData = new FormData(event.target);
@@ -20,22 +17,16 @@ const ForgotPassword = () => {
       formData.forEach(function (value, key) {
         object[key] = value;
       });
-      const response = await PostRequest('/password/forgot', object)
+      const response = await PostRequest("/password/forgot", object);
 
       if (response) {
-
-        toast.success(response.message)
-        navigate('/reset-password')
-
+        toast.success(response.message);
+        navigate("/reset-password");
       }
-
     } catch (error) {
-
-      toast.error(error)
-
+      toast.error(error);
     }
-
-  }
+  };
 
   return (
     <FormDefault title="Forgot Password">

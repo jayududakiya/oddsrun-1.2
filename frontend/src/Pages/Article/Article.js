@@ -14,15 +14,10 @@ const Article = () => {
   const [articles, setArticles] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
 
-  //console.log("articles", articles);
-
   const getArticles = async () => {
     setIsLoading(true);
     try {
       const response = await PostRequest("/articles");
-
-      //console.log("response", response);
-
       setArticles(response);
     } catch (error) {
       toast.error(error);
@@ -37,10 +32,6 @@ const Article = () => {
   return (
     <Default>
       <div className="mb-5 container">
-        {/* {isLoading ? (
-          <Loading height={"50px"} width={"50px"} />
-        ) : ( */}
-        {/* // )} */}
         <Row>
           {articles.map((article, index) => (
             <Col md={4} key={index}>

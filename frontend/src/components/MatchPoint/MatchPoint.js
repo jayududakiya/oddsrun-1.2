@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "../../Pages/DroppingOdds/DroppingOdds.module.css";
-import { OddsFormat } from "../../data/formater";
 
 const MatchPoint = (props) => {
-  const { pointTwo, onClick = () => { }, className = "" } = props;
+  const { pointTwo, onClick = () => {} } = props;
 
   return (
     <div

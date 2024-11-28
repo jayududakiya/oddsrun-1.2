@@ -6,9 +6,6 @@ import NavTab from "./NavTab";
 const EventNav = (props) => {
   const { onClickTab = false, isActive } = props;
 
-  // console.log('isActiverfrerw', isActive);
-
-
   return (
     <>
       <Stack

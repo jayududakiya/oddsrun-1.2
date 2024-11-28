@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./MyCoupon.module.css";
 import { Stack } from "react-bootstrap";
 import { Icon } from "@iconify-icon/react";
@@ -44,11 +44,10 @@ const MatchResult = (props) => {
         <div className={styles.correct}>
           <Icon icon="charm:tick" />
         </div>
-        <NavLink
-          to={props.to}
-          state={props.state}
-        >
-          <div className={`${styles.playerName && styles.couponTitle}`}>{props.title}</div>
+        <NavLink to={props.to} state={props.state}>
+          <div className={`${styles.playerName && styles.couponTitle}`}>
+            {props.title}
+          </div>
         </NavLink>
         <Icon
           onClick={handleRemoveMatch}
@@ -68,8 +67,15 @@ const MatchResult = (props) => {
       <Stack direction="horizontal" className="mt-3">
         <MycouponMsgBtn title={props.MycouponMsgBtn} />
         <div className={`${styles.finalResult} ${styles.couponResult}`}>
-          <div dangerouslySetInnerHTML={{ __html: props.result?.replace(/&nbsp;/g, ' ') }}></div>
-          <div className="d-flex justify-content-end" dangerouslySetInnerHTML={{ __html: props.timeStats }}></div>
+          <div
+            dangerouslySetInnerHTML={{
+              __html: props.result?.replace(/&nbsp;/g, " "),
+            }}
+          ></div>
+          <div
+            className="d-flex justify-content-end"
+            dangerouslySetInnerHTML={{ __html: props.timeStats }}
+          ></div>
         </div>
       </Stack>
     </>

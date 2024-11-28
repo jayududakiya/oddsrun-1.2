@@ -1,7 +1,5 @@
 import moment from "moment";
 import BOOKIES_DATA from "./bookies";
-import { markets } from "./markets";
-
 export const doFormatText = (text) => {
   let words = text?.split("-");
   for (let i = 0; i < words?.length; i++) {
@@ -121,8 +119,6 @@ export const getDateAndTime = (
   format = "DD MMM HH:mm",
   doConvert = true
 ) => {
-  console.log('time', time);
-
   var timezone = false;
   try {
     timezone = window.localStorage.getItem("Timezone-object")

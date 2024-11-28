@@ -73,29 +73,3 @@
     width: 65%;
   }
 }
-
-/* @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .nextMatchDisplay {
-    display: block;
-  }
-  .colMdWidth {
-    width: 100% !important;
-  }
-  .secondCountry {
-    display: block;
-  }
-  .flexReverse {
-    display: flex !important;
-    flex-direction: row-reverse !important;
-    justify-content: flex-end;
-  }
-  .displayNone {
-    display: none;
-  }
-  .redFont {
-    margin-inline-start: 30% !important;
-  }
-  .flexWidthSm {
-    width: 65%;
-  }
-} */

@@ -5,7 +5,6 @@ import AboutDroppingOdds from "../DroppingOdds/AboutDroppingOdds";
 import SportsNav from "../DroppingOdds/SportsNav";
 import GAME1 from "../../assets/image 11.jpg";
 import SportDetails from "../DroppingOdds/SportDetails";
-import styles from "../../Pages/DroppingOdds/DroppingOdds.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { loadSureBets } from "../../store/data.action";
 import { getSportsIcon } from "../../data/SportsIcon";
@@ -18,8 +17,6 @@ import { getDateAndTime } from "../../data/formater";
 const SureBetsComponent = (props) => {
   const { isLoader, setIsLoader } = props;
   const _sureBets = useSelector((state) => state.dataReducer.sureBets);
-  // console.log("_sureBets", _sureBets);
-
   const dispatch = useDispatch();
 
   const sureBets = () => {
@@ -78,9 +75,6 @@ const SureBetsComponent = (props) => {
                       .unix(sureBet.matches.match["date-start-timestamp"])
                       .format("DD MMMM YYYY, HH:mm")
               }
-              // timing={ moment
-              //   .unix(sureBet.matches.match["date-start-timestamp"])
-              //   .format("DD MMMM YYYY, HH:mm")}
               match={sureBet.matches}
               minus={false}
               maxBookmarkers={sureBet.maxBookmarkers}

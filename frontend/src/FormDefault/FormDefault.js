@@ -1,12 +1,11 @@
 import React from "react";
 import styles from "../Pages/Login/Login.module.css";
 import { Col, Row } from "react-bootstrap";
-import { Icon } from "@iconify/react";
 
 const FormDefault = (props) => {
   return (
     <div className={styles.loginBg}>
-      {/* <h1>OddsRun</h1> */}
+      <h4>OddsRun</h4>
 
       <div className="container m-auto mt-5">
         <Row>

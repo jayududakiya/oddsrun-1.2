@@ -83,7 +83,6 @@
 }
 .SetPlace {
   padding: 16px 18px !important;
-  /* background-color: var(--white); */
 }
 .sportsList {
   border-radius: 16px 16px 00 00;
@@ -97,8 +96,6 @@
   padding: 16px 30px;
   margin-left: -11px;
   margin-right: -12px;
-  /* border-left: 1px solid var(--pink); */
-  
 }
 
 .gap10 {
@@ -164,10 +161,8 @@
   font-size: var(--font-size-xsm) !important;
 }
 .myCheckbox {
-  /* border: 2px solid #ff0000; */
   height: 15px;
   width: 15px;
-  /* border-radius-: ; */
 }
 .checkEmail {
   font-size: var(--font-size-xsm);
@@ -181,7 +176,6 @@
 }
 .navTab {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   color: var(--dark-blue);
   font-size: var(--font-size-sm);
@@ -215,7 +209,6 @@
   margin-left: -11px;
   margin-right: -12px;
   font-weight: bold;
-  /* text-decoration: underline; */
 }
 .couponResult {
   color: rgb(101, 110, 245);
@@ -263,58 +256,16 @@
     font-size: 11px;
   }
   .contentBetween {
-    /* justify-content: space-between !important; */
     gap: 5px;
   }
 }
 
-/* @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .evetTabDisplay {
-    display: block;
-  }
-  .myCouponDisplay {
-    display: none !important;
-  }
-  .topEventBdr {
-    border: none;
-    padding-left: 11px;
-    padding-top: 0px !important;
-  }
-  .iconFont {
-    font-size: var(--font-size-sm) !important;
-  }
-  .navTabFont {
-    font-size: var(--font-size-sm-3);
-  }
-  .myCouponTitle {
-    font-size: var(--font-size-xsm);
-  }
-  .topEvent {
-    padding: 6px;
-  }
-  .gap {
-    gap: 25px !important;
-  }
-  .bettingItemIcon {
-    font-size: var(--font-size-sm);
-  }
-} */
-
-
-
-.couponTitle:hover{
+.couponTitle:hover {
   color: #448efc;
   cursor: pointer;
 }
 
-/* 
-.playerName:hover{
-  color: #448efc;
-  cursor: pointer;
-} */
-
 .banner_Img img {
   width: 100%;
   height: 100%;
-
 }

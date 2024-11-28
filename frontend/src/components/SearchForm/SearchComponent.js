@@ -1,22 +1,16 @@
-import { Icon } from '@iconify/react/dist/iconify.js';
-import React, { useState } from 'react';
+import { Icon } from "@iconify/react/dist/iconify.js";
+import React, { useState } from "react";
 import searchStyle from "./SearchForm.module.css";
-import { useSelector } from 'react-redux';
-import { Stack } from 'react-bootstrap';
-import { getAssetImage } from '../../data/flag';
-import { NavLink } from 'react-router-dom';
-import { stringToSlug } from '../../data/formater';
-import PostRequest from '../../services/PostRequest';
+import { Stack } from "react-bootstrap";
+import { getAssetImage } from "../../data/flag";
+import { NavLink } from "react-router-dom";
+import { stringToSlug } from "../../data/formater";
+import PostRequest from "../../services/PostRequest";
 
 const SearchComponent = (props) => {
-
-
-
-
   const [searchResult, setSearchResult] = useState([]);
   const [isSearchActive, setIsSearchActive] = useState("");
   const [isSearching, setIsSearching] = useState(false);
-
 
   const getPlayer = async (event) => {
     if (event.target.value == "") {
@@ -27,7 +21,7 @@ const SearchComponent = (props) => {
     try {
       const data = {
         search: event.target.value,
-        sport: props.sportName
+        sport: props.sportName,
       };
 
       const response = await PostRequest("/search", data);
@@ -35,13 +29,11 @@ const SearchComponent = (props) => {
       if (response) {
         setIsSearchActive(true);
         setSearchResult(response);
-
       }
     } catch (error) {
       // toast.error(error);
     }
   };
-
 
   const toggleSearch = () => {
     setIsSearching(!isSearching);
@@ -51,7 +43,12 @@ const SearchComponent = (props) => {
     <div className="search-container">
       {isSearching ? (
         <div className="search-input-container">
-          <input onChange={getPlayer} className='search-input' type="text" placeholder="Search..." />
+          <input
+            onChange={getPlayer}
+            className="search-input"
+            type="text"
+            placeholder="Search..."
+          />
           <Icon
             onClick={toggleSearch}
             icon="material-symbols-light:close"
@@ -60,7 +57,7 @@ const SearchComponent = (props) => {
           />
         </div>
       ) : (
-        <div className='me-3'>
+        <div className="me-3">
           <Icon
             onClick={toggleSearch}
             icon="ri:search-2-line"
@@ -75,7 +72,7 @@ const SearchComponent = (props) => {
             return (
               <NavLink
                 onClick={() => {
-                  setIsSearchActive(false)
+                  setIsSearchActive(false);
                 }}
                 key={index}
                 to={`/search/${stringToSlug(
@@ -84,7 +81,6 @@ const SearchComponent = (props) => {
                     : result.data.match["away-name"]
                 )}${result.data.match.breadcrumbs.tournament.url}`}
               >
-
                 <Stack
                   className="mt-3"
                   key={index}
@@ -105,7 +101,8 @@ const SearchComponent = (props) => {
                       ? result.data.match["home-name"]
                       : result.data.match["away-name"]}
                   </span>
-                </Stack></NavLink>
+                </Stack>
+              </NavLink>
             );
           })}
 

@@ -1,18 +1,15 @@
 import React from "react";
 import FormDefault from "../../FormDefault/FormDefault";
 import styles from "../../Pages/Login/Login.module.css";
-import { Icon } from "@iconify/react";
 import { NavLink, useNavigate } from "react-router-dom";
-import PostRequest from '../../services/PostRequest'
+import PostRequest from "../../services/PostRequest";
 import { toast } from "react-toastify";
 
 const Register = () => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
   const registerFormData = async (event) => {
     try {
-
       event.preventDefault();
 
       const formData = new FormData(event.target);
@@ -20,27 +17,19 @@ const Register = () => {
       formData.forEach(function (value, key) {
         object[key] = value;
       });
-      var json = JSON.stringify(object);
-
-      const response = await PostRequest('/register', object)
+      const response = await PostRequest("/register", object);
       if (response) {
-
-        toast.success('Register successfully')
-        navigate('/login')
-
+        toast.success("Register successfully");
+        navigate("/login");
       }
-
     } catch (error) {
-
-      toast.error(error)
-
+      toast.error(error);
     }
   };
   return (
     <div>
       <FormDefault title="Sign Up">
         <form onSubmit={registerFormData}>
-
           <div className="mt-4">
             <p className="mb-2">Name</p>
             <input type="text" className="form-control" name="name" />
@@ -55,8 +44,6 @@ const Register = () => {
             <p className="mb-2">Password</p>
             <input type="password" className="form-control" name="password" />
           </div>
-
-
 
           <div className="mt-4">
             <button

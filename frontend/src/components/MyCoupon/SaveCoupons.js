@@ -7,25 +7,11 @@ import { Stack } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { useSelector } from "react-redux";
 import homeStyle from "../MyCoupon/MyCoupon.module.css";
-import moment from "moment";
 import BOOKIES_DATA from "../../data/bookies";
 import { OddsFormat, doFormatText, getDateAndTime } from "../../data/formater";
 import Loading from "../../Loader/Loading";
 import { markets } from "../../data/markets";
 import { NavLink } from "react-router-dom";
-
-function sortOdds(odds, index) {
-  return Object.keys(odds).sort((a, b) => {
-    const valueA = odds[a][index];
-    const valueB = odds[b][index];
-    // If values are equal, maintain the original order
-    if (valueA === valueB) {
-      return Number(a) - Number(b);
-    }
-    // Sort based on the value at the specified index
-    return valueB - valueA; // Change to valueA - valueB for ascending order
-  });
-}
 
 const getCol = (key, count) => {
   return count == 3 && key == 1 ? "X" : key + 1 >= 3 ? key : key + 1;
@@ -138,18 +124,14 @@ const SaveCoupons = () => {
       const element = coupons[matchKeys[index]];
       var url = element.match.url.replace("inplay-odds/", "");
       const sport = element.match.breadcrumbs.sport.name;
-      // console.log('sport', sport.toLowerCase());
-
       try {
         const market = markets[sport.toLowerCase()][0].key;
 
         const data = {
           match: url,
           market: market,
-          // date: moment.unix(date).format("YYYYMMDD"),
         };
         const response = await PostRequest("/match/details", data);
-        var oddsData = [];
         if (
           response &&
           response.matchOdds &&
@@ -164,15 +146,6 @@ const SaveCoupons = () => {
             col: element.col,
             odds: odds,
           });
-          // var sorted = sortOdds(odds,element.col);
-          // sorted.map(bookie => {
-          //   oddsData.push({
-          //     bookie : BOOKIES_DATA[bookie],
-          //     odds : odds[bookie],
-          //     activeOdd : odds[bookie][element.col],
-          //   })
-          // })
-          // console.log('oddsData',oddsData)
         }
         if (response && response.matchData) {
           updatedResult[`${element.match.id}__KD_MASTER_${market}`] =
@@ -254,11 +227,6 @@ const SaveCoupons = () => {
             result = matchUpdatedResult[key]?.text;
           }
           return (
-            // <NavLink
-            //   to={`/match${match.url}${match["date-start-timestamp"]} /${match["id"]}`}
-            //   state={match2}
-            // >
-
             <MatchResult
               to={`/match${match.url}${match["date-start-timestamp"]} /${match["id"]}`}
               state={match2}
@@ -277,14 +245,12 @@ const SaveCoupons = () => {
                   ? "1X2"
                   : "H/A"
               }
-              // market={market.length == 3 ? "1X2" : "H/A"}
               MycouponMsgBtn={getDateAndTime(match["date-start-timestamp"])}
               wonMatches={odds[colIndex].avg}
               result={result}
               timeStats={timeStats}
               tip={getCol(colIndex, market.length)}
             />
-            // </NavLink>
           );
         })}
 
@@ -309,14 +275,13 @@ const SaveCoupons = () => {
                       width={true}
                       title={
                         <div className={styles.logoOfOdds}>
-                          {/* <img className={styles.bestOddsItem} src={GAME1} alt="" /> */}
                           <a
                             href={getURL(bookie?.WebUrl)}
                             target="_blank"
                             rel="noreferrer"
                             style={{
-                              display: 'flex',
-                              gap: '5px',
+                              display: "flex",
+                              gap: "5px",
                             }}
                           >
                             <h6> {bookie?.WebName} </h6>
@@ -343,35 +308,6 @@ const SaveCoupons = () => {
             </NavLink>
           </div>
         )}
-        {/* <p className={`mt-3 ${styles.compare}`}>Compare all bookmakers</p>
-  <Stack direction="horizontal" gap={2} className="mt-3">
-    <ButtonBg btnName="Save" />
-    <MycouponMsgBtn
-      title={<div className="m-1">Save as predictions</div>}
-    />
-  </Stack> */}
-        {/* <Stack direction="horizontal" gap={2} className="mt-4">
-          <input
-            type="checkbox"
-            className={styles.myCheckbox}
-            style={{ borderColor: "#FF0000" }}
-          />
-          <div>
-            <label className={styles.checkEmail}>Results by email</label>
-          </div>
-        </Stack> */}
-        {/* <Stack direction="horizontal" gap={2} className="mt-4">
-    <Icon
-      icon="system-uicons:cross-circle"
-      style={{ fontSize: "24px", color: "#FF0000" }}
-    />
-    <p className={styles.bestOddsCancle}>
-      Ntondele Zinga T. - Girelle C.
-    </p>
-  </Stack> */}
-        {/* <div className="mt-4">
-    <MycouponMsgBtn title="My saved coupons (0)" />
-  </div> */}
       </div>
     </div>
   );

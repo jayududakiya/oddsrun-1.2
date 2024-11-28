@@ -27,23 +27,6 @@ b {
     margin-top: 15px;
   }
   .msgBtn {
-    /* margin-top: 0px !important;
-    margin-bottom: 0px !important; */
     margin: 3px !important;
   }
 }
-
-/* @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .nextMatchesDisplay {
-    display: none !important;
-  }
-  .myMatches {
-    display: block !important;
-  }
-  .scMargin {
-    margin-top: 15px;
-  }
-  .msgBtn {
-    margin: 3px !important;
-  }
-} */

@@ -2,10 +2,10 @@ import React, { useEffect, useRef, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Sidebar.module.css";
 import { Icon } from "@iconify/react";
-import { Accordion, Nav, NavDropdown, Stack } from "react-bootstrap";
+import { Accordion, Nav, NavDropdown } from "react-bootstrap";
 
 import { useDispatch, useSelector } from "react-redux";
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 import { SPORTS_LIST } from "../../data/sports";
 import {
@@ -18,12 +18,10 @@ import Loading from "../../Loader/Loading";
 import { loadSportLeagues } from "../../store/data.action";
 import moment from "moment";
 import timezones from "timezones-list";
-import ButtonBg from "../ButtonBg.js/ButtonBg";
 import ManullyTags from "../../Utils.js/ManullyTags";
 
 const Sidebar = (props) => {
-
-  const {location: uselocation} = useLocation()
+  const { location: uselocation } = useLocation();
 
   const _sportsLeagues = useSelector(
     (state) => state.dataReducer.sportsLeagues
@@ -39,7 +37,6 @@ const Sidebar = (props) => {
   const [sportLeagues, setSportLeagues] = useState([]);
   const [activeSport, setActiveSport] = useState("");
   const [isLoading, setIsLoading] = useState(_isSportsLeaguesLoading);
-  const params = useParams();
 
   const handleSetActiveSport = async (sportName) => {
     setActiveSport(stringToSlug(sportName));
@@ -62,7 +59,7 @@ const Sidebar = (props) => {
 
   try {
     timezone = JSON.parse(window.localStorage.getItem("Timezone-object"));
-  } catch (error) { }
+  } catch (error) {}
 
   const formattedDate = timezone
     ? getDateAndTime(moment().unix())
@@ -88,11 +85,10 @@ const Sidebar = (props) => {
   }, [_isSportsLeaguesLoading]);
 
   const selectedTimeZone = window.localStorage.getItem("Timezone-object");
-  // console.log(selectedTimeZone);
 
-  useEffect(()=>{
-    <ManullyTags/>
-  },[uselocation])
+  useEffect(() => {
+    <ManullyTags />;
+  }, [uselocation]);
 
   return (
     <div className={`${styles.sideBg} ${props.responsive && styles.sideBgRH}`}>
@@ -115,23 +111,6 @@ const Sidebar = (props) => {
             </NavLink>
           </div>
         </div>
-
-        {/* <div className={styles.languageCard}> */}
-        {/* <div className={styles.selectLanguage}>
-            <Icon icon="solar:star-outline" fontSize={"20px"} />
-
-            <span>My Leagues</span>
-
-            <div className={styles.countLanguage}>
-              <span>0</span>
-            </div>
-          </div>
-          <hr></hr>
-          <p className={styles.manageLanguage}>Manage my leagues</p> */}
-
-        {/* <div
-          className={`${styles.decorationLine} ${styles.displayOutline}`}
-        ></div> */}
 
         <div className={`${styles.displayPages}`}>
           <nav className="ps-3">
@@ -297,7 +276,7 @@ const Sidebar = (props) => {
                       ).map((countryKey, index) => {
                         const leagues =
                           sportLeagues[stringToSlug(sport.sportName)][
-                          countryKey
+                            countryKey
                           ];
                         return (
                           <div key={index}>

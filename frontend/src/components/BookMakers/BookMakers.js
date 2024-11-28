@@ -1,5 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
-// import { Helmet } from "react-helmet";
+import React, { useEffect, useState } from "react";
 import styles from "../../Pages/MatchWithOdds/MatchWithOdds.module.css";
 import { Icon } from "@iconify/react";
 import { Dropdown, Nav, NavDropdown, Stack, Table } from "react-bootstrap";
@@ -26,8 +25,6 @@ import Loading from "../../Loader/Loading";
 import { getAssetImage } from "../../data/flag";
 import { markets } from "../../data/markets";
 import NavTab from "../MyCoupon/NavTab";
-
-// import DocumentMeta from 'react-document-meta';
 import useMetaTags from "../../hooks/useMetaTags";
 import PostRequest from "../../services/PostRequest";
 
@@ -128,7 +125,7 @@ const BookmarkerItem = (props) => {
             bookmarker[type].type == "up"
               ? styles.plusAmount
               : styles.minusAmount
-          }`} //${bookmarker[type].type == "up" ? styles.plusAmount : styles.minusAmount}
+          }`}
           variant="success"
           id="dropdown-basic"
         >
@@ -299,10 +296,6 @@ const BookmarkerItem = (props) => {
           {renderDropdown("visitorOdds")}
         </td>
       )}
-
-      {/* <td className="text-center">
-          <span className={styles.percentageNumber}>97.8%</span>
-        </td> */}
     </tr>
   );
 };
@@ -315,12 +308,8 @@ const hasMatchData = (d) => {
 const BookMakers = () => {
   const [bookies, setBookies] = useState([]);
   const params = useParams();
-
   const location = useLocation();
-  const matchOdd = location.state;
-
   const [subMarket, setSubMarket] = useState("1X2");
-  // console.log("subMarket", subMarket);
   const { sport, country, league, match, date } = useParams();
   const matchUrl = `/${sport}/${country}/${league}/${match}/`;
 
@@ -415,7 +404,6 @@ const BookMakers = () => {
     },
     {
       title: params.match,
-      //  title: `${_matchDetails.matchData["home"]} VS ${_matchDetails.matchData["away"]}`,
     },
   ]);
 
@@ -570,7 +558,6 @@ const BookMakers = () => {
           <td className="text-center" colSpan={4}>
             There are no any odds Data found!
           </td>
-          {/* _matchDetails.matchOdds?.data.message */}
         </tr>
       );
     }
@@ -582,8 +569,6 @@ const BookMakers = () => {
 
     var kdOkey = Object.keys(_matchDetails.matchOdds.data.oddsdata.back);
 
-    // console.log('kdOkey', kdOkey)
-
     if (kdOkey.length == 1) {
       const {
         odds,
@@ -594,8 +579,6 @@ const BookMakers = () => {
         changeTime,
       } = getOddsObjectData(_matchDetails, kdOkey[0]);
       const statastic = calculateStats(odds);
-      // console.log('odds new', Object.values(odds)[0]);
-
       var cols = 3;
       // THIS CODE IS  FOR IN RESPONSE OF API SOMETIME WE GET {} OR SOMETIME []
       // console.log('DDDD', typeof Object.values(odds)[0])

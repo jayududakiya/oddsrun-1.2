@@ -1,24 +1,16 @@
 import React, { useEffect, useState } from "react";
 import styles from "../../Pages/LeaguesData/LeaguesData.module.css";
 import myCouponStyle from "../MyCoupon/MyCoupon.module.css";
-import PagesNav from "../DroppingOdds/PagesNav";
 import { Icon } from "@iconify/react";
-import { Col, Row, Stack, Table } from "react-bootstrap";
-import ButtonBg from "../ButtonBg.js/ButtonBg";
+import { Stack } from "react-bootstrap";
 import MycouponMsgBtn from "../MyCoupon/MycouponMsgBtn";
-import SportsNav from "../DroppingOdds/SportsNav";
-import MatchPoint from "../MatchPoint/MatchPoint";
-
-import { NavLink, useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import BreadcrumbComponent from "../DroppingOdds/Breadcrumbs";
 import { doFormatText, stringToSlug } from "../../data/formater";
-import { getAssetImage, getFlagIconKey } from "../../data/flag";
-import { getSportsIcon } from "../../data/SportsIcon";
+import { getFlagIconKey } from "../../data/flag";
 import PostRequest from "../../services/PostRequest";
-import moment from "moment";
 import Loading from "../../Loader/Loading";
 import { toast } from "react-toastify";
-import LeagueMatchItem from "./LeagueMatchItem";
 import { useDispatch } from "react-redux";
 import { setLeagueMatches } from "../../store/data.action";
 import LeagueResult from "./LeagueResult";
@@ -26,15 +18,12 @@ import Standings from "./Standings";
 
 const LeaguesDataComponent = () => {
   const params = useParams();
-  const location = useLocation()
   const dispatch = useDispatch();
-
   const [matches, setMatches] = useState({});
   const [isLoading, setIsLoading] = useState(false);
   const [selectPage, setSelectPage] = useState("nextMatch");
   const [leagueResult, setLeagueResult] = useState([]);
   const [leagueContent, setLeagueContent] = useState("");
-  // console.log("leagueContent....", leagueContent);
   const [navs, setNavs] = useState([
     {
       title: params.sport,
@@ -73,7 +62,6 @@ const LeaguesDataComponent = () => {
       toast.error(error);
     }
   };
-  // console.log("params.league", params.league);
 
   const getResultData = async () => {
     try {
@@ -102,9 +90,7 @@ const LeaguesDataComponent = () => {
       if (response) {
         setLeagueContent(response.fullDescriptions);
       }
-    } catch (error) {
-      // toast.error(error);
-    }
+    } catch (error) {}
   };
 
   useEffect(() => {
@@ -155,7 +141,6 @@ const LeaguesDataComponent = () => {
           direction="horizontal"
           className={`${styles.headerPart1} mt-4`}
         >
-          {/* <ButtonBg btnName="Next Matches" btnPadding={true} /> */}
           <div
             onClick={() => {
               setSelectPage("nextMatch");
@@ -180,9 +165,6 @@ const LeaguesDataComponent = () => {
               }
             />
           </div>
-          {/* <div className={styles.premierLanDisplay} onClick={() => { setSelectPage('standings') }}>
-            <MycouponMsgBtn isActive={selectPage == 'standings' ? true : false} title={<p className="m-1">Standings</p>} />
-          </div> */}
         </Stack>
         {isLoading && <Loading height={50} width={50} />}
 
@@ -198,11 +180,6 @@ const LeaguesDataComponent = () => {
       </div>
 
       <div className={`mt-4 mb-3`}>
-        {/* <div className={myCouponStyle.leaguesHeading}>
-          <Icon icon="solar:star-outline" fontSize={"20px"} />
-          <span className="ms-2"><u>Add "{params.league}" to My leagues</u></span>
-        </div> */}
-
         {leagueContent != "" ? (
           <div
             className={`${myCouponStyle.leaguesHeading} p-3 fw-normal`}
@@ -242,9 +219,6 @@ const LeaguesDataComponent = () => {
         `}
           </div>
         )}
-        {/* <div className={`${myCouponStyle.leaguesHeading} p-3 fw-normal`}>
-          {`${doFormatText(params.league)} page help: Odds Portal lists all upcoming ${doFormatText(params.league)} tennis matches played in Argentina. "B's" column indicates number of bookmakers offering ${doFormatText(params.league)} betting odds on a specific tennis match. Columns 1, X and 2 serve for average/biggest ${doFormatText(params.league)} betting odds offered on home team to win, draw and away team to win the ${doFormatText(params.league)} match. The top line of upcoming matches table (Tennis - Argentina - ${doFormatText(params.league)}) lets you click-through to higher categories of Odds Portal betting odds comparison service.`}
-        </div> */}
       </div>
     </>
   );

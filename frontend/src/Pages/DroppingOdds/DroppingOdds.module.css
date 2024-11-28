@@ -10,8 +10,6 @@
   background-color: var(--white);
   padding: 25px 25px;
   border-radius: var(--br-sm);
-  /* overflow-y: scroll !important; */
-  /* height: 105vh; */
 }
 
 .textCapitalize {
@@ -343,7 +341,6 @@
   font-weight: 600;
 }
 
-
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .textmore {
     display: -webkit-box;
@@ -369,10 +366,10 @@
     /* display: none; */
     font-size: 0.8rem;
     gap: 10px;
-
   }
 
-  .bread-icon {}
+  .bread-icon {
+  }
 
   .setToggle {
     display: block !important;
@@ -512,7 +509,7 @@
   .spaceRemove {
     margin-left: 0px !important;
   }
-  .navLi{
+  .navLi {
     margin: auto 0;
   }
 }
@@ -530,103 +527,3 @@
     gap: 2px;
   }
 }
-
-/* @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .pages {
-    display: none;
-  }
-  .setToggle {
-    display: block !important;
-  }
-  .aboutdiscription {
-    display: none;
-  }
-  .aboutDroppingOdds p {
-    font-size: var(--font-size-xsm) !important;
-    margin: 0;
-  }
-  .aboutDroppingOdds p div {
-    margin-top: 5px !important;
-  }
-  .aboutDroppingOdds label {
-    font-size: var(--font-size-sm) !important;
-  }
-  .aboutDroppingOdds {
-    padding: 14px 18px !important;
-    width: fit-content !important;
-    border-radius: 8px !important;
-  }
-  .displayLastTime {
-    display: none !important;
-  }
-  .dropdownDisplay {
-    display: block !important;
-  }
-  .dropdownFlex {
-    display: flex !important;
-  }
-  .sportAndCountyName {
-    font-size: var(--font-size-smi);
-  }
-  .oddsImg {
-    width: 55px;
-  }
-  .odds_p {
-    margin-bottom: 0px;
-  }
-  .floatingValue {
-    padding-top: 6px;
-  }
-  .odds {
-    margin-inline-start: 0px !important;
-  }
-  .oddsOne {
-    width: 75px !important;
-  }
-  .plusTool {
-    height: 85px !important;
-  }
-  .plusTool span {
-    margin-top: 2px !important;
-  }
-  .filterData filter {
-    font-size: var(--font-size-xsm) !important;
-  }
-  .allSportsDisplay h5 {
-    font-size: var(--font-size-xsm) !important;
-  }
-  .iconFont {
-    font-size: var(--font-size-sm) !important;
-  }
-  .deshDisplay {
-    display: none !important;
-  }
-  .showMobile {
-    display: block;
-  }
-  .countryAndTime {
-    display: flex;
-    justify-content: space-between;
-  }
-  .contentAround {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  .pointInPercentage {
-    width: 34px;
-    height: 15px;
-    padding: 4px 6px;
-    font-size: 8px;
-  }
-
-  .marginTop0 {
-    margin-top: 0px !important;
-  }
-  .marginTop {
-    margin-top: 10px !important;
-  }
-  .marginTop12 {
-    margin-top: 12px;
-  }
-} */

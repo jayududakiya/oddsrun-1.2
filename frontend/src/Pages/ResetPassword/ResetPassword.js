@@ -22,7 +22,6 @@ const ResetPassword = () => {
         password: object.password,
         otp: object.otp,
       };
-      // console.log(data);
 
       const response = await PostRequest("/password/reset", data);
 
@@ -56,15 +55,6 @@ const ResetPassword = () => {
             Reset Password
           </button>
         </div>
-
-        {/* <p>
-          Don’t have an account?
-          <span className={styles.signUp}>
-            <NavLink to={"/login"} className={styles.active}>
-              Sign up
-            </NavLink>
-          </span>
-        </p> */}
       </form>
     </FormDefault>
   );

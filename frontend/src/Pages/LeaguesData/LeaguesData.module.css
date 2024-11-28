@@ -62,16 +62,6 @@
   margin-left: 15px;
 }
 
-/* .PointBox {
-  display: flex;
-  justify-content: space-between;
-} */
-
-/* .matchPoint {
-  width: 70%;
-  margin-inline-start: auto;
-} */
-
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .premierTitle {
     font-size: var(--font-size-base);
@@ -84,9 +74,6 @@
     display: block !important;
   }
   .contentBetween {
-    /* justify-content: block !important; */
-    /* gap: 2; */
-    /* display: block @; */
   }
   .setDisplay {
     display: block;
@@ -149,42 +136,3 @@
     margin-left: 0px !important;
   }
 }
-
-/* @media only screen and (min-width: 375px) and (max-width: 768px) {
-  .premierTitle {
-    font-size: var(--font-size-base);
-    width: 60%;
-  }
-  .matchPoint {
-    width: 100% !important;
-  }
-  .contentBetween {
-    justify-content: space-between !important;
-  }
-  .displayReverse {
-    display: flex !important;
-    flex-direction: row-reverse !important;
-    justify-content: left;
-  }
-  .premierLanDisplay {
-    display: none;
-  }
-  .premierLanMargin {
-    margin: 3px !important;
-  }
-  .btnMargin {
-    margin-top: 10px;
-  }
-  .paddingTop10 {
-    padding-top: 10px !important;
-  }
-  .matchPointMargin {
-    margin-top: 30px !important;
-  }
-  .headerPart {
-    margin-left: 14px;
-  }
-  .headerPart1 {
-    margin-left: 10px;
-  }
-} */

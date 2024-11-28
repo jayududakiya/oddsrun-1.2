@@ -14,8 +14,6 @@ const ArticleDetails = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const params = useParams();
-  //console.log("params", params);
-
   const getArticleDetails = async () => {
     setIsLoading(true);
     try {
@@ -24,8 +22,6 @@ const ArticleDetails = () => {
       });
 
       setArticleDetails(response);
-
-      // console.log("re", response);
     } catch (error) {
       toast.error(error);
     }
@@ -34,12 +30,7 @@ const ArticleDetails = () => {
 
   useEffect(() => {
     getArticleDetails();
-    // setIsLoading(response)
   }, [params]);
-
-  // if (isLoading) {
-  //   return <Loading height={"50px"} width={"50px"} />;
-  // }
 
   return (
     <Default>

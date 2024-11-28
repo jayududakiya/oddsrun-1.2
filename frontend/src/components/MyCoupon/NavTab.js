@@ -31,12 +31,10 @@ const NavTab = (props) => {
     }
   };
 
-
-
   return (
     <Stack
       direction="horizontal"
-      className={`${styles.navTab} ${isActive ? styles.activeSportName : ''}`}
+      className={`${styles.navTab} ${isActive ? styles.activeSportName : ""}`}
       onClick={handleNavClick}
     >
       <Icon icon={getSportsIcon(props.title)} className={styles.iconFont} />

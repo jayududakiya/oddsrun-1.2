@@ -1,15 +1,13 @@
 import React, { useEffect, useState } from "react";
-import styles from "./NextMatches.module.css";
 import Default from "../../components/Default/Default";
 import { Col, Row } from "react-bootstrap";
-import MyCoupon from "../../components/MyCoupon/MyCoupon";
 import NextMatchesComponent from "../../components/NextMatches/NextMatchesComponent";
 import CouponDetails from "../../components/MyCoupon/CouponDetails";
 import { useParams } from "react-router-dom";
 
 const NextMatches = () => {
   const [isLoader, setIsLoader] = useState([false]);
-  const params = useParams()
+  const params = useParams();
 
   useEffect(() => {
     const handleParamChange = () => {
@@ -27,7 +25,15 @@ const NextMatches = () => {
     <Default>
       <Row>
         <Col md={8}>
-          <NextMatchesComponent params={params["sport-name"] == 'soccer' ? 'football' : params["sport-name"]} isLoader={isLoader} setIsLoader={setIsLoader} />
+          <NextMatchesComponent
+            params={
+              params["sport-name"] == "soccer"
+                ? "football"
+                : params["sport-name"]
+            }
+            isLoader={isLoader}
+            setIsLoader={setIsLoader}
+          />
         </Col>
         <Col md={4}>
           <div className="p-3">

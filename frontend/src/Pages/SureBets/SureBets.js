@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import style from "./Surebets.module.css";
 import Default from "../../components/Default/Default";
 import { Col, Row } from "react-bootstrap";
 import CouponDetails from "../../components/MyCoupon/CouponDetails";

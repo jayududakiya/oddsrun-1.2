@@ -170,6 +170,7 @@ export const loadHotMatches = (data = {}) => {
         type: HOT_MATCHES,
         value: response,
       });
+      return response;
     } catch (error) {
       toast.error(error);
     }

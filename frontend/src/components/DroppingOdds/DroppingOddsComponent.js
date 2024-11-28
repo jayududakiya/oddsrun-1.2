@@ -1,16 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Icon } from "@iconify/react";
-import { Col, Collapse, Dropdown, Row, Stack } from "react-bootstrap";
-
+import { Dropdown, Stack } from "react-bootstrap";
 // Internal Components or Modules
-import MatchPoint from "../MatchPoint/MatchPoint";
 import SportsNav from "./SportsNav";
 import SportDetails from "./SportDetails";
 import PagesNav from "./PagesNav";
 import AboutDroppingOdds from "./AboutDroppingOdds";
-
 import EventNav from "../MyCoupon/EventNav";
-
 // CSS or Stylesheets
 import styles from "../../Pages/DroppingOdds/DroppingOdds.module.css";
 import mycoupoStyle from "../MyCoupon/MyCoupon.module.css";
@@ -19,7 +14,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { loadDroppingOdds } from "../../store/data.action";
 import { getSportsIcon } from "../../data/SportsIcon";
 import { getFlagIconKey } from "../../data/flag";
-import moment from "moment";
 import { toast } from "react-toastify";
 import Loading from "../../Loader/Loading";
 import { getDateAndTime, stringToSlug } from "../../data/formater";

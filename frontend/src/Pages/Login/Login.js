@@ -1,8 +1,6 @@
 import React from "react";
 import styles from "./Login.module.css";
-
 import FormDefault from "../../FormDefault/FormDefault";
-import { Icon } from "@iconify/react";
 import { NavLink, useNavigate } from "react-router-dom";
 import PostRequest from "../../services/PostRequest";
 import { toast } from "react-toastify";
@@ -88,19 +86,6 @@ const Login = () => {
               </NavLink>
             </span>
           </p>
-
-          {/* <hr></hr>
-
-          <p className="fw-bolder">login with</p>
-
-          <div className="mb-2">
-            <button
-              className={`${styles.btn} btn btn-outline-primary fw-bolder`}
-            >
-              <Icon icon="devicon:google" className="me-1" />
-              Continue with Google
-            </button>
-          </div> */}
         </form>
       </FormDefault>
     </div>

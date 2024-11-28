@@ -33,13 +33,3 @@
 .bgSearchForm::-webkit-scrollbar {
   display: none;
 }
-/* .overlay {
-  background-color: rgba(255, 255, 255, 0.7) !important;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 280px;
-  height: 200px;
-} */
-
-

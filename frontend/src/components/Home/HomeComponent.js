@@ -6,24 +6,16 @@ import SportsNav from "../DroppingOdds/SportsNav";
 import SportDetails from "../DroppingOdds/SportDetails";
 import { Stack } from "react-bootstrap";
 import MycouponMsgBtn from "../MyCoupon/MycouponMsgBtn";
-// import MatchPoint from "../MatchPoint/MatchPoint";
 import NextMatchesDetails from "./NextMatchesDetails";
-// import nextMatchStyle from "../../Pages/NextMatches/NextMatches.module.css";
-import ButtonBg from "../ButtonBg.js/ButtonBg";
 import { getFlagIconKey } from "../../data/flag";
 import moment from "moment";
 import { getSportsIcon } from "../../data/SportsIcon";
 import Loading from "../../Loader/Loading";
 import { getDateAndTime } from "../../data/formater";
-import { useSelector } from "react-redux";
 import myCouponStyle from "../MyCoupon/MyCoupon.module.css";
 
 const HomeComponent = (props) => {
-  const _coupons = useSelector((state) => state.dataReducer.coupons);
-
   const { hotMatchesDetails = [], nextMatches = [], isLoader } = props;
-
-  // console.log("hot match", hotMatchesDetails);
 
   return (
     <>
@@ -57,10 +49,6 @@ const HomeComponent = (props) => {
             </div>
           );
         })}
-
-        {/* <div className="mt-4 mb-3 text-end">
-          <ButtonBg btnPadding={true} btnName="All Hot Matches" />
-        </div> */}
       </div>
 
       <TopEvent navBar={true} />

@@ -1,39 +1,31 @@
-
 import axios from "axios";
 import {
   MATCHDETAILS,
   DROPPING_ODDS,
   DROPPING_ODDS_LOADING,
-  FILTER_DROPPING_ODDS,
   HOT_MATCHES,
   NEXT_MATCHES,
   NEXT_MATCHES_LOADING,
   SPORT_LEAGUES,
   SPORT_LEAGUES_IS_LOADING,
   SURE_BETS,
-  UPCOMING_MATCHES,
   TOP_EVENTS,
   SET_COUPON,
   SET_LEAGUE_MATCHES,
   LOAD_MORE_NEXT_MATCHES,
 } from "./data.action";
 
-
 const _getCoupon = () => {
-
   const readFromLocal = localStorage.getItem("MY_COUPON");
   if (readFromLocal) {
     try {
       const parseData = JSON.parse(readFromLocal);
-      return parseData
+      return parseData;
     } catch (error) {
-      return {}
+      return {};
     }
   }
-
-
-}
-
+};
 
 const initialState = {
   sportsLeagues: {},
@@ -74,7 +66,6 @@ export const dataReducer = (state = initialState, actions) => {
       return { ...state, nextMatches: actions.value };
 
     case LOAD_MORE_NEXT_MATCHES:
-
       return {
         ...state,
         nextMatches: { ...state.nextMatches, ...actions.value },

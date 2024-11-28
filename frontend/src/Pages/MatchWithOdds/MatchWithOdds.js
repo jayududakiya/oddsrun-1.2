@@ -7,7 +7,6 @@ import styles from "./MatchWithOdds.module.css";
 import CouponDetails from "../../components/MyCoupon/CouponDetails";
 
 const MatchWithOdds = () => {
-
   return (
     <Default>
       <Row>

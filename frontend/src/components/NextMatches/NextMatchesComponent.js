@@ -1,11 +1,9 @@
 import React, { Fragment, useEffect, useState } from "react";
 import styles from "../../Pages/NextMatches/NextMatches.module.css";
-import NavTab from "../MyCoupon/NavTab";
 import PagesNav from "../DroppingOdds/PagesNav";
 import AboutDroppingOdds from "../DroppingOdds/AboutDroppingOdds";
 import { Stack } from "react-bootstrap";
 import MycouponMsgBtn from "../MyCoupon/MycouponMsgBtn";
-import ButtonBg from "../ButtonBg.js/ButtonBg";
 import EventNav from "../MyCoupon/EventNav";
 import SportsNav from "../DroppingOdds/SportsNav";
 import { useDispatch, useSelector } from "react-redux";
@@ -64,23 +62,6 @@ const NextMatchesComponent = (props) => {
     }
   };
 
-  const loadmoreMatches = () => {
-    try {
-      const data = {
-        sport: activeSport ? activeSport : props.params,
-        date: moment(activeDate, "YYYY-MM-DD").format("YYYYMMDD"),
-        isEvent: isEvent,
-        isKickOf: !isEvent,
-        timezone: timezone,
-        skip: _nextMatches.length,
-      };
-
-      dispatch(loadMoreNextMatches(data));
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
   const handleDateChange = (event) => {
     setActiveDate(
       getDateAndTime(
@@ -108,8 +89,6 @@ const NextMatchesComponent = (props) => {
     setIsLoading(_isNextMatchLoading);
   }, [_isNextMatchLoading]);
 
-  //console.log('_nextMatches',_nextMatches);
-
   return (
     <div className={styles.nextMatches}>
       <PagesNav
@@ -118,8 +97,8 @@ const NextMatchesComponent = (props) => {
           activeSport
             ? activeSport
             : props.params === "football"
-              ? "soccer"
-              : props.params
+            ? "soccer"
+            : props.params
         }
       />
 
@@ -135,7 +114,6 @@ const NextMatchesComponent = (props) => {
         gap={1}
       >
         <div className={`mt-2 ${styles.nextMatchesDisplay}`}>
-          {/* <div className={`mt-2`}> */}
           <MycouponMsgBtn
             isActive={selectedDate === activeDate}
             title={
@@ -294,10 +272,6 @@ const NextMatchesComponent = (props) => {
               </Fragment>
             );
           })}
-
-          {/* <div onClick={loadmoreMatches} className="text-center mt-3">
-            <ButtonBg btnName="Load more" />
-          </div> */}
         </Fragment>
       )}
     </div>

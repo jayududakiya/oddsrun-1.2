@@ -1,5 +1,5 @@
-import React, { Suspense, lazy, useEffect } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Provider } from "react-redux";
 import { applyMiddleware, combineReducers, legacy_createStore } from "redux";
 import { thunk } from "redux-thunk";
@@ -7,17 +7,15 @@ import { dataReducer } from "./store/data.reducer";
 import Loader from "./Loader/Loader";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import InitAPICall from "./components/Default/InitAPICall";
 import BookMakersMain from "./Pages/BookMakers/BookMakersMain";
 import AllLeagues from "./Pages/allLeagues/AllLeagues";
 import SearchResult from "./Pages/SearchResult/SearchResult";
-import ReactTooltip from "react-tooltip";
-import LeagueResult from "./components/LeaguesData/LeagueResult";
 import CompareBookmakers from "./Pages/CompareBookmakers/CompareBookmakers";
-import ManullyTags from "./Utils.js/ManullyTags";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const DroppingOdds = lazy(() => import("./Pages/DroppingOdds/DroppingOdds"));
 const Home = lazy(() => import("./Pages/Home/Home"));
@@ -43,68 +41,80 @@ const rootReducers = combineReducers({
 
 const store = legacy_createStore(rootReducers, applyMiddleware(thunk));
 
+// Create a client
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      retry: false,
+      refetchOnWindowFocus: false,
+      staleTime: 5 * 60 * 1000,
+    },
+  },
+});
 export const App = () => {
-
   return (
     <>
-      <Provider store={store}>
-        <BrowserRouter>
-          <Suspense
-            fallback={
-              <div>
-                <Loader />
-              </div>
-            }
-          >
-            <Routes > 
-              {/* <Route path="/" element={<Navigate to={"/home"} />} /> */}
-              <Route path="/" element={<Home />} />
-              <Route path="/home" element={<Home />} />
-              <Route path="/droppingOdds" element={<DroppingOdds />} />
-              <Route path="/sure-bets" element={<SureBets />} />
-              <Route path="/bookmakers" element={<BookMakersMain />} />
-              <Route path="/article" element={<Article />} />
-              <Route
-                path="/article-details/:title/:id"
-                element={<ArticleDetails />}
-              />
-              <Route
-                path="/matches/:sport/:country/:league"
-                element={<LeaguesData />}
-              />
-              <Route
-                path="/match/:sport/:country/:league/:match/:date"
-                element={<MatchWithOdds />}
-              />
-              <Route
-                path="/match/:sport/:country/:league/:match/:date/:id"
-                element={<MatchWithOdds />}
-              />
-              <Route
-                path="/:sport-name/next-matches"
-                element={<NextMatches />}
-              />
-              <Route path="/:sport-name" element={<AllLeagues />} />
-              <Route
-                path="/:sport-name/:country-name"
-                element={<AllLeagues />}
-              />
-              <Route path="/login" element={<Login />} />
-              <Route path="/coupon" element={<CompareBookmakers />} />
-              <Route path="/register" element={<Register />} />
-              <Route path="/forgot-password" element={<ForgotPassword />} />
-              <Route path="/reset-password" element={<ResetPassword />} />
-              <Route path="/save-coupon" element={<SaveCoupon />} />
-              <Route
-                path="/search/:team-name/:sport/:country/:turnament"
-                element={<SearchResult />}
-              />
-            </Routes>
-          </Suspense>
-          <ToastContainer />
-          {/* <InitAPICall /> */}
-        </BrowserRouter>
-      </Provider>
+      {/* <QueryClientProvider client={queryClient}> */}
+        <Provider store={store}>
+          <BrowserRouter>
+            <Suspense
+              fallback={
+                <div>
+                  <Loader />
+                </div>
+              }
+            >
+              <Routes>
+                {/* <Route path="/" element={<Navigate to={"/home"} />} /> */}
+                <Route path="/" element={<Home />} />
+                <Route path="/home" element={<Home />} />
+                <Route path="/droppingOdds" element={<DroppingOdds />} />
+                <Route path="/sure-bets" element={<SureBets />} />
+                <Route path="/bookmakers" element={<BookMakersMain />} />
+                <Route path="/article" element={<Article />} />
+                <Route
+                  path="/article-details/:title/:id"
+                  element={<ArticleDetails />}
+                />
+                <Route
+                  path="/matches/:sport/:country/:league"
+                  element={<LeaguesData />}
+                />
+                <Route
+                  path="/match/:sport/:country/:league/:match/:date"
+                  element={<MatchWithOdds />}
+                />
+                <Route
+                  path="/match/:sport/:country/:league/:match/:date/:id"
+                  element={<MatchWithOdds />}
+                />
+                <Route
+                  path="/:sport-name/next-matches"
+                  element={<NextMatches />}
+                />
+                <Route path="/:sport-name" element={<AllLeagues />} />
+                <Route
+                  path="/:sport-name/:country-name"
+                  element={<AllLeagues />}
+                />
+                <Route path="/login" element={<Login />} />
+                <Route path="/coupon" element={<CompareBookmakers />} />
+                <Route path="/register" element={<Register />} />
+                <Route path="/forgot-password" element={<ForgotPassword />} />
+                <Route path="/reset-password" element={<ResetPassword />} />
+                <Route path="/save-coupon" element={<SaveCoupon />} />
+                <Route
+                  path="/search/:team-name/:sport/:country/:turnament"
+                  element={<SearchResult />}
+                />
+              </Routes>
+            </Suspense>
+            <ToastContainer />
+            {/* <InitAPICall /> */}
+          </BrowserRouter>
+        </Provider>
+      {/* </QueryClientProvider> */}
+      {/* <ReactQueryDevtools initialIsOpen={false} client={queryClient} /> */}
     </>
   );
 };

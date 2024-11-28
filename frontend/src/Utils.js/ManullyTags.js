@@ -5,7 +5,6 @@ export default function ManullyTags() {
 
 
     const location = useLocation()
-    console.log('location:', location);
 
     const soccerNextMatches = {
         title: `Next matches betting odds in football, tennis, basketball – order of play, schedule`,

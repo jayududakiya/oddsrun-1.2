@@ -4,10 +4,8 @@ import CouponDetails from "../../components/MyCoupon/CouponDetails";
 import { Col, Row } from "react-bootstrap";
 import HomeComponent from "../../components/Home/HomeComponent";
 import { countryName } from "../../store/data.reducer";
-import PostRequest from "../../services/PostRequest";
 import { useDispatch, useSelector } from "react-redux";
 import { loadHotMatches, loadNextMatches } from "../../store/data.action";
-import Loading from "../../Loader/Loading";
 import { toast } from "react-toastify";
 import { getDateAndTime } from "../../data/formater";
 import moment from "moment";
@@ -17,11 +15,7 @@ const Home = () => {
 
   const _hotMatches = useSelector((state) => state.dataReducer.hotMatches);
   const _nextMatches = useSelector((state) => state.dataReducer.nextMatches);
-
-  // console.log("next matches", _nextMatches);
-
   const dispatch = useDispatch();
-
   const saveCountryName = async () => {
     try {
       const country = window.localStorage.getItem("countryName");
@@ -36,8 +30,8 @@ const Home = () => {
 
   const hotMatches = async () => {
     setIsLoader(true);
-    const currentDate = getDateAndTime(moment().unix())
-    const date = moment(currentDate, 'DD MMM HH:mm').format('YYYYMMDD')
+    const currentDate = getDateAndTime(moment().unix());
+    const date = moment(currentDate, "DD MMM HH:mm").format("YYYYMMDD");
     try {
       dispatch(loadHotMatches({ date: date }));
       setIsLoader(false);

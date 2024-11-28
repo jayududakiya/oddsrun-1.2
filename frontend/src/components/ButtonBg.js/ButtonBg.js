@@ -4,7 +4,13 @@ import styles from "../Header/Header.module.css";
 const ButtonBg = (props) => {
   return (
     <div>
-      <button className={`${styles.btnRegister} ${props.btnPadding && styles.btnPadding}`}>{props.btnName}</button>
+      <button
+        className={`${styles.btnRegister} ${
+          props.btnPadding && styles.btnPadding
+        }`}
+      >
+        {props.btnName}
+      </button>
     </div>
   );
 };

@@ -8,7 +8,9 @@ const PagesNav = (props) => {
   return (
     <div className={styles.pages}>
       <div className={styles.toggleName}>
-        <NavLink className={styles.navLi} to={'/home'}><span>Home</span></NavLink>
+        <NavLink className={styles.navLi} to={"/home"}>
+          <span>Home</span>
+        </NavLink>
         <Icon
           icon="mdi:keyboard-arrow-right"
           color="black"
@@ -17,11 +19,22 @@ const PagesNav = (props) => {
         />
       </div>
       <div className={styles.toggleName}>
-
-        <NavLink className={styles.navLi} to={`/${props.sportsName !== 'Odds Comparison' ? props.sportsName : 'droppingOdds'}`}><span>{doFormatText(props.sportsName == 'soccer' ? 'football' : props.sportsName)}</span></NavLink>
+        <NavLink
+          className={styles.navLi}
+          to={`/${
+            props.sportsName !== "Odds Comparison"
+              ? props.sportsName
+              : "droppingOdds"
+          }`}
+        >
+          <span>
+            {doFormatText(
+              props.sportsName == "soccer" ? "football" : props.sportsName
+            )}
+          </span>
+        </NavLink>
         {props.sportsName && (
           <Icon
-          
             icon="mdi:keyboard-arrow-right"
             color="black"
             fontSize={"25px"}
@@ -29,7 +42,9 @@ const PagesNav = (props) => {
           />
         )}
       </div>
-      <span className={styles.toggleName1 && styles.navLi}>{doFormatText(props.nextTab)}</span>
+      <span className={styles.toggleName1 && styles.navLi}>
+        {doFormatText(props.nextTab)}
+      </span>
     </div>
   );
 };

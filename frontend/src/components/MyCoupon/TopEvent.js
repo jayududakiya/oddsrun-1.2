@@ -1,96 +1,17 @@
 import React, { useEffect, useState } from "react";
 import BettingToolItem from "./BettingToolItem";
 import styles from "./MyCoupon.module.css";
-import { Col, Nav, NavDropdown, Row, Stack, Table } from "react-bootstrap";
+import { Col, Row, Stack } from "react-bootstrap";
 import ButtonBg from "../ButtonBg.js/ButtonBg";
-import { Icon } from "@iconify/react";
-import NavTab from "./NavTab";
 import EventNav from "./EventNav";
 import { useDispatch, useSelector } from "react-redux";
-import {
-  loadNextMatches,
-  loadSportLeagues,
-  loadTopEvents,
-} from "../../store/data.action";
+import { loadTopEvents } from "../../store/data.action";
 import { getSportsIcon } from "../../data/SportsIcon";
 import { NavLink } from "react-router-dom";
 import { stringToSlug } from "../../data/formater";
 
 const TopEvent = (props) => {
   const _topEvents = useSelector((state) => state.dataReducer.topEvents);
-
-  // const _topEvents = [
-  //   {
-  //     sport: 'Football',
-  //     name: 'Champions League',
-  //     url: '/football/europe/champions-league'
-  //   },
-  //   {
-  //     sport: 'Football',
-  //     name: 'Europa League',
-  //     url: '/football/europe/europa-league'
-  //   },
-  //   {
-  //     sport: 'Football',
-  //     name: 'Serie A',
-  //     url: '/football/italy/serie-a'
-  //   },
-  //   {
-  //     sport: 'Football',
-  //     name: 'Premier League',
-  //     url: '/football/armenia/premier-league'
-  //   },
-  //   {
-  //     sport: 'Football',
-  //     name: 'Bundesliga',
-  //     url: '/football/austria/bundesliga'
-  //   },
-  //   {
-  //     sport: 'Football',
-  //     name: 'La Liga',
-  //     url: '/football/austria/la-liga           '
-  //   },
-  //   {
-  //     sport: 'Basketball',
-  //     name: 'NBA',
-  //     url: '/basketball/Usa/nba'
-  //   },
-  //   {
-  //     sport: 'Basketball',
-  //     name: 'Euroleague',
-  //     url: '/basketball/europe/euroleague'
-  //   },
-  //   {
-  //     sport: 'American Football',
-  //     name: 'NFL',
-  //     url: '/american-football/europe/nfl            '
-  //   },
-  //   {
-  //     sport: 'Hockey',
-  //     name: 'NHL',
-  //     url: '/hockey/usa/nhl'
-  //   },
-  //   {
-  //     sport: 'Tennis',
-  //     name: 'ATP/WTA Australian Open',
-  //     url: '/tennis/usa/atp-wta-australian-open       '
-  //   },
-  //   {
-  //     sport: 'Tennis',
-  //     name: 'ATP/WTA Roland Garros',
-  //     url: '/tennis/usa/atp-wta-roland-garros       '
-  //   },
-  //   {
-  //     sport: 'Tennis',
-  //     name: 'ATP/WTA Wimbledon',
-  //     url: '/tennis/usa/atp-wta-wimbledon       '
-  //   },
-  //   {
-  //     sport: 'Tennis',
-  //     name: 'ATP/WTA US Open',
-  //     url: '/tennis/usa/atp-wta-open       '
-  //   },
-  // ]
 
   const [events, setEvents] = useState([]);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 576);
@@ -112,7 +33,6 @@ const TopEvent = (props) => {
   }, []);
 
   useEffect(() => {
-    // console.log('events',events)
     setEvents(_topEvents);
   }, [_topEvents]);
 

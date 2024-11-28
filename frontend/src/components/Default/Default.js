@@ -1,31 +1,19 @@
 import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
-// Internal Components or Modules
 import Sidebar from "../Sidebar/Sidebar";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-
-// Styles
 import styles from "./Default.module.css";
 import { Col, Row, Stack } from "react-bootstrap";
 import { Icon } from "@iconify/react";
-import { useDispatch } from "react-redux";
 import SearchComponent from "../SearchForm/SearchComponent";
 import { NavLink } from "react-router-dom";
 
 const Default = (props) => {
   const [openMenu, setOpenMenu] = useState(false);
-
   const openMenuEvent = () => {
     setOpenMenu(!openMenu);
   };
-
-  const loadAPIDataTEst = () => { };
-
-  useEffect(() => {
-    loadAPIDataTEst();
-  }, []);
 
   return (
     <>
@@ -43,7 +31,9 @@ const Default = (props) => {
                   fontSize={"24px"}
                   icon="material-symbols:menu"
                 />
-                <NavLink to={'/home'}><div className={styles.logoRH}>OddsRun</div></NavLink>
+                <NavLink to={"/home"}>
+                  <div className={styles.logoRH}>OddsRun</div>
+                </NavLink>
               </Stack>
               <Stack direction="horizontal">
                 <SearchComponent />
@@ -58,7 +48,12 @@ const Default = (props) => {
           </div>
           {openMenu && (
             <div className={styles.openMenu}>
-              <Sidebar closeSidebar={() => { setOpenMenu(false) }} responsive={true} />
+              <Sidebar
+                closeSidebar={() => {
+                  setOpenMenu(false);
+                }}
+                responsive={true}
+              />
             </div>
           )}
 
