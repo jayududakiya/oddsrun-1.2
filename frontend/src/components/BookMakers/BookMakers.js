@@ -812,6 +812,7 @@ const BookMakers = () => {
                   _matchDetails.matchData["home-participant-images"][0]
                 )}
                 className="ps-3 pe-3"
+                alt="home-participant-images_0"
               />
             </div>
             <div>
@@ -823,6 +824,7 @@ const BookMakers = () => {
                   _matchDetails.matchData["away-participant-images"][0]
                 )}
                 className="ps-3 pe-3"
+                alt="away-participant-images_0"
               />
               <span className={styles.largeLabel}>
                 {_matchDetails.matchData["away"]}

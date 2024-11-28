@@ -6,6 +6,7 @@
   margin-top: 20px;
   border-radius: var(--br-sm);
 }
+
 b {
   font-weight: 500;
 }
@@ -20,12 +21,15 @@ b {
   .nextMatchesDisplay {
     display: none !important;
   }
+
   .myMatches {
     display: block !important;
   }
+
   .scMargin {
     margin-top: 15px;
   }
+
   .msgBtn {
     margin: 3px !important;
   }

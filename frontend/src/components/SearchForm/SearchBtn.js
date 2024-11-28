@@ -71,6 +71,7 @@ const SearchBtn = (props) => {
                           ? result.data.match["home-participant-images"]
                           : result.data.match["away-participant-images"]
                       )}
+                      alt="away-participant-images"
                     />
                     <span className="ml-1">
                       {result.isHomeTeam

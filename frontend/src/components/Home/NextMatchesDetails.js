@@ -45,14 +45,14 @@ const NextMatchesDetails = (props) => {
     if (!isSaveable) return false;
     var existingCoupon = {};
     try {
-      if (isSavedCoupon(match.match.id, col, '1X2')) {
+      if (isSavedCoupon(match.match.id, col, "1X2")) {
         // Delete from list
 
         const readFromLocal = localStorage.getItem("MY_COUPON");
         if (readFromLocal) {
           existingCoupon = JSON.parse(readFromLocal);
         }
-        const market = '1X2';
+        const market = "1X2";
         delete existingCoupon[`${match.match.id}__KD_MASTER_${market}`];
         localStorage.setItem(`MY_COUPON`, JSON.stringify(existingCoupon));
         dispatch(setCoupon());
@@ -63,13 +63,13 @@ const NextMatchesDetails = (props) => {
           existingCoupon = JSON.parse(readFromLocal);
         }
         const odds = Object.values(match.odds[0]);
-        const market = '1X2';
+        const market = "1X2";
         existingCoupon[`${match.match.id}__KD_MASTER_${market}`] = {
           col: col,
           match: match.match,
           odds: match.odds,
           originValue: odds[col].avg,
-          market: market
+          market: market,
         };
         localStorage.setItem(`MY_COUPON`, JSON.stringify(existingCoupon));
         dispatch(setCoupon());
@@ -138,7 +138,7 @@ const NextMatchesDetails = (props) => {
                             match.match["home-participant-images"]
                           )}
                           className="playerImage"
-                          alt=""
+                          alt="home-participant-images"
                         />
                       )}
                     </Stack>
@@ -153,7 +153,7 @@ const NextMatchesDetails = (props) => {
                           match.match["away-participant-images"]
                         )}
                         className="playerImage"
-                        alt=""
+                        alt="away-participant-images"
                       />
                       <div
                         className={`${droppingStyle.textmore} ${droppingStyle.teamName}  ${droppingStyle.spaceRemove} ms-2`}
@@ -204,7 +204,7 @@ const NextMatchesDetails = (props) => {
                         match.match["away-participant-images"]
                       )}
                       className="playerImage"
-                      alt=""
+                      alt="away-participant-images"
                     />
                   )}
                   <span

@@ -161,7 +161,7 @@ const SportDetails = (props) => {
                         match.match["home-participant-images"]
                       )}
                       className="playerImage"
-                      alt=""
+                      alt="home-participant-images"
                     />
                   )}
                   <span
@@ -189,7 +189,7 @@ const SportDetails = (props) => {
                         match.match["away-participant-images"]
                       )}
                       className="playerImage"
-                      alt=""
+                      alt="away-participant-images"
                     />
                   )}
                   <span
@@ -268,7 +268,7 @@ const SportDetails = (props) => {
                     <img
                       className={styles.oddsImg}
                       src={getBookmarker(col, maxBookmarkers)}
-                      alt=""
+                      alt="maxBook"
                     />
                   )}
                 </MatchPoint>

@@ -48,6 +48,7 @@ const Article = () => {
                       <img
                         src={ASSETS_URL + article?.image}
                         className={style.cardImg}
+                        alt={`ASSETS_URL_image_${index}`}
                       />
 
                       <div className={style.date}>

@@ -11,24 +11,30 @@
   font-family: Poppins;
   overflow-y: scroll;
 }
+
 .sideBg::-webkit-scrollbar {
   display: none;
 }
+
 .sideBgRH {
   width: 100% !important;
 }
+
 .logo {
   padding-top: 16px;
   text-align: center;
 }
-.logo h4 {
+
+.logo h1 {
   font-size: 24px;
   font-weight: bold;
 }
+
 .decorationLine {
   border: 1px solid var(--light-odds);
   margin-top: 22px;
 }
+
 .languageCard {
   margin-top: 18px;
   height: 110px;
@@ -37,6 +43,7 @@
   background-color: var(--color-mediumslateblue-200);
   padding: 15px 16px;
 }
+
 .selectLanguage {
   display: flex;
   align-items: center;
@@ -57,11 +64,13 @@
 .manageLanguage {
   margin-bottom: 0px;
 }
+
 .sportsMenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .sportsAndCountryBg {
   padding: 5px;
   margin: 10px;
@@ -70,9 +79,11 @@
   background-color: white;
   border-radius: 16px;
 }
+
 .accordion .item .accordion-header button {
   box-shadow: none;
 }
+
 .accordionItem {
   border: none !important;
   background-color: transparent;
@@ -83,12 +94,15 @@
   color: white;
   box-shadow: none !important;
 }
+
 .accordionItem button:not(.collapsed) {
   color: white;
 }
+
 .accordionItem :not(.collapsed) ::after {
   filter: brightness(0) invert(1);
 }
+
 .DisplayDayOfMatch {
   display: flex;
   justify-content: center;
@@ -98,6 +112,7 @@
   color: var(--light-purple);
   margin: 0px 15px;
 }
+
 .subAccordion {
   border: none !important;
   padding: 0px !important;
@@ -112,6 +127,7 @@
   background-color: white !important;
   box-shadow: none !important;
 }
+
 /* .customSubAccordion {
   padding: 0px;
 } */
@@ -127,6 +143,7 @@
   margin-bottom: 10px;
   width: fit-content;
 }
+
 .newSubMenu {
   height: 1px;
   width: 220;
@@ -142,6 +159,7 @@
 .displayPages {
   display: none;
 }
+
 .sidebarLogin {
   border-radius: var(--br-large);
   border: 1px solid white;
@@ -150,6 +168,7 @@
   color: white;
   font-size: 15px;
 }
+
 .authenticateBtn {
   display: none !important;
 }
@@ -158,9 +177,11 @@
   .logo {
     display: none;
   }
+
   .displayOutline {
     display: block;
   }
+
   .marginBottom {
     margin-bottom: 9rem !important;
   }
@@ -168,6 +189,7 @@
   .languageCard {
     height: fit-content !important;
   }
+
   .displayPages {
     display: block;
     margin-left: -38px;
@@ -176,15 +198,18 @@
     padding: 5px;
     flex-direction: column !important;
   }
+
   .displayPages nav ul {
     list-style: none;
   }
+
   .authenticateBtn {
     display: block !important;
     display: flex !important;
     /* justify-content: space-around !important; */
     gap: 16px;
   }
+
   .loginBtn {
     border-radius: var(--br-large);
     /* border: 1px solid var(--light-purple); */
@@ -193,6 +218,7 @@
     padding: 6px 40px;
     color: var(--light-purple);
   }
+
   .registerBtn {
     border-radius: var(--br-large);
     border: 1px solid var(--light-purple);
@@ -201,9 +227,11 @@
     padding: 6px 40px;
     color: white;
   }
+
   .sideMenuItem {
     font-weight: 600;
   }
+
   .timeZoneSelected {
     width: 240px;
     /* opacity: 0; */

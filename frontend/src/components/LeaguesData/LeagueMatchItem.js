@@ -316,7 +316,7 @@ const LeagueMatchItem = (props) => {
                               src={getAssetImage(
                                 match.match["home-participant-images"]
                               )}
-                              alt=""
+                              alt="home-participant-images"
                             />
                           </div>
                         )}
@@ -384,7 +384,7 @@ const LeagueMatchItem = (props) => {
                             match.match["away-participant-images"]
                           )}
                           className={`${styles.paddingTop10}  ${styles.msSet} playerImage`}
-                          alt=""
+                          alt="away-participant-images"
                         />
                       </div>
                     )}

@@ -10,7 +10,6 @@ const SureBets = lazy(() => import("./Pages/SureBets/SureBets"));
 const LeaguesData = lazy(() => import("./Pages/LeaguesData/LeaguesData"));
 const NextMatches = lazy(() => import("./Pages/NextMatches/NextMatches"));
 
-
 export const Routing = () => {
   return (
     <>

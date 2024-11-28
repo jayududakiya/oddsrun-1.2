@@ -219,7 +219,7 @@ const Header = () => {
                   <div className="ms-auto d-flex align-items-center">
                     <Icon icon="gala:bell" className="me-4" fontSize={"25px"} />
                     <div className={`${styles.userName}`}>
-                      <img src={USERIMG} />
+                      <img src={USERIMG} alt="USERIMG" />
                       <span>
                         {userName?.charAt(0).toUpperCase() + userName?.slice(1)}
                       </span>
