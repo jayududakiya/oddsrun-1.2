@@ -268,7 +268,7 @@ const SportDetails = (props) => {
                     <img
                       className={styles.oddsImg}
                       src={getBookmarker(col, maxBookmarkers)}
-                      alt="maxBook"
+                      alt="oddsImg"
                     />
                   )}
                 </MatchPoint>

@@ -52,7 +52,7 @@ const ArticleDetails = () => {
                     <img
                       src={ASSETS_URL + articleDetails?.image}
                       className={styles.cardImg}
-                      alt="ASSETS_URL_image"
+                      alt={articleDetails.title}
                     />
                   </div>
 
