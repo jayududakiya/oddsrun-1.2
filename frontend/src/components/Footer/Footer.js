@@ -44,13 +44,20 @@ const Footer = () => {
             </Stack>
           </Stack>
         </Stack>
-        <Stack direction="horizontal" className={styles.footerDisplay}>
-          <div className={`${styles.footerDiscription}`}>
+        <Stack
+          direction="horizontal"
+          className={`${styles.footerDisplay} flex-wrap  justify-content-between `}
+        >
+          <div className={`${styles.footerDiscription} `}>
             The best betting odds! You can compare sports odds and lines across
             all bookmakers and betting sites. Go for the highest odds for
             Football, Tennis, esport, NFL and more !
           </div>
-          <Stack direction="horizontal" className="ms-auto mt-3" gap={2}>
+          <Stack
+            direction="horizontal"
+            className=" justify-content-center mt-3 flex-wrap"
+            gap={2}
+          >
             <div className={styles.logoNotDisplay}>
               <img src={LOGO} height={65} alt="LOGO" />
             </div>

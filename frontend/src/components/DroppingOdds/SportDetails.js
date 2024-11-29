@@ -126,8 +126,8 @@ const SportDetails = (props) => {
 
   return (
     <div className={styles.matchSchedule}>
-      <Row>
-        <Col md={props.sureBets ? 7 : 8}>
+      <Row className="gx-3">
+        <Col xs={12} sm={10} md={6}>
           <div
             className={`${props.display && styles.countryAndTime} ${
               styles.teamNameAndTime
@@ -141,7 +141,7 @@ const SportDetails = (props) => {
               <Stack
                 direction="horizontal"
                 gap={2}
-                className={styles.showMobile}
+                className={`${styles.showMobile} `}
               >
                 <div className={styles.dropdownFlex}>
                   {/* `${BROKER_SPORT_ASSEST}${match.match['home-participant-images']}` */}
@@ -201,25 +201,25 @@ const SportDetails = (props) => {
               </Stack>
             </NavLink>
 
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center ">
               <div
-                className={`mt-4 ${styles.marginTop} ${
+                className={` ${styles.marginTop} ${
                   props.display && styles.marginTop0
                 }`}
               >
                 <MycouponMsgBtn title={props.timing} bg={true} />
               </div>
               {isDroppingOdds && market && (
-                <div className={`${styles.marginTop} mt-4 ms-1`}>
+                <div className={`${styles.marginTop} mt-4 ms-1 `}>
                   <MycouponMsgBtn title={market} bg={true} />
                 </div>
               )}
             </div>
           </div>
         </Col>
-        <Col md={props.sureBets ? 5 : 4}>
+        <Col className="py-2 d-flex justify-content-between align-items-center flex-wrap">
           <Stack
-            className={`${nextMatchStyle.scMargin} justify-content-end ${droppingStyles.spaceAround}`}
+            className=" justify-content-md-between justify-content-end  gap-3 flex-wrap flex-sm-nowrap"
             direction="horizontal"
           >
             {cols?.map((col, index) =>
