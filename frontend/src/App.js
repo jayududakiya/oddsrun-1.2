@@ -7,15 +7,12 @@ import { dataReducer } from "./store/data.reducer";
 import Loader from "./Loader/Loader";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import BookMakersMain from "./Pages/BookMakers/BookMakersMain";
 import AllLeagues from "./Pages/allLeagues/AllLeagues";
 import SearchResult from "./Pages/SearchResult/SearchResult";
 import CompareBookmakers from "./Pages/CompareBookmakers/CompareBookmakers";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 const DroppingOdds = lazy(() => import("./Pages/DroppingOdds/DroppingOdds"));
 const Home = lazy(() => import("./Pages/Home/Home"));
@@ -41,20 +38,9 @@ const rootReducers = combineReducers({
 
 const store = legacy_createStore(rootReducers, applyMiddleware(thunk));
 
-// Create a client
-const queryClient = new QueryClient({
-  defaultOptions: {
-    queries: {
-      retry: false,
-      refetchOnWindowFocus: false,
-      staleTime: 5 * 60 * 1000,
-    },
-  },
-});
 export const App = () => {
   return (
     <>
-      {/* <QueryClientProvider client={queryClient}> */}
         <Provider store={store}>
           <BrowserRouter>
             <Suspense
@@ -113,8 +99,6 @@ export const App = () => {
             {/* <InitAPICall /> */}
           </BrowserRouter>
         </Provider>
-      {/* </QueryClientProvider> */}
-      {/* <ReactQueryDevtools initialIsOpen={false} client={queryClient} /> */}
     </>
   );
 };
