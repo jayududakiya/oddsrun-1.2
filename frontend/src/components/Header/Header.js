@@ -66,7 +66,7 @@ const Header = () => {
   return (
     <Fragment>
       <div className={`${styles.headerBg} ${styles.hideHeader}`}>
-        <div className={styles.mainHeader}>
+        <div className={`${styles.mainHeader} flex-wrap`}>
           <div className={styles.oddsFormate}>
             <span>
               <div>Odds format:</div>{" "}

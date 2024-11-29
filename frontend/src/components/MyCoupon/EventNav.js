@@ -13,15 +13,39 @@ const EventNav = (props) => {
         className={`${styles.evetTabDisplay} ${styles.gap}`}
         gap={3}
       >
-        <Stack direction="horizontal" gap={3} className={styles.gap}>
-          <NavTab isActive={isActive && isActive("Football")} onClickTab={onClickTab} title="Football" />
-          <NavTab isActive={isActive && isActive("Basketball")} onClickTab={onClickTab} title="Basketball" />
-          <NavTab isActive={isActive && isActive("Baseball")} onClickTab={onClickTab} title="Baseball" />
-        </Stack>
-        <Stack direction="horizontal" gap={3} className={styles.gap}>
-          <NavTab icon="noto-v1:hole" isActive={isActive && isActive("Hockey")} onClickTab={onClickTab} title="Hockey" />
+        <Stack
+          direction="horizontal"
+          gap={3}
+          className={`${styles.gap} ${styles.custom_stack_wrap}`}
+        >
           <NavTab
-
+            isActive={isActive && isActive("Football")}
+            onClickTab={onClickTab}
+            title="Football"
+          />
+          <NavTab
+            isActive={isActive && isActive("Basketball")}
+            onClickTab={onClickTab}
+            title="Basketball"
+          />
+          <NavTab
+            isActive={isActive && isActive("Baseball")}
+            onClickTab={onClickTab}
+            title="Baseball"
+          />
+        </Stack>
+        <Stack
+          direction="horizontal"
+          gap={3}
+          className={`${styles.gap} ${styles.custom_stack_wrap}`}
+        >
+          <NavTab
+            icon="noto-v1:hole"
+            isActive={isActive && isActive("Hockey")}
+            onClickTab={onClickTab}
+            title="Hockey"
+          />
+          <NavTab
             icon="emojione-v1:tennis"
             onClickTab={onClickTab}
             isActive={isActive && isActive("Tennis")}

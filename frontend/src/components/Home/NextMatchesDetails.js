@@ -90,7 +90,7 @@ const NextMatchesDetails = (props) => {
     >
       <Row>
         <Col
-          md={cols.length == 3 ? 8 : 9}
+          // md={cols.length == 3 ? 8 : 9}
           className={`${homeStyle.alignItem} `}
         >
           <Stack
