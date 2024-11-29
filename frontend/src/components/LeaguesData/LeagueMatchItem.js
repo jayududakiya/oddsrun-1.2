@@ -233,10 +233,10 @@ const LeagueMatchItem = (props) => {
   useMetaTags(metaTags, meta.title);
 
   return (
-    <div className={`mt-2`} key={matchIndex}>
+    <div className='p-2' key={matchIndex}>
       <div className={dateMatches.length - 1 == matchIndex ? "" : styles.b}>
-        <Row className={styles.dataItem}>
-          <Col md={cols.length == 3 ? 8 : 9}>
+        <Row className={`${styles.dataItem} gy-2`}>
+          <Col xs={12} xl={6}>
             <Stack
               direction="horizontal"
               gap={3}
@@ -414,15 +414,14 @@ const LeagueMatchItem = (props) => {
             </Stack>
           </Col>
           <Col
-            md={cols.length == 3 ? 4 : 3}
+           xs={12} xl={6}
             className={styles.matchPointMargin}
           >
             <div className={styles.matchPoint}>
               <Stack
                 direction="horizontal"
-                className={`${
-                  cols.length == 3 ? styles.pointBox : styles.pointBox1
-                } d-flex justify-content-end`}
+                gap={3}
+                className={`d-flex justify-content-start justify-content-xl-end mb-2`}
               >
                 {cols.map((col, colIndex) => (
                   <div key={colIndex}>

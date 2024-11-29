@@ -10,12 +10,12 @@ const MatchWithOdds = () => {
   return (
     <Default>
       <Row>
-        <Col md={8}>
+        <Col xs={12} lg={8}>
           <div className="pt-3">
             <BookMakers />
           </div>
         </Col>
-        <Col md={4} className={styles.navbarDisplay}>
+        <Col xs={12} lg={4} className={styles.navbarDisplay}>
           <div className="p-3">
             <CouponDetails />
           </div>

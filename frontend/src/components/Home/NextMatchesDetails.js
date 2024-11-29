@@ -88,11 +88,8 @@ const NextMatchesDetails = (props) => {
     <div
       className={`${droppingStyle.matchSchedule} ${homeStyle.nextMatchDetails}`}
     >
-      <Row>
-        <Col
-          // md={cols.length == 3 ? 8 : 9}
-          className={`${homeStyle.alignItem} `}
-        >
+      <Row className="gy-4">
+        <Col xs={12} xl={6} className={`${homeStyle.alignItem} `}>
           <Stack
             direction="horizontal"
             gap={3}
@@ -236,11 +233,11 @@ const NextMatchesDetails = (props) => {
             </NavLink>
           </Stack>
         </Col>
-        <Col md={cols.length == 3 ? 4 : 3}>
+        <Col xs={12} xl={6} >
           <Stack
             direction="horizontal"
             gap={1}
-            className={`justify-content-end ${droppingStyle.marginTop} ${droppingStyle.spaceAround}`}
+            className={`justify-content-between`}
           >
             {cols?.map((col, index) => (
               <MatchPoint

@@ -98,6 +98,7 @@
   border-bottom: 2px solid var(--light-purple);
   width: fit-content;
   padding: 5px 10px;
+  white-space: nowrap;
 }
 
 .topEventBdr {
@@ -221,6 +222,7 @@
   align-items: center;
   color: var(--dark-blue);
   font-size: var(--font-size-sm);
+  padding: 8px !important;
 }
 
 .navTab :hover {

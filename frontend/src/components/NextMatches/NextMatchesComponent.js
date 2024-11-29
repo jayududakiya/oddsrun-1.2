@@ -157,7 +157,7 @@ const NextMatchesComponent = (props) => {
               </div>
             }
           />
-          <div className={styles.nextMatchesDisplay}>
+          {/* <div className={styles.nextMatchesDisplay}>
             <MycouponMsgBtn
               isActive={activeDate === dayAfterTomorrow}
               title={
@@ -182,18 +182,16 @@ const NextMatchesComponent = (props) => {
                 </div>
               }
             />
-          </div>
+          </div> */}
         </Stack>
       </Stack>
 
       <Stack
-        direction="horizontal"
+        direction="vertical"
         gap={4}
         className={`mt-4 ${styles.myMatches}`}
       >
-        <div>
-          <b>My Matches</b>
-        </div>
+        <b className="text-nowrap">My Matches</b>
         <div className={styles.scMargin}>
           <EventNav onClickTab={handleOnSportChange} isActive={checkActive} />
         </div>

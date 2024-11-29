@@ -33,12 +33,6 @@ const EventNav = (props) => {
             onClickTab={onClickTab}
             title="Baseball"
           />
-        </Stack>
-        <Stack
-          direction="horizontal"
-          gap={3}
-          className={`${styles.gap} ${styles.custom_stack_wrap}`}
-        >
           <NavTab
             icon="noto-v1:hole"
             isActive={isActive && isActive("Hockey")}
@@ -52,7 +46,7 @@ const EventNav = (props) => {
             title="Tennis"
           />
 
-          <div className={`ms-auto ${styles.more}`}>
+          <div className={`${styles.more}`}>
             <Nav>
               <NavDropdown
                 id="nav-dropdown-dark-example"

@@ -4,8 +4,6 @@ import { Icon } from "@iconify/react";
 
 // Styles
 import styles from "../../Pages/DroppingOdds/DroppingOdds.module.css";
-import nextMatchStyle from "../../Pages/NextMatches/NextMatches.module.css";
-import droppingStyles from "../../Pages/DroppingOdds/DroppingOdds.module.css";
 import "../../App.css";
 
 // Internal Components
@@ -126,8 +124,8 @@ const SportDetails = (props) => {
 
   return (
     <div className={styles.matchSchedule}>
-      <Row className="gx-3">
-        <Col xs={12} sm={10} md={6}>
+      <Row className="gx-3 gy-3">
+        <Col xs={12} xl={6}>
           <div
             className={`${props.display && styles.countryAndTime} ${
               styles.teamNameAndTime
@@ -203,7 +201,7 @@ const SportDetails = (props) => {
 
             <div className="d-flex align-items-center ">
               <div
-                className={` ${styles.marginTop} ${
+                className={`${
                   props.display && styles.marginTop0
                 }`}
               >
@@ -219,7 +217,7 @@ const SportDetails = (props) => {
         </Col>
         <Col className="py-2 d-flex justify-content-between align-items-center flex-wrap">
           <Stack
-            className=" justify-content-md-between justify-content-end  gap-3 flex-wrap flex-sm-nowrap"
+            className="w-100 justify-content-between  gap-3 flex-wrap flex-sm-nowrap"
             direction="horizontal"
           >
             {cols?.map((col, index) =>

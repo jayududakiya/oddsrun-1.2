@@ -32,6 +32,12 @@
   z-index: 11;
 }
 
+@media screen and (max-width: 768px) {
+  .mainBg {
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
   .noScroll {
     overflow-y: hidden;

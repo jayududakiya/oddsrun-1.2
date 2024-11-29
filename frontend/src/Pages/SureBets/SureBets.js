@@ -9,10 +9,10 @@ const SureBets = () => {
   return (
     <Default>
       <Row>
-        <Col md={8}>
+        <Col xs={12} lg={8}>
           <SureBetsComponent isLoader={isLoader} setIsLoader={setIsLoader} />
         </Col>
-        <Col md={4}>
+        <Col xs={12} lg={4}>
           <div className="p-3">
             <CouponDetails />
           </div>

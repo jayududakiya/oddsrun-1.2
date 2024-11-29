@@ -341,9 +341,14 @@
   font-weight: 600;
 }
 
-
 .marginTop {
   margin-top: 1.5rem;
+}
+
+.teamNameAndTime {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
@@ -358,10 +363,7 @@
     justify-content: space-around !important;
   }
 
-  .teamNameAndTime {
-    /* display: flex; */
 
-  }
 
   .justify-content-end {
     justify-content: space-between !important;
@@ -373,7 +375,8 @@
     gap: 10px;
   }
 
-  .bread-icon {}
+  .bread-icon {
+  }
 
   .setToggle {
     display: block !important;

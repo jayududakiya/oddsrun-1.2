@@ -147,7 +147,7 @@ const Header = () => {
 
         <div className={styles.header}>
           <Row>
-            <Col md={7}>
+            <Col xs={12} xl={7}>
               <div className={styles.menubar}>
                 <nav>
                   <ul>
@@ -209,9 +209,9 @@ const Header = () => {
                 </nav>
               </div>
             </Col>
-            <Col md={5}>
+            <Col xs={12} xl={5}>
               <Stack direction="horizontal">
-                <div className="ms-auto">
+                <div className="ms-auto w-100">
                   <SearchBtn />
                 </div>
 

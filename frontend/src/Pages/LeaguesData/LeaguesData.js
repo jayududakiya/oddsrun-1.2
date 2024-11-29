@@ -9,10 +9,10 @@ const LeaguesData = () => {
   return (
     <Default>
       <Row>
-        <Col md={8}>
+        <Col xs={12} lg={8}>
           <LeaguesDataComponent />
         </Col>
-        <Col md={4} className={style.premierLanDisplay}>
+        <Col xs={12} lg={4} className={style.premierLanDisplay}>
           <div className="p-3">
             <CouponDetails />
           </div>
