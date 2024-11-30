@@ -56,6 +56,31 @@ const Home = () => {
     nextMatches();
   }, []);
 
+  useEffect(() => {
+    // Create the script element
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.oddsrun.com/",
+      name: "Sports Betting Odds Calculator | Compare Betting Odds",
+      description:
+        "Use our sports betting odds calculator to compare odds across top bookmakers for Football, Tennis, NFL, esports, and more. Get the best odds today!",
+      url: "https://www.oddsrun.com/",
+    });
+
+    console.log('script', script)
+
+    // Append the script to the document head
+    document.head.appendChild(script);
+
+    // Cleanup function to remove the script if necessary
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <Default>
       <Row>

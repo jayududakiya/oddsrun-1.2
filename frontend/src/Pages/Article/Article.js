@@ -29,6 +29,29 @@ const Article = () => {
     getArticles();
   }, []);
 
+  useEffect(() => {
+    // Create the script element
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "@id": "https://www.oddsrun.com/article",
+      name: "Expert Tips and Insights on Betting Trends | OddsRun",
+      description:
+        "Explore expert insights, trends, and tips on betting with the latest articles from OddsRun. Stay informed and make smarter decisions.",
+      url: "https://www.oddsrun.com/article",
+    });
+
+    // Append the script to the document head
+    document.head.appendChild(script);
+
+    // Cleanup function to remove the script if necessary
+    return () => {
+      document.head.removeChild(script);
+    };
+  }, []);
+
   return (
     <Default>
       <div className="mb-5 container">

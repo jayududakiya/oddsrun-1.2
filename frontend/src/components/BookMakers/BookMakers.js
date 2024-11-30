@@ -827,7 +827,6 @@ const BookMakers = () => {
                 )}
                 loading="lazy"
                 className="ps-3 pe-3"
-                loading="lazy"
                 alt="away-participant-images_0"
               />
               <span className={styles.largeLabel}>

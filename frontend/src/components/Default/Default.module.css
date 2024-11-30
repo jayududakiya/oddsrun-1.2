@@ -6,8 +6,7 @@
 
 .mainBg {
   background-color: var(--light-odds);
-  /* font-family: Poppins !important; */
-  /* font-display: swap; */
+  font-family: var(--font-poppins);
 }
 
 .responsiveHeader {
