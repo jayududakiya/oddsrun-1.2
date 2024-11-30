@@ -227,6 +227,7 @@
 }
 .betLogo {
   width: 14%;
+  height: inherit;
 }
 .addCouponSave :hover {
   cursor: pointer;

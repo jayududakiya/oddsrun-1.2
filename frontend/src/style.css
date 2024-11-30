@@ -1,7 +1,9 @@
+/* Import the Poppins font with swap display */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
 :root {
   /* fonts */
-  --font-poppins: Poppins;
+  --font-poppins: 'Poppins', Arial, sans-serif;
 
   /* font sizes */
   --font-size-xsm: 14px;
@@ -34,7 +36,6 @@
   --green-bg-300: #def3dd;
 
   /* Border Radius */
-
   --br-medium: 32px;
   --br-large: 48px;
   --br-sm: 16px;
@@ -43,7 +44,9 @@
   /* Gap */
   --gap: 10px;
 }
+
 body {
   font-family: var(--font-poppins);
   font-size: var(--font-size-sm);
+  color: var(--dark-blue);
 }

@@ -1,7 +1,7 @@
 const APP_URL = window.location.origin;
 
 const ShowImage = (props) => {
-  const { property, record, onChange } = props;
+  const { property } = props;
 
   var image = props.record.params[property.name];
 

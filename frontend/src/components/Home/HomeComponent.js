@@ -115,32 +115,38 @@ const HomeComponent = (props) => {
 
       <div className={`mt-4 mb-3`}>
         <div className={`${myCouponStyle.leaguesHeading} p-3 fw-normal`}>
-          Welcome to OddsRun, your ultimate online betting comparison platform
-          for everything related to sports betting. Whether you’re a seasoned
-          bettor or just getting started, we provide you with a comprehensive
-          range of tools to enhance your betting experience. Our platform offers
-          dropping odds, sure bets, betting predictions, betting lines,
-          schedule, results, and more—all designed to help you make informed
-          betting decisions and maximize your returns.
-          <br /> <br />
-          At OddsRun, we specialize in offering the best odds across various
-          markets. Our advanced system tracks odds movement in real time,
-          ensuring you stay updated with the most accurate and competitive odds.
-          With our dropping odds feature, you can spot sudden shifts in the
-          market and act quickly to take advantage of the best betting
-          opportunities. For those looking for guaranteed profit, our sure bets
-          section compares betting lines from different bookmakers, helping you
-          exploit odds discrepancies and lock in a winning bet. <br /> <br /> We
-          also provide betting tips and predictions on major sports events,
-          along with a full schedule of upcoming matches across various leagues
-          and tournaments. Our platform covers football, tennis, basketball, and
-          more, making sure you’re equipped with everything you need to succeed
-          in sports betting. Check real-time results, explore betting lines, and
-          use our expert predictions to get ahead of the game. Whether you're
-          looking to bet online, compare the best odds, or discover sure bets,
-          OddsRun is your go-to platform for a smarter and more profitable
-          betting experience. Join us today and stay ahead with the latest
-          betting odds and the best insights in online sports betting.
+          <p>
+            Welcome to OddsRun, your ultimate online betting comparison platform
+            for everything related to sports betting. Whether you’re a seasoned
+            bettor or just getting started, we provide you with a comprehensive
+            range of tools to enhance your betting experience. Our platform
+            offers dropping odds, sure bets, betting predictions, betting lines,
+            schedule, results, and more—all designed to help you make informed
+            betting decisions and maximize your returns.
+          </p>
+          <p>
+            At OddsRun, we specialize in offering the best odds across various
+            markets. Our advanced system tracks odds movement in real-time,
+            ensuring you stay updated with the most accurate and competitive
+            odds. With our dropping odds feature, you can spot sudden shifts in
+            the market and act quickly to take advantage of the best betting
+            opportunities. For those looking for guaranteed profit, our sure
+            bets section compares betting lines from different bookmakers,
+            helping you exploit odds discrepancies and lock in a winning bet.
+          </p>
+          <p>
+            We also provide betting tips and predictions on major sports events,
+            along with a full schedule of upcoming matches across various
+            leagues and tournaments. Our platform covers football, tennis,
+            basketball, and more, making sure you’re equipped with everything
+            you need to succeed in sports betting. Check real-time results,
+            explore betting lines, and use our expert predictions to get ahead
+            of the game. Whether you're looking to bet online, compare the best
+            odds, or discover sure bets, OddsRun is your go-to platform for a
+            smarter and more profitable betting experience. Join us today and
+            stay ahead with the latest betting odds and the best insights in
+            online sports betting.
+          </p>
         </div>
       </div>
     </>

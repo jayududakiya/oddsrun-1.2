@@ -159,6 +159,7 @@ const SportDetails = (props) => {
                         match.match["home-participant-images"]
                       )}
                       className="playerImage"
+                      loading="lazy"
                       alt="home-participant-images"
                       loading="lazy"
                     />
@@ -187,6 +188,7 @@ const SportDetails = (props) => {
                       src={getAssetImage(
                         match.match["away-participant-images"]
                       )}
+                      loading="lazy"
                       className="playerImage"
                       alt="away-participant-images"
                       loading="lazy"

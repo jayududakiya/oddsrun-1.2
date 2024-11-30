@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import styles from "./Header.module.css";
 import { Icon } from "@iconify/react";
@@ -14,40 +14,46 @@ import { getDateAndTime } from "../../data/formater";
 import { TIMEZONE_ALIASES } from "../../data/TimezoneAliases";
 
 const Header = () => {
+  const [timezone, setTimezone] = useState({});
+  const [oddsFormat, setOddsFormat] = useState(
+    window.localStorage.getItem("Odds-Format")
+  );
+
+  // Handle selection of odds format
+  const handleSelect = (eventKey) => {
+    window.localStorage.setItem("Odds-Format", eventKey);
+    setOddsFormat(eventKey);
+  };
+
+  // Handle selection of timezone
   const handleSelectedTime = (eventKey) => {
     window.localStorage.setItem("Timezone-object", eventKey);
     window.location.reload();
   };
 
-  const handleSelect = (eventKey) => {
-    window.localStorage.setItem("Odds-Format", eventKey);
-    window.location.reload();
-  };
-  const oddsFormat = window.localStorage.getItem("Odds-Format");
-  var timezone = {};
-
-  try {
-    timezone = JSON.parse(window.localStorage.getItem("Timezone-object"));
-  } catch (error) {}
-
+  // Default timezone format if none is selected
   const formattedDate = timezone
     ? getDateAndTime(moment().unix())
     : moment().format("DD MMM HH:mm");
 
+  // User related functions
   const userVerify = window.localStorage.getItem("token");
+  const userName = window.localStorage.getItem("username");
 
+  // Logout handler
   const handleLogout = () => {
     window.localStorage.removeItem("token");
     window.localStorage.removeItem("userId");
-
     toast.success("You have been logged out successfully");
-
     window.location.reload();
   };
-  const userName = window.localStorage.getItem("username");
 
+  // Fetch timezone when the component mounts
   useEffect(() => {
-    if (!timezone) {
+    let storedTimezone = JSON.parse(
+      window.localStorage.getItem("Timezone-object")
+    );
+    if (!storedTimezone) {
       const timezoneAliases = TIMEZONE_ALIASES;
       let timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
       timezone = timezoneAliases[timezone] || timezone;
@@ -55,11 +61,14 @@ const Header = () => {
         tz.label.includes(timezone)
       );
       if (matchedTimezone) {
+        setTimezone(matchedTimezone);
         window.localStorage.setItem(
           "Timezone-object",
           JSON.stringify(matchedTimezone)
         );
       }
+    } else {
+      setTimezone(storedTimezone);
     }
   }, []);
 
@@ -76,8 +85,7 @@ const Header = () => {
                     id="nav-dropdown-dark-example"
                     title={
                       <span style={{ color: "#656ef5" }}>
-                        {" "}
-                        {oddsFormat ? oddsFormat : "EU Odds"}{" "}
+                        {oddsFormat || "EU Odds"}
                       </span>
                     }
                     onSelect={handleSelect}
@@ -97,6 +105,7 @@ const Header = () => {
             </span>
           </div>
 
+          {/* Timezone Section - Ensure it is shown without delay */}
           <div className={`${styles.oddsFormate} ${styles.timeZone}`}>
             <div>
               Time Zones :<span> {formattedDate} ,</span>
@@ -108,8 +117,7 @@ const Header = () => {
                   id="nav-dropdown-dark-example"
                   title={
                     <span style={{ color: "#656ef5", padding: "0px" }}>
-                      {" "}
-                      {timezone?.label}{" "}
+                      {timezone?.label || "Select Timezone"}
                     </span>
                   }
                   onSelect={handleSelectedTime}
@@ -130,18 +138,15 @@ const Header = () => {
           </div>
 
           {userVerify ? (
-            <button
-              className={`${styles.btnLogin} `}
-              onClick={() => handleLogout()}
-            >
+            <button className={styles.btnLogin} onClick={handleLogout}>
               Logout
             </button>
           ) : (
             <Stack direction="horizontal" gap={3} className={styles.mt}>
-              <NavLink to={"/login"}>
-                <button className={`${styles.btnLogin} `}>Login</button>
+              <NavLink to="/login">
+                <button className={styles.btnLogin}>Login</button>
               </NavLink>
-              <NavLink to={"/register"}>
+              <NavLink to="/register">
                 <ButtonBg btnName="Register" />
               </NavLink>
             </Stack>

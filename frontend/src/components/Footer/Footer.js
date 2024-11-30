@@ -111,7 +111,12 @@ const Footer = () => {
             </a>
           </Stack>
           <div className={styles.footerLogo}>
-            <img src={LOGO} height={50} alt="LOGO" loading="lazy" />
+            <img
+              loading="lazy"
+              src={LOGO}
+              style={{ height: "65px",  width:"280px"}}
+              alt="LOGO"
+            />
           </div>
         </Stack>
         <hr></hr>
