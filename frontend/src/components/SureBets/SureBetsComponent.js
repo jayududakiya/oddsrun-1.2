@@ -13,6 +13,7 @@ import moment from "moment";
 import { toast } from "react-toastify";
 import Loading from "../../Loader/Loading";
 import { getDateAndTime } from "../../data/formater";
+import { Virtuoso } from "react-virtuoso";
 
 const SureBetsComponent = (props) => {
   const { isLoader, setIsLoader } = props;
@@ -88,6 +89,56 @@ const SureBetsComponent = (props) => {
             />
           </div>
         ))}
+
+        <Virtuoso
+          useWindowScroll
+          totalCount={(_sureBets && _sureBets?.length) || 0}
+          data={_sureBets}
+          overscan={3}
+          initialItemCount={_sureBets.length}
+          itemContent={(index, sureBet) => {
+            return (
+              <div className="mt-4" key={index}>
+                <SportsNav
+                  icon={getSportsIcon(
+                    sureBet.matches.match.breadcrumbs.sport.name
+                  )}
+                  title={sureBet.matches.match.breadcrumbs.sport.name}
+                  countryIcon={getFlagIconKey(
+                    sureBet.matches.match["country-name"]
+                  )}
+                  countryName={sureBet.matches.match["country-name"]}
+                  language={sureBet.matches.match["tournament-name"]}
+                />
+
+                <SportDetails
+                  countryOne={sureBet.matches.match["home-name"]}
+                  countryTwo={sureBet.matches.match["away-name"]}
+                  timing={
+                    window.localStorage.getItem("Timezone-object")
+                      ? getDateAndTime(
+                          sureBet.matches.match["date-start-timestamp"],
+                          "DD MMMM YYYY, HH:mm"
+                        )
+                      : moment
+                          .unix(sureBet.matches.match["date-start-timestamp"])
+                          .format("DD MMMM YYYY, HH:mm")
+                  }
+                  match={sureBet.matches}
+                  minus={false}
+                  maxBookmarkers={sureBet.maxBookmarkers}
+                  img={GAME1}
+                  sureBets={
+                    (1 / Number(sureBet.sureBetsFinal.toFixed(4)) - 1) * 100
+                  }
+                  display={true}
+                  showMax={true}
+                  isSaveable={false}
+                />
+              </div>
+            );
+          }}
+        />
       </div>
     </>
   );

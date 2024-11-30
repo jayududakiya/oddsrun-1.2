@@ -136,6 +136,7 @@ const NextMatchesDetails = (props) => {
                           )}
                           className="playerImage"
                           alt="home-participant-images"
+                          loading="lazy"
                         />
                       )}
                     </Stack>
@@ -151,6 +152,7 @@ const NextMatchesDetails = (props) => {
                         )}
                         className="playerImage"
                         alt="away-participant-images"
+                        loading="lazy"
                       />
                       <div
                         className={`${droppingStyle.textmore} ${droppingStyle.teamName}  ${droppingStyle.spaceRemove} ms-2`}
@@ -202,6 +204,7 @@ const NextMatchesDetails = (props) => {
                       )}
                       className="playerImage"
                       alt="away-participant-images"
+                      loading="lazy"
                     />
                   )}
                   <span
@@ -233,7 +236,7 @@ const NextMatchesDetails = (props) => {
             </NavLink>
           </Stack>
         </Col>
-        <Col xs={12} xl={6} >
+        <Col xs={12} xl={6}>
           <Stack
             direction="horizontal"
             gap={1}

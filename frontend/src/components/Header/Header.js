@@ -130,13 +130,16 @@ const Header = () => {
           </div>
 
           {userVerify ? (
-            <button className={styles.btnLogin} onClick={() => handleLogout()}>
+            <button
+              className={`${styles.btnLogin} `}
+              onClick={() => handleLogout()}
+            >
               Logout
             </button>
           ) : (
             <Stack direction="horizontal" gap={3} className={styles.mt}>
               <NavLink to={"/login"}>
-                <button className={styles.btnLogin}>Login</button>
+                <button className={`${styles.btnLogin} `}>Login</button>
               </NavLink>
               <NavLink to={"/register"}>
                 <ButtonBg btnName="Register" />
@@ -151,60 +154,71 @@ const Header = () => {
               <div className={styles.menubar}>
                 <nav>
                   <ul>
-                    <NavLink
-                      to={"/"}
-                      className={({ isActive }) =>
-                        `${isActive ? styles.active : ""}`
-                      }
-                    >
-                      <li>Home</li>
-                    </NavLink>
-                    <NavLink
-                      to={"/soccer/next-matches"}
-                      className={({ isActive }) =>
-                        `${isActive ? styles.active : ""}`
-                      }
-                    >
-                      <li>Next Matches</li>
-                    </NavLink>
-
-                    <NavLink
-                      to={"/droppingOdds"}
-                      className={({ isActive }) =>
-                        `${isActive ? styles.active : ""}`
-                      }
-                    >
-                      <li>Dropping odds</li>
-                    </NavLink>
-
-                    <NavLink
-                      to={"/sure-bets"}
-                      className={({ isActive }) =>
-                        `${isActive ? styles.active : ""}`
-                      }
-                    >
-                      <li>Sure Bets</li>
-                    </NavLink>
-                    <NavLink
-                      to={"/bookmakers"}
-                      className={({ isActive }) =>
-                        `${styles.removerBorder}  ${
-                          isActive ? styles.active : ""
-                        }`
-                      }
-                    >
-                      <li>Bookmakers</li>
-                    </NavLink>
-                    <NavLink
-                      to={"/article"}
-                      className={({ isActive }) =>
-                        `${styles.removerBorder}  ${
-                          isActive ? styles.active : ""
-                        }`
-                      }
-                    >
-                      <li>Articles</li>
-                    </NavLink>
+                    <li>
+                      <NavLink
+                        to={"/"}
+                        className={({ isActive }) =>
+                          `${isActive ? styles.active : ""}`
+                        }
+                      >
+                        Home
+                      </NavLink>
+                    </li>{" "}
+                    <li>
+                      <NavLink
+                        to={"/soccer/next-matches"}
+                        className={({ isActive }) =>
+                          `${isActive ? styles.active : ""}`
+                        }
+                      >
+                        Next Matches
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to={"/droppingOdds"}
+                        className={({ isActive }) =>
+                          `${isActive ? styles.active : ""}`
+                        }
+                      >
+                        Dropping odds
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to={"/sure-bets"}
+                        className={({ isActive }) =>
+                          `${isActive ? styles.active : ""}`
+                        }
+                      >
+                        Sure Bets
+                      </NavLink>
+                    </li>
+                    <li>
+                      <NavLink
+                        to={"/bookmakers"}
+                        className={({ isActive }) =>
+                          `${styles.removerBorder}  ${
+                            isActive ? styles.active : ""
+                          }`
+                        }
+                      >
+                        Bookmakers
+                      </NavLink>
+                    </li>
+                    <li>
+                      {" "}
+                      <NavLink
+                        to={"/article"}
+                        className={({ isActive }) =>
+                          `${styles.removerBorder}  ${
+                            isActive ? styles.active : ""
+                          }`
+                        }
+                      >
+                        Articles
+                      </NavLink>
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -219,7 +233,7 @@ const Header = () => {
                   <div className="ms-auto d-flex align-items-center">
                     <Icon icon="gala:bell" className="me-4" fontSize={"25px"} />
                     <div className={`${styles.userName}`}>
-                      <img src={USERIMG} alt="USERIMG" />
+                      <img src={USERIMG} alt="USERIMG" loading="lazy" />
                       <span>
                         {userName?.charAt(0).toUpperCase() + userName?.slice(1)}
                       </span>

@@ -49,6 +49,7 @@ const Article = () => {
                         src={ASSETS_URL + article?.image}
                         className={style.cardImg}
                         alt={article.title}
+                        loading="lazy"
                       />
 
                       <div className={style.date}>

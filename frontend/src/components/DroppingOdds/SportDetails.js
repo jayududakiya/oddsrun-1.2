@@ -160,6 +160,7 @@ const SportDetails = (props) => {
                       )}
                       className="playerImage"
                       alt="home-participant-images"
+                      loading="lazy"
                     />
                   )}
                   <span
@@ -188,6 +189,7 @@ const SportDetails = (props) => {
                       )}
                       className="playerImage"
                       alt="away-participant-images"
+                      loading="lazy"
                     />
                   )}
                   <span
@@ -200,11 +202,7 @@ const SportDetails = (props) => {
             </NavLink>
 
             <div className="d-flex align-items-center ">
-              <div
-                className={`${
-                  props.display && styles.marginTop0
-                }`}
-              >
+              <div className={`${props.display && styles.marginTop0}`}>
                 <MycouponMsgBtn title={props.timing} bg={true} />
               </div>
               {isDroppingOdds && market && (
@@ -267,6 +265,7 @@ const SportDetails = (props) => {
                       className={styles.oddsImg}
                       src={getBookmarker(col, maxBookmarkers)}
                       alt="oddsImg"
+                      loading="lazy"
                     />
                   )}
                 </MatchPoint>

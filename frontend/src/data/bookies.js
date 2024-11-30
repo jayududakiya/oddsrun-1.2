@@ -1,7 +1,7 @@
 const BOOKIES_DATA = {
   1: {
     idProvider: "1",
-    logo: "1.png",
+    logo: "1.webp",
     WebName: "Interwetten",
     WebUrl: "interwetten",
     IsBookmaker: "y",
@@ -24,7 +24,7 @@ const BOOKIES_DATA = {
   },
   2: {
     idProvider: "2",
-    logo: "2.png",
+    logo: "2.webp",
     WebName: "bwin",
     WebUrl: "bwin",
     IsBookmaker: "y",
@@ -42,7 +42,7 @@ const BOOKIES_DATA = {
   },
   3: {
     idProvider: "3",
-    logo: "3.png",
+    logo: "3.webp",
     WebName: "bet-at-home",
     WebUrl: "bet-at-home",
     IsBookmaker: "y",
@@ -82,7 +82,7 @@ const BOOKIES_DATA = {
   },
   5: {
     idProvider: "5",
-    logo: "5.png",
+    logo: "5.webp",
     WebName: "Unibet",
     WebUrl: "unibet",
     IsBookmaker: "y",
@@ -122,7 +122,7 @@ const BOOKIES_DATA = {
   },
   8: {
     idProvider: "8",
-    logo: "8.png",
+    logo: "8.webp",
     WebName: "Stan James",
     WebUrl: "stan-james",
     IsBookmaker: "y",
@@ -145,7 +145,7 @@ const BOOKIES_DATA = {
   },
   9: {
     idProvider: "9",
-    logo: "9.png",
+    logo: "9.webp",
     WebName: "Expekt",
     WebUrl: "expekt",
     IsBookmaker: "y",
@@ -219,7 +219,7 @@ const BOOKIES_DATA = {
   },
   14: {
     idProvider: "14",
-    logo: "14.png",
+    logo: "14.webp",
     WebName: "10Bet",
     WebUrl: "10bet",
     IsBookmaker: "y",
@@ -242,7 +242,7 @@ const BOOKIES_DATA = {
   },
   15: {
     idProvider: "15",
-    logo: "15.png",
+    logo: "15.webp",
     WebName: "William Hill",
     WebUrl: "william-hill",
     IsBookmaker: "y",
@@ -265,7 +265,7 @@ const BOOKIES_DATA = {
   },
   16: {
     idProvider: "16",
-    logo: "16.png",
+    logo: "16.webp",
     WebName: "bet365",
     WebUrl: "bet365",
     IsBookmaker: "y",
@@ -310,7 +310,7 @@ const BOOKIES_DATA = {
   },
   18: {
     idProvider: "18",
-    logo: "18.png",
+    logo: "18.webp",
     WebName: "Pinnacle",
     WebUrl: "pinnacle",
     IsBookmaker: "y",
@@ -328,7 +328,7 @@ const BOOKIES_DATA = {
   },
   19: {
     idProvider: "19",
-    logo: "19.png",
+    logo: "19.webp",
     WebName: "Sports Interaction",
     WebUrl: "sports-interaction",
     IsBookmaker: "y",
@@ -346,7 +346,7 @@ const BOOKIES_DATA = {
   },
   20: {
     idProvider: "20",
-    logo: "20.png",
+    logo: "20.webp",
     WebName: "5Dimes",
     WebUrl: "5dimes",
     IsBookmaker: "y",
@@ -369,7 +369,7 @@ const BOOKIES_DATA = {
   },
   21: {
     idProvider: "21",
-    logo: "21.png",
+    logo: "21.webp",
     WebName: "Betfred",
     WebUrl: "betfred",
     IsBookmaker: "y",
@@ -392,7 +392,7 @@ const BOOKIES_DATA = {
   },
   23: {
     idProvider: "23",
-    logo: "23.png",
+    logo: "23.webp",
     WebName: "DOXXbet",
     WebUrl: "doxxbet",
     IsBookmaker: "y",
@@ -415,7 +415,7 @@ const BOOKIES_DATA = {
   },
   24: {
     idProvider: "24",
-    logo: "24.png",
+    logo: "24.webp",
     WebName: "Betsafe",
     WebUrl: "betsafe",
     IsBookmaker: "y",
@@ -433,7 +433,7 @@ const BOOKIES_DATA = {
   },
   26: {
     idProvider: "26",
-    logo: "26.png",
+    logo: "26.webp",
     WebName: "Betway",
     WebUrl: "betway",
     IsBookmaker: "y",
@@ -456,7 +456,7 @@ const BOOKIES_DATA = {
   },
   27: {
     idProvider: "27",
-    logo: "27.png",
+    logo: "27.webp",
     WebName: "888sport",
     WebUrl: "888sport",
     IsBookmaker: "y",
@@ -479,7 +479,7 @@ const BOOKIES_DATA = {
   },
   28: {
     idProvider: "28",
-    logo: "28.png",
+    logo: "28.webp",
     WebName: "Ladbrokes",
     WebUrl: "ladbrokes",
     IsBookmaker: "y",
@@ -519,7 +519,7 @@ const BOOKIES_DATA = {
   },
   30: {
     idProvider: "30",
-    logo: "30.png",
+    logo: "30.webp",
     WebName: "BoyleSports",
     WebUrl: "boylesports",
     IsBookmaker: "y",
@@ -542,7 +542,7 @@ const BOOKIES_DATA = {
   },
   31: {
     idProvider: "31",
-    logo: "31.png",
+    logo: "31.webp",
     WebName: "Everygame",
     WebUrl: "everygame",
     IsBookmaker: "y",
@@ -565,7 +565,7 @@ const BOOKIES_DATA = {
   },
   32: {
     idProvider: "32",
-    logo: "32.png",
+    logo: "32.webp",
     WebName: "Betclic",
     WebUrl: "betclic",
     IsBookmaker: "y",
@@ -583,7 +583,7 @@ const BOOKIES_DATA = {
   },
   33: {
     idProvider: "33",
-    logo: "33.png",
+    logo: "33.webp",
     WebName: "NordicBet",
     WebUrl: "nordicbet",
     IsBookmaker: "y",
@@ -601,7 +601,7 @@ const BOOKIES_DATA = {
   },
   34: {
     idProvider: "34",
-    logo: "34.png",
+    logo: "34.webp",
     WebName: "Bodog",
     WebUrl: "bodog",
     IsBookmaker: "y",
@@ -624,7 +624,7 @@ const BOOKIES_DATA = {
   },
   35: {
     idProvider: "35",
-    logo: "35.png",
+    logo: "35.webp",
     WebName: "Eurobet",
     WebUrl: "eurobet",
     IsBookmaker: "y",
@@ -642,7 +642,7 @@ const BOOKIES_DATA = {
   },
   38: {
     idProvider: "38",
-    logo: "38.png",
+    logo: "38.webp",
     WebName: "Sportingbet",
     WebUrl: "sportingbet",
     IsBookmaker: "y",
@@ -661,7 +661,7 @@ const BOOKIES_DATA = {
   },
   39: {
     idProvider: "39",
-    logo: "39.png",
+    logo: "39.webp",
     WebName: "Betdaq",
     WebUrl: "betdaq",
     IsBookmaker: "n",
@@ -701,7 +701,7 @@ const BOOKIES_DATA = {
   },
   41: {
     idProvider: "41",
-    logo: "41.png",
+    logo: "41.webp",
     WebName: "mybet",
     WebUrl: "mybet",
     IsBookmaker: "y",
@@ -724,7 +724,7 @@ const BOOKIES_DATA = {
   },
   43: {
     idProvider: "43",
-    logo: "43.png",
+    logo: "43.webp",
     WebName: "Betsson",
     WebUrl: "betsson",
     IsBookmaker: "y",
@@ -747,7 +747,7 @@ const BOOKIES_DATA = {
   },
   44: {
     idProvider: "44",
-    logo: "44.png",
+    logo: "44.webp",
     WebName: "Betfair Exchange",
     WebUrl: "betfair-exchange",
     IsBookmaker: "n",
@@ -770,7 +770,7 @@ const BOOKIES_DATA = {
   },
   45: {
     idProvider: "45",
-    logo: "45.png",
+    logo: "45.webp",
     WebName: "Chance.cz",
     WebUrl: "chance-cz",
     IsBookmaker: "y",
@@ -793,7 +793,7 @@ const BOOKIES_DATA = {
   },
   46: {
     idProvider: "46",
-    logo: "46.png",
+    logo: "46.webp",
     WebName: "iFortuna.cz",
     WebUrl: "ifortuna-cz",
     IsBookmaker: "y",
@@ -816,7 +816,7 @@ const BOOKIES_DATA = {
   },
   47: {
     idProvider: "47",
-    logo: "47.png",
+    logo: "47.webp",
     WebName: "MAXITIP.cz",
     WebUrl: "maxitip-cz",
     IsBookmaker: "y",
@@ -839,7 +839,7 @@ const BOOKIES_DATA = {
   },
   49: {
     idProvider: "49",
-    logo: "49.png",
+    logo: "49.webp",
     WebName: "Tipsport.cz",
     WebUrl: "tipsport-cz",
     IsBookmaker: "y",
@@ -863,7 +863,7 @@ const BOOKIES_DATA = {
   },
   53: {
     idProvider: "53",
-    logo: "2.png",
+    logo: "2.webp",
     WebName: "bwin.it",
     WebUrl: "bwin-it",
     IsBookmaker: "y",
@@ -903,7 +903,7 @@ const BOOKIES_DATA = {
   },
   55: {
     idProvider: "55",
-    logo: "55.png",
+    logo: "55.webp",
     WebName: "Noxwin",
     WebUrl: "noxwin",
     IsBookmaker: "y",
@@ -921,7 +921,7 @@ const BOOKIES_DATA = {
   },
   56: {
     idProvider: "56",
-    logo: "56.png",
+    logo: "56.webp",
     WebName: "188BET",
     WebUrl: "188bet",
     IsBookmaker: "y",
@@ -939,7 +939,7 @@ const BOOKIES_DATA = {
   },
   57: {
     idProvider: "57",
-    logo: "57.png",
+    logo: "57.webp",
     WebName: "Jetbull",
     WebUrl: "jetbull",
     IsBookmaker: "y",
@@ -979,7 +979,7 @@ const BOOKIES_DATA = {
   },
   60: {
     idProvider: "60",
-    logo: "60.png",
+    logo: "60.webp",
     WebName: "Paddy Power",
     WebUrl: "paddy-power",
     IsBookmaker: "y",
@@ -1058,7 +1058,7 @@ const BOOKIES_DATA = {
   },
   69: {
     idProvider: "69",
-    logo: "69.png",
+    logo: "69.webp",
     WebName: "Bookmaker",
     WebUrl: "bookmaker",
     IsBookmaker: "y",
@@ -1076,7 +1076,7 @@ const BOOKIES_DATA = {
   },
   70: {
     idProvider: "70",
-    logo: "70.png",
+    logo: "70.webp",
     WebName: "Tipico",
     WebUrl: "tipico",
     IsBookmaker: "y",
@@ -1099,7 +1099,7 @@ const BOOKIES_DATA = {
   },
   71: {
     idProvider: "71",
-    logo: "71.png",
+    logo: "71.webp",
     WebName: "Coral",
     WebUrl: "coral",
     IsBookmaker: "y",
@@ -1139,7 +1139,7 @@ const BOOKIES_DATA = {
   },
   73: {
     idProvider: "73",
-    logo: "73.png",
+    logo: "73.webp",
     WebName: "Leonbets",
     WebUrl: "leonbets",
     IsBookmaker: "y",
@@ -1162,7 +1162,7 @@ const BOOKIES_DATA = {
   },
   74: {
     idProvider: "74",
-    logo: "74.png",
+    logo: "74.webp",
     WebName: "Skybet",
     WebUrl: "skybet",
     IsBookmaker: "y",
@@ -1180,7 +1180,7 @@ const BOOKIES_DATA = {
   },
   75: {
     idProvider: "75",
-    logo: "75.png",
+    logo: "75.webp",
     WebName: "SBOBET",
     WebUrl: "sbobet",
     IsBookmaker: "y",
@@ -1203,7 +1203,7 @@ const BOOKIES_DATA = {
   },
   76: {
     idProvider: "76",
-    logo: "76.png",
+    logo: "76.webp",
     WebName: "BetVictor",
     WebUrl: "betvictor",
     IsBookmaker: "y",
@@ -1243,7 +1243,7 @@ const BOOKIES_DATA = {
   },
   78: {
     idProvider: "78",
-    logo: "78.png",
+    logo: "78.webp",
     WebName: "BetOnline",
     WebUrl: "betonline",
     IsBookmaker: "y",
@@ -1266,7 +1266,7 @@ const BOOKIES_DATA = {
   },
   79: {
     idProvider: "79",
-    logo: "79.png",
+    logo: "79.webp",
     WebName: "BetDSI",
     WebUrl: "betdsi",
     IsBookmaker: "y",
@@ -1284,7 +1284,7 @@ const BOOKIES_DATA = {
   },
   80: {
     idProvider: "80",
-    logo: "80.png",
+    logo: "80.webp",
     WebName: "12BET",
     WebUrl: "12bet",
     IsBookmaker: "y",
@@ -1409,7 +1409,7 @@ const BOOKIES_DATA = {
   },
   90: {
     idProvider: "90",
-    logo: "90.png",
+    logo: "90.webp",
     WebName: "BetGun",
     WebUrl: "betgun",
     IsBookmaker: "y",
@@ -1449,7 +1449,7 @@ const BOOKIES_DATA = {
   },
   92: {
     idProvider: "92",
-    logo: "92.png",
+    logo: "92.webp",
     WebName: "Island Casino",
     WebUrl: "island-casino",
     IsBookmaker: "y",
@@ -1511,7 +1511,7 @@ const BOOKIES_DATA = {
   },
   98: {
     idProvider: "98",
-    logo: "98.png",
+    logo: "98.webp",
     WebName: "Superbahis",
     WebUrl: "superbahis",
     IsBookmaker: "y",
@@ -1568,7 +1568,7 @@ const BOOKIES_DATA = {
   },
   101: {
     idProvider: "101",
-    logo: "101.png",
+    logo: "101.webp",
     WebName: "Paf",
     WebUrl: "paf",
     IsBookmaker: "y",
@@ -1591,7 +1591,7 @@ const BOOKIES_DATA = {
   },
   103: {
     idProvider: "103",
-    logo: "103.png",
+    logo: "103.webp",
     WebName: "Redbet",
     WebUrl: "redbet",
     IsBookmaker: "y",
@@ -1643,7 +1643,7 @@ const BOOKIES_DATA = {
   },
   107: {
     idProvider: "107",
-    logo: "107.png",
+    logo: "107.webp",
     WebName: "Betboo",
     WebUrl: "betboo",
     IsBookmaker: "y",
@@ -1734,7 +1734,7 @@ const BOOKIES_DATA = {
   },
   112: {
     idProvider: "112",
-    logo: "112.png",
+    logo: "112.webp",
     WebName: "Betinternet",
     WebUrl: "betinternet",
     IsBookmaker: "y",
@@ -1830,7 +1830,7 @@ const BOOKIES_DATA = {
   },
   119: {
     idProvider: "119",
-    logo: "119.png",
+    logo: "119.webp",
     WebName: "Goalwin",
     WebUrl: "goalwin",
     IsBookmaker: "y",
@@ -1848,7 +1848,7 @@ const BOOKIES_DATA = {
   },
   120: {
     idProvider: "120",
-    logo: "120.png",
+    logo: "120.webp",
     WebName: "Circlebet",
     WebUrl: "circlebet",
     IsBookmaker: "y",
@@ -1866,7 +1866,7 @@ const BOOKIES_DATA = {
   },
   121: {
     idProvider: "121",
-    logo: "121.png",
+    logo: "121.webp",
     WebName: "Titanbet",
     WebUrl: "titanbet",
     IsBookmaker: "y",
@@ -1923,7 +1923,7 @@ const BOOKIES_DATA = {
   },
   124: {
     idProvider: "124",
-    logo: "124.png",
+    logo: "124.webp",
     WebName: "Luxbet",
     WebUrl: "luxbet",
     IsBookmaker: "y",
@@ -1946,7 +1946,7 @@ const BOOKIES_DATA = {
   },
   125: {
     idProvider: "125",
-    logo: "125.png",
+    logo: "125.webp",
     WebName: "Bestbet",
     WebUrl: "bestbet",
     IsBookmaker: "y",
@@ -1981,7 +1981,7 @@ const BOOKIES_DATA = {
   },
   128: {
     idProvider: "128",
-    logo: "128.png",
+    logo: "128.webp",
     WebName: "youwin",
     WebUrl: "youwin",
     IsBookmaker: "y",
@@ -1999,8 +1999,8 @@ const BOOKIES_DATA = {
   },
   129: {
     idProvider: "129",
-    logo: "129.png",
-    logo: "2.png",
+    logo: "129.webp",
+    logo: "2.webp",
     WebName: "bwin.fr",
     WebUrl: "bwin-fr",
     IsBookmaker: "y",
@@ -2074,7 +2074,7 @@ const BOOKIES_DATA = {
   },
   134: {
     idProvider: "134",
-    logo: "134.png",
+    logo: "134.webp",
     WebName: "ParionsWeb.fr",
     WebUrl: "parionsweb-fr",
     IsBookmaker: "y",
@@ -2165,7 +2165,7 @@ const BOOKIES_DATA = {
   },
   139: {
     idProvider: "139",
-    logo: "139.png",
+    logo: "139.webp",
     WebName: "France Pari",
     WebUrl: "france-pari",
     IsBookmaker: "y",
@@ -2188,7 +2188,7 @@ const BOOKIES_DATA = {
   },
   140: {
     idProvider: "140",
-    logo: "140.png",
+    logo: "140.webp",
     WebName: "Betclic.it",
     WebUrl: "betclic-it",
     IsBookmaker: "y",
@@ -2211,7 +2211,7 @@ const BOOKIES_DATA = {
   },
   141: {
     idProvider: "141",
-    logo: "141.png",
+    logo: "141.webp",
     WebName: "Betclic.fr",
     WebUrl: "betclic-fr",
     IsBookmaker: "y",
@@ -2234,7 +2234,7 @@ const BOOKIES_DATA = {
   },
   142: {
     idProvider: "142",
-    logo: "142.png",
+    logo: "142.webp",
     WebName: "Bets10",
     WebUrl: "bets10",
     IsBookmaker: "y",
@@ -2320,7 +2320,7 @@ const BOOKIES_DATA = {
   },
   147: {
     idProvider: "147",
-    logo: "147.png",
+    logo: "147.webp",
     WebName: "Dafabet",
     WebUrl: "dafabet",
     IsBookmaker: "y",
@@ -2343,7 +2343,7 @@ const BOOKIES_DATA = {
   },
   149: {
     idProvider: "149",
-    logo: "149.png",
+    logo: "149.webp",
     WebName: "Interwetten.es",
     WebUrl: "interwetten-es",
     IsBookmaker: "y",
@@ -2361,7 +2361,7 @@ const BOOKIES_DATA = {
   },
   150: {
     idProvider: "150",
-    logo: "150.png",
+    logo: "150.webp",
     WebName: "LBapuestas",
     WebUrl: "lbapuestas",
     IsBookmaker: "y",
@@ -2401,7 +2401,7 @@ const BOOKIES_DATA = {
   },
   152: {
     idProvider: "152",
-    logo: "152.png",
+    logo: "152.webp",
     WebName: "Triobet",
     WebUrl: "triobet",
     IsBookmaker: "y",
@@ -2419,7 +2419,7 @@ const BOOKIES_DATA = {
   },
   153: {
     idProvider: "153",
-    logo: "153.png",
+    logo: "153.webp",
     WebName: "PMU FR",
     WebUrl: "pmu-fr",
     IsBookmaker: "y",
@@ -2493,8 +2493,8 @@ const BOOKIES_DATA = {
   },
   157: {
     idProvider: "157",
-    logo: "157.png",
-    logo: "5.png",
+    logo: "157.webp",
+    logo: "5.webp",
     WebName: "Unibet.it",
     WebUrl: "unibet-it",
     IsBookmaker: "y",
@@ -2517,7 +2517,7 @@ const BOOKIES_DATA = {
   },
   158: {
     idProvider: "158",
-    logo: "158.png",
+    logo: "158.webp",
     WebName: "Sportsbet.com.au",
     WebUrl: "sportsbet-com-au",
     IsBookmaker: "y",
@@ -2535,7 +2535,7 @@ const BOOKIES_DATA = {
   },
   159: {
     idProvider: "159",
-    logo: "159.png",
+    logo: "159.webp",
     WebName: "Sisal",
     WebUrl: "sisal",
     IsBookmaker: "y",
@@ -2553,7 +2553,7 @@ const BOOKIES_DATA = {
   },
   160: {
     idProvider: "160",
-    logo: "157.png",
+    logo: "157.webp",
     WebName: "Unibet.fr",
     WebUrl: "unibet-fr",
     IsBookmaker: "y",
@@ -2576,7 +2576,7 @@ const BOOKIES_DATA = {
   },
   161: {
     idProvider: "161",
-    logo: "161.png",
+    logo: "161.webp",
     WebName: "NetBet",
     WebUrl: "netbet",
     IsBookmaker: "y",
@@ -2616,7 +2616,7 @@ const BOOKIES_DATA = {
   },
   163: {
     idProvider: "163",
-    logo: "46.png",
+    logo: "46.webp",
     WebName: "eFortuna.pl",
     WebUrl: "efortuna-pl",
     IsBookmaker: "y",
@@ -2639,7 +2639,7 @@ const BOOKIES_DATA = {
   },
   164: {
     idProvider: "164",
-    logo: "46.png",
+    logo: "46.webp",
     WebName: "iFortuna.sk",
     WebUrl: "ifortuna-sk",
     IsBookmaker: "y",
@@ -2662,7 +2662,7 @@ const BOOKIES_DATA = {
   },
   165: {
     idProvider: "165",
-    logo: "165.png",
+    logo: "165.webp",
     WebName: "STS.pl",
     WebUrl: "sts-pl",
     IsBookmaker: "y",
@@ -2736,7 +2736,7 @@ const BOOKIES_DATA = {
   },
   169: {
     idProvider: "169",
-    logo: "169.png",
+    logo: "169.webp",
     WebName: "Tipos",
     WebUrl: "tipos",
     IsBookmaker: "y",
@@ -2788,7 +2788,7 @@ const BOOKIES_DATA = {
   },
   244: {
     idProvider: "244",
-    logo: "244.png",
+    logo: "244.webp",
     WebName: "WagerWeb",
     WebUrl: "wagerweb",
     IsBookmaker: "y",
@@ -2806,7 +2806,7 @@ const BOOKIES_DATA = {
   },
   293: {
     idProvider: "293",
-    logo: "293.png",
+    logo: "293.webp",
     WebName: "Nike.sk",
     WebUrl: "nike-sk",
     IsBookmaker: "y",
@@ -2829,7 +2829,7 @@ const BOOKIES_DATA = {
   },
   302: {
     idProvider: "302",
-    logo: "302.png",
+    logo: "302.webp",
     WebName: "SBG Global",
     WebUrl: "sbg-global",
     IsBookmaker: "y",
@@ -2852,7 +2852,7 @@ const BOOKIES_DATA = {
   },
   322: {
     idProvider: "322",
-    logo: "322.png",
+    logo: "322.webp",
     WebName: "Eurobet.it",
     WebUrl: "eurobet-it",
     IsBookmaker: "y",
@@ -2977,7 +2977,7 @@ const BOOKIES_DATA = {
   },
   372: {
     idProvider: "372",
-    logo: "15.png",
+    logo: "15.webp",
     WebName: "WilliamHill.it",
     WebUrl: "williamhill-it",
     IsBookmaker: "y",
@@ -3000,7 +3000,7 @@ const BOOKIES_DATA = {
   },
   373: {
     idProvider: "373",
-    logo: "373.png",
+    logo: "373.webp",
     WebName: "Top Bet",
     WebUrl: "top-bet",
     IsBookmaker: "y",
@@ -3040,7 +3040,7 @@ const BOOKIES_DATA = {
   },
   375: {
     idProvider: "375",
-    logo: "1.png",
+    logo: "1.webp",
     WebName: "Interwetten.it",
     WebUrl: "interwetten-it",
     IsBookmaker: "y",
@@ -3063,7 +3063,7 @@ const BOOKIES_DATA = {
   },
   376: {
     idProvider: "376",
-    logo: "376.png",
+    logo: "376.webp",
     WebName: "FortunaWin",
     WebUrl: "fortunawin",
     IsBookmaker: "y",
@@ -3081,7 +3081,7 @@ const BOOKIES_DATA = {
   },
   377: {
     idProvider: "377",
-    logo: "377.png",
+    logo: "377.webp",
     WebName: "Bovada",
     WebUrl: "bovada",
     IsBookmaker: "y",
@@ -3104,7 +3104,7 @@ const BOOKIES_DATA = {
   },
   378: {
     idProvider: "378",
-    logo: "378.png",
+    logo: "378.webp",
     WebName: "TonyBet",
     WebUrl: "tonybet",
     IsBookmaker: "y",
@@ -3127,7 +3127,7 @@ const BOOKIES_DATA = {
   },
   379: {
     idProvider: "379",
-    logo: "379.png",
+    logo: "379.webp",
     WebName: "PaddyPower.it",
     WebUrl: "paddypower-it",
     IsBookmaker: "y",
@@ -3167,7 +3167,7 @@ const BOOKIES_DATA = {
   },
   381: {
     idProvider: "381",
-    logo: "381.png",
+    logo: "381.webp",
     WebName: "Marathonbet",
     WebUrl: "marathonbet",
     IsBookmaker: "y",
@@ -3185,7 +3185,7 @@ const BOOKIES_DATA = {
   },
   382: {
     idProvider: "382",
-    logo: "382.png",
+    logo: "382.webp",
     WebName: "Forvetbet",
     WebUrl: "forvetbet",
     IsBookmaker: "y",
@@ -3203,7 +3203,7 @@ const BOOKIES_DATA = {
   },
   383: {
     idProvider: "383",
-    logo: "383.png",
+    logo: "383.webp",
     WebName: "ComeOn",
     WebUrl: "comeon",
     IsBookmaker: "y",
@@ -3226,7 +3226,7 @@ const BOOKIES_DATA = {
   },
   384: {
     idProvider: "384",
-    logo: "3.png",
+    logo: "3.webp",
     WebName: "bet-at-home.it",
     WebUrl: "bet-at-home-it",
     IsBookmaker: "y",
@@ -3266,7 +3266,7 @@ const BOOKIES_DATA = {
   },
   386: {
     idProvider: "386",
-    logo: "386.png",
+    logo: "386.webp",
     WebName: "Ucabet",
     WebUrl: "ucabet",
     IsBookmaker: "y",
@@ -3284,7 +3284,7 @@ const BOOKIES_DATA = {
   },
   387: {
     idProvider: "387",
-    logo: "387.png",
+    logo: "387.webp",
     WebName: "SportsBetting",
     WebUrl: "sportsbetting",
     IsBookmaker: "y",
@@ -3341,7 +3341,7 @@ const BOOKIES_DATA = {
   },
   390: {
     idProvider: "390",
-    logo: "390.png",
+    logo: "390.webp",
     WebName: "Matchbook",
     WebUrl: "matchbook",
     IsBookmaker: "n",
@@ -3364,7 +3364,7 @@ const BOOKIES_DATA = {
   },
   391: {
     idProvider: "391",
-    logo: "391.png",
+    logo: "391.webp",
     WebName: "WSBets",
     WebUrl: "wsbets",
     IsBookmaker: "y",
@@ -3382,7 +3382,7 @@ const BOOKIES_DATA = {
   },
   392: {
     idProvider: "392",
-    logo: "2.png",
+    logo: "2.webp",
     WebName: "bwin.es",
     WebUrl: "bwin-es",
     IsBookmaker: "y",
@@ -3400,7 +3400,7 @@ const BOOKIES_DATA = {
   },
   393: {
     idProvider: "393",
-    logo: "393.png",
+    logo: "393.webp",
     WebName: "Oddsring",
     WebUrl: "oddsring",
     IsBookmaker: "y",
@@ -3423,7 +3423,7 @@ const BOOKIES_DATA = {
   },
   394: {
     idProvider: "394",
-    logo: "394.png",
+    logo: "394.webp",
     WebName: "Tipico.it",
     WebUrl: "tipico-it",
     IsBookmaker: "y",
@@ -3446,7 +3446,7 @@ const BOOKIES_DATA = {
   },
   395: {
     idProvider: "395",
-    logo: "395.png",
+    logo: "395.webp",
     WebName: "Tempobet",
     WebUrl: "tempobet",
     IsBookmaker: "y",
@@ -3464,7 +3464,7 @@ const BOOKIES_DATA = {
   },
   396: {
     idProvider: "396",
-    logo: "396.png",
+    logo: "396.webp",
     WebName: "Oddset",
     WebUrl: "oddset",
     IsBookmaker: "y",
@@ -3482,7 +3482,7 @@ const BOOKIES_DATA = {
   },
   397: {
     idProvider: "397",
-    logo: "397.png",
+    logo: "397.webp",
     WebName: "Winline",
     WebUrl: "winline",
     IsBookmaker: "y",
@@ -3500,7 +3500,7 @@ const BOOKIES_DATA = {
   },
   398: {
     idProvider: "398",
-    logo: "161.png",
+    logo: "161.webp",
     WebName: "NetBet.fr",
     WebUrl: "netbet-fr",
     IsBookmaker: "y",
@@ -3518,7 +3518,7 @@ const BOOKIES_DATA = {
   },
   399: {
     idProvider: "399",
-    logo: "399.png",
+    logo: "399.webp",
     WebName: "Winner",
     WebUrl: "winner",
     IsBookmaker: "y",
@@ -3541,7 +3541,7 @@ const BOOKIES_DATA = {
   },
   400: {
     idProvider: "400",
-    logo: "400.png",
+    logo: "400.webp",
     WebName: "HiperBet",
     WebUrl: "hiperbet",
     IsBookmaker: "y",
@@ -3576,7 +3576,7 @@ const BOOKIES_DATA = {
   },
   402: {
     idProvider: "402",
-    logo: "128.png",
+    logo: "128.webp",
     WebName: "Hepsibahis",
     WebUrl: "hepsibahis",
     IsBookmaker: "y",
@@ -3594,7 +3594,7 @@ const BOOKIES_DATA = {
   },
   403: {
     idProvider: "403",
-    logo: "403.png",
+    logo: "403.webp",
     WebName: "Betrally",
     WebUrl: "betrally",
     IsBookmaker: "y",
@@ -3617,7 +3617,7 @@ const BOOKIES_DATA = {
   },
   404: {
     idProvider: "404",
-    // logo: "404.png",
+    // logo: "404.webp",
     WebName: "Seaniemac",
     WebUrl: "seaniemac",
     IsBookmaker: "y",
@@ -3635,7 +3635,7 @@ const BOOKIES_DATA = {
   },
   405: {
     idProvider: "405",
-    // logo: "405.png",
+    // logo: "405.webp",
     WebName: "Bet9",
     WebUrl: "bet9",
     IsBookmaker: "y",
@@ -3653,7 +3653,7 @@ const BOOKIES_DATA = {
   },
   406: {
     idProvider: "406",
-    logo: "406.png",
+    logo: "406.webp",
     WebName: "Sportium.es",
     WebUrl: "sportium-es",
     IsBookmaker: "y",
@@ -3671,7 +3671,7 @@ const BOOKIES_DATA = {
   },
   407: {
     idProvider: "407",
-    logo: "407.png",
+    logo: "407.webp",
     WebName: "Vistabet.gr",
     WebUrl: "vistabet-gr",
     IsBookmaker: "y",
@@ -3689,7 +3689,7 @@ const BOOKIES_DATA = {
   },
   408: {
     idProvider: "408",
-    logo: "408.png",
+    logo: "408.webp",
     WebName: "Sportingbet.gr",
     WebUrl: "sportingbet-gr",
     IsBookmaker: "y",
@@ -3707,7 +3707,7 @@ const BOOKIES_DATA = {
   },
   409: {
     idProvider: "409",
-    logo: "409.png",
+    logo: "409.webp",
     WebName: "Stoiximan.gr",
     WebUrl: "stoiximan-gr",
     IsBookmaker: "y",
@@ -3725,7 +3725,7 @@ const BOOKIES_DATA = {
   },
   410: {
     idProvider: "410",
-    logo: "410.png",
+    logo: "410.webp",
     WebName: "Dhoze",
     WebUrl: "dhoze",
     IsBookmaker: "y",
@@ -3743,7 +3743,7 @@ const BOOKIES_DATA = {
   },
   411: {
     idProvider: "411",
-    logo: "49.png",
+    logo: "49.webp",
     WebName: "Tipsport.sk",
     WebUrl: "tipsport-sk",
     IsBookmaker: "y",
@@ -3788,7 +3788,7 @@ const BOOKIES_DATA = {
   },
   413: {
     idProvider: "413",
-    logo: "413.png",
+    logo: "413.webp",
     WebName: "GoBetGo",
     WebUrl: "gobetgo",
     IsBookmaker: "y",
@@ -3811,7 +3811,7 @@ const BOOKIES_DATA = {
   },
   414: {
     idProvider: "414",
-    logo: "414.png",
+    logo: "414.webp",
     WebName: "SAZKAbet.cz",
     WebUrl: "sazkabet-cz",
     IsBookmaker: "y",
@@ -3834,7 +3834,7 @@ const BOOKIES_DATA = {
   },
   415: {
     idProvider: "415",
-    logo: "415.png",
+    logo: "415.webp",
     WebName: "Dashbet",
     WebUrl: "dashbet",
     IsBookmaker: "y",
@@ -3857,7 +3857,7 @@ const BOOKIES_DATA = {
   },
   416: {
     idProvider: "416",
-    logo: "416.png",
+    logo: "416.webp",
     WebName: "18bet",
     WebUrl: "18bet",
     IsBookmaker: "y",
@@ -3880,7 +3880,7 @@ const BOOKIES_DATA = {
   },
   417: {
     idProvider: "417",
-    logo: "417.png",
+    logo: "417.webp",
     WebName: "1xBet",
     WebUrl: "1xbet",
     IsBookmaker: "y",
@@ -3903,7 +3903,7 @@ const BOOKIES_DATA = {
   },
   418: {
     idProvider: "418",
-    logo: "418.png",
+    logo: "418.webp",
     WebName: "Vernons",
     WebUrl: "vernons",
     IsBookmaker: "y",
@@ -3921,7 +3921,7 @@ const BOOKIES_DATA = {
   },
   419: {
     idProvider: "419",
-    logo: "16.png",
+    logo: "16.webp",
     WebName: "bet365.it",
     WebUrl: "bet365-it",
     IsBookmaker: "y",
@@ -3944,7 +3944,7 @@ const BOOKIES_DATA = {
   },
   420: {
     idProvider: "420",
-    logo: "420.png",
+    logo: "420.webp",
     WebName: "WonOdds",
     WebUrl: "wonodds",
     IsBookmaker: "y",
@@ -3984,7 +3984,7 @@ const BOOKIES_DATA = {
   },
   422: {
     idProvider: "422",
-    logo: "422.png",
+    logo: "422.webp",
     WebName: "5plusbet",
     WebUrl: "5plusbet",
     IsBookmaker: "y",
@@ -4002,7 +4002,7 @@ const BOOKIES_DATA = {
   },
   423: {
     idProvider: "423",
-    logo: "161.png",
+    logo: "161.webp",
     WebName: "NetBet.it",
     WebUrl: "netbet-it",
     IsBookmaker: "y",
@@ -4020,7 +4020,7 @@ const BOOKIES_DATA = {
   },
   424: {
     idProvider: "424",
-    logo: "424.png",
+    logo: "424.webp",
     WebName: "138",
     WebUrl: "138",
     IsBookmaker: "y",
@@ -4043,7 +4043,7 @@ const BOOKIES_DATA = {
   },
   425: {
     idProvider: "425",
-    logo: "425.png",
+    logo: "425.webp",
     WebName: "RealDealBet",
     WebUrl: "realdealbet",
     IsBookmaker: "y",
@@ -4066,7 +4066,7 @@ const BOOKIES_DATA = {
   },
   426: {
     idProvider: "426",
-    logo: "426.png",
+    logo: "426.webp",
     WebName: "OtoBet",
     WebUrl: "otobet",
     IsBookmaker: "y",
@@ -4089,7 +4089,7 @@ const BOOKIES_DATA = {
   },
   427: {
     idProvider: "427",
-    logo: "427.png",
+    logo: "427.webp",
     WebName: "VitalBet",
     WebUrl: "vitalbet",
     IsBookmaker: "y",
@@ -4112,7 +4112,7 @@ const BOOKIES_DATA = {
   },
   428: {
     idProvider: "428",
-    logo: "428.png",
+    logo: "428.webp",
     WebName: "Kroon Casino",
     WebUrl: "kroon-casino",
     IsBookmaker: "y",
@@ -4130,7 +4130,7 @@ const BOOKIES_DATA = {
   },
   429: {
     idProvider: "429",
-    logo: "429.png",
+    logo: "429.webp",
     WebName: "Betfair",
     WebUrl: "betfair",
     IsBookmaker: "y",
@@ -4153,7 +4153,7 @@ const BOOKIES_DATA = {
   },
   430: {
     idProvider: "430",
-    logo: "430.png",
+    logo: "430.webp",
     WebName: "Winmasters",
     WebUrl: "winmasters",
     IsBookmaker: "y",
@@ -4171,7 +4171,7 @@ const BOOKIES_DATA = {
   },
   431: {
     idProvider: "431",
-    logo: "431.png",
+    logo: "431.webp",
     WebName: "SuperAposta",
     WebUrl: "superaposta",
     IsBookmaker: "y",
@@ -4189,7 +4189,7 @@ const BOOKIES_DATA = {
   },
   432: {
     idProvider: "432",
-    logo: "432.png",
+    logo: "432.webp",
     WebName: "Bettilt",
     WebUrl: "bettilt",
     IsBookmaker: "y",
@@ -4212,7 +4212,7 @@ const BOOKIES_DATA = {
   },
   433: {
     idProvider: "433",
-    logo: "433.png",
+    logo: "433.webp",
     WebName: "Guts",
     WebUrl: "guts",
     IsBookmaker: "y",
@@ -4230,7 +4230,7 @@ const BOOKIES_DATA = {
   },
   434: {
     idProvider: "434",
-    logo: "434.png",
+    logo: "434.webp",
     WebName: "Jojobet",
     WebUrl: "jojobet",
     IsBookmaker: "y",
@@ -4265,7 +4265,7 @@ const BOOKIES_DATA = {
   },
   436: {
     idProvider: "436",
-    logo: "436.png",
+    logo: "436.webp",
     WebName: "Bet-52",
     WebUrl: "bet-52",
     IsBookmaker: "y",
@@ -4288,7 +4288,7 @@ const BOOKIES_DATA = {
   },
   437: {
     idProvider: "437",
-    logo: "437.png",
+    logo: "437.webp",
     WebName: "BizimBahis",
     WebUrl: "bizimbahis",
     IsBookmaker: "y",
@@ -4306,7 +4306,7 @@ const BOOKIES_DATA = {
   },
   438: {
     idProvider: "438",
-    logo: "46.png",
+    logo: "46.webp",
     WebName: "Fortuna.ro",
     WebUrl: "fortuna-ro",
     IsBookmaker: "y",
@@ -4324,7 +4324,7 @@ const BOOKIES_DATA = {
   },
   439: {
     idProvider: "439",
-    logo: "439.png",
+    logo: "439.webp",
     WebName: "Restbet",
     WebUrl: "restbet",
     IsBookmaker: "y",
@@ -4342,7 +4342,7 @@ const BOOKIES_DATA = {
   },
   440: {
     idProvider: "440",
-    logo: "440.png",
+    logo: "440.webp",
     WebName: "Marcaapuestas",
     WebUrl: "marcaapuestas",
     IsBookmaker: "y",
@@ -4360,7 +4360,7 @@ const BOOKIES_DATA = {
   },
   441: {
     idProvider: "441",
-    logo: "441.png",
+    logo: "441.webp",
     WebName: "Tipobet",
     WebUrl: "tipobet",
     IsBookmaker: "y",
@@ -4378,7 +4378,7 @@ const BOOKIES_DATA = {
   },
   442: {
     idProvider: "442",
-    logo: "442.png",
+    logo: "442.webp",
     WebName: "VonBets",
     WebUrl: "vonbets",
     IsBookmaker: "y",
@@ -4401,7 +4401,7 @@ const BOOKIES_DATA = {
   },
   443: {
     idProvider: "443",
-    logo: "443.png",
+    logo: "443.webp",
     WebName: "BetWorld",
     WebUrl: "betworld",
     IsBookmaker: "y",
@@ -4424,7 +4424,7 @@ const BOOKIES_DATA = {
   },
   445: {
     idProvider: "445",
-    logo: "430.png",
+    logo: "430.webp",
     WebName: "Sekabet",
     WebUrl: "sekabet",
     IsBookmaker: "y",
@@ -4447,7 +4447,7 @@ const BOOKIES_DATA = {
   },
   446: {
     idProvider: "446",
-    logo: "446.png",
+    logo: "446.webp",
     WebName: "BetOlimp",
     WebUrl: "betolimp",
     IsBookmaker: "y",
@@ -4470,7 +4470,7 @@ const BOOKIES_DATA = {
   },
   447: {
     idProvider: "447",
-    logo: "140.png",
+    logo: "140.webp",
     WebName: "Betclic.pt",
     WebUrl: "betclic-pt",
     IsBookmaker: "y",
@@ -4488,7 +4488,7 @@ const BOOKIES_DATA = {
   },
   448: {
     idProvider: "448",
-    logo: "448.png",
+    logo: "448.webp",
     WebName: "Intragame",
     WebUrl: "intragame",
     IsBookmaker: "y",
@@ -4511,7 +4511,7 @@ const BOOKIES_DATA = {
   },
   449: {
     idProvider: "449",
-    logo: "449.png",
+    logo: "449.webp",
     WebName: "betcart",
     WebUrl: "betcart",
     IsBookmaker: "y",
@@ -4534,7 +4534,7 @@ const BOOKIES_DATA = {
   },
   450: {
     idProvider: "450",
-    logo: "450.png",
+    logo: "450.webp",
     WebName: "Grandbetting",
     WebUrl: "grandbetting",
     IsBookmaker: "y",
@@ -4552,7 +4552,7 @@ const BOOKIES_DATA = {
   },
   451: {
     idProvider: "451",
-    logo: "451.png",
+    logo: "451.webp",
     WebName: "Vulkan Bet",
     WebUrl: "vulkan-bet",
     IsBookmaker: "y",
@@ -4592,7 +4592,7 @@ const BOOKIES_DATA = {
   },
   453: {
     idProvider: "453",
-    logo: "453.png",
+    logo: "453.webp",
     WebName: "1xStavka.ru",
     WebUrl: "1xstavka-ru",
     IsBookmaker: "y",
@@ -4610,7 +4610,7 @@ const BOOKIES_DATA = {
   },
   454: {
     idProvider: "454",
-    logo: "454.png",
+    logo: "454.webp",
     WebName: "Winline.ru",
     WebUrl: "winline-ru",
     IsBookmaker: "y",
@@ -4628,7 +4628,7 @@ const BOOKIES_DATA = {
   },
   455: {
     idProvider: "455",
-    logo: "455.png",
+    logo: "455.webp",
     WebName: "Leon.ru",
     WebUrl: "leon-ru",
     IsBookmaker: "y",
@@ -4651,7 +4651,7 @@ const BOOKIES_DATA = {
   },
   456: {
     idProvider: "456",
-    logo: "456.png",
+    logo: "456.webp",
     WebName: "Riccobet",
     WebUrl: "riccobet",
     IsBookmaker: "y",
@@ -4669,7 +4669,7 @@ const BOOKIES_DATA = {
   },
   457: {
     idProvider: "457",
-    logo: "457.png",
+    logo: "457.webp",
     WebName: "Luckia.es",
     WebUrl: "luckia-es",
     IsBookmaker: "y",
@@ -4704,7 +4704,7 @@ const BOOKIES_DATA = {
   },
   459: {
     idProvider: "459",
-    logo: "2.png",
+    logo: "2.webp",
     WebName: "bwin.pt",
     WebUrl: "bwin-pt",
     IsBookmaker: "y",
@@ -4722,7 +4722,7 @@ const BOOKIES_DATA = {
   },
   460: {
     idProvider: "460",
-    logo: "460.png",
+    logo: "460.webp",
     WebName: "Tipbet",
     WebUrl: "tipbet",
     IsBookmaker: "y",
@@ -4745,7 +4745,7 @@ const BOOKIES_DATA = {
   },
   461: {
     idProvider: "461",
-    logo: "461.png",
+    logo: "461.webp",
     WebName: "MrRingo",
     WebUrl: "mrringo",
     IsBookmaker: "y",
@@ -4768,7 +4768,7 @@ const BOOKIES_DATA = {
   },
   462: {
     idProvider: "462",
-    logo: "462.png",
+    logo: "462.webp",
     WebName: "iForBet.pl",
     WebUrl: "iforbet-pl",
     IsBookmaker: "y",
@@ -4808,7 +4808,7 @@ const BOOKIES_DATA = {
   },
   464: {
     idProvider: "464",
-    logo: "464.png",
+    logo: "464.webp",
     WebName: "Bethard",
     WebUrl: "bethard",
     IsBookmaker: "y",
@@ -4831,7 +4831,7 @@ const BOOKIES_DATA = {
   },
   465: {
     idProvider: "465",
-    logo: "465.png",
+    logo: "465.webp",
     WebName: "Winmasters.ro",
     WebUrl: "winmasters-ro",
     IsBookmaker: "y",
@@ -4849,7 +4849,7 @@ const BOOKIES_DATA = {
   },
   466: {
     idProvider: "466",
-    logo: "466.png",
+    logo: "466.webp",
     WebName: "Betebet",
     WebUrl: "betebet",
     IsBookmaker: "y",
@@ -4867,7 +4867,7 @@ const BOOKIES_DATA = {
   },
   467: {
     idProvider: "467",
-    logo: "467.png",
+    logo: "467.webp",
     WebName: "Planetwin365",
     WebUrl: "planetwin365",
     IsBookmaker: "y",
@@ -4890,7 +4890,7 @@ const BOOKIES_DATA = {
   },
   468: {
     idProvider: "468",
-    logo: "468.png",
+    logo: "468.webp",
     WebName: "Coolbet",
     WebUrl: "coolbet",
     IsBookmaker: "y",
@@ -4908,7 +4908,7 @@ const BOOKIES_DATA = {
   },
   469: {
     idProvider: "469",
-    logo: "469.png",
+    logo: "469.webp",
     WebName: "Babibet",
     WebUrl: "babibet",
     IsBookmaker: "y",
@@ -4931,7 +4931,7 @@ const BOOKIES_DATA = {
   },
   470: {
     idProvider: "470",
-    logo: "470.png",
+    logo: "470.webp",
     WebName: "Marsbet",
     WebUrl: "marsbet",
     IsBookmaker: "y",
@@ -4954,7 +4954,7 @@ const BOOKIES_DATA = {
   },
   471: {
     idProvider: "471",
-    logo: "417.png",
+    logo: "417.webp",
     WebName: "1xBet.kz",
     WebUrl: "1xbet-kz",
     IsBookmaker: "y",
@@ -4972,7 +4972,7 @@ const BOOKIES_DATA = {
   },
   472: {
     idProvider: "472",
-    logo: "472.png",
+    logo: "472.webp",
     WebName: "Totolotek.pl",
     WebUrl: "totolotek-pl",
     IsBookmaker: "y",
@@ -4995,7 +4995,7 @@ const BOOKIES_DATA = {
   },
   473: {
     idProvider: "473",
-    logo: "473.png",
+    logo: "473.webp",
     WebName: "ScandiBet",
     WebUrl: "scandibet",
     IsBookmaker: "y",
@@ -5035,7 +5035,7 @@ const BOOKIES_DATA = {
   },
   475: {
     idProvider: "475",
-    logo: "475.png",
+    logo: "475.webp",
     WebName: "Betser",
     WebUrl: "betser",
     IsBookmaker: "y",
@@ -5058,7 +5058,7 @@ const BOOKIES_DATA = {
   },
   476: {
     idProvider: "476",
-    logo: "476.png",
+    logo: "476.webp",
     WebName: "Asianodds",
     WebUrl: "asianodds",
     IsBookmaker: "y",
@@ -5081,7 +5081,7 @@ const BOOKIES_DATA = {
   },
   477: {
     idProvider: "477",
-    logo: "477.png",
+    logo: "477.webp",
     WebName: "Betmoon",
     WebUrl: "betmoon",
     IsBookmaker: "y",
@@ -5099,7 +5099,7 @@ const BOOKIES_DATA = {
   },
   478: {
     idProvider: "478",
-    logo: "478.png",
+    logo: "478.webp",
     WebName: "Dotabet",
     WebUrl: "dotabet",
     IsBookmaker: "y",
@@ -5122,7 +5122,7 @@ const BOOKIES_DATA = {
   },
   479: {
     idProvider: "479",
-    logo: "479.png",
+    logo: "479.webp",
     WebName: "Mobilbahis",
     WebUrl: "mobilbahis",
     IsBookmaker: "y",
@@ -5140,7 +5140,7 @@ const BOOKIES_DATA = {
   },
   480: {
     idProvider: "480",
-    logo: "480.png",
+    logo: "480.webp",
     WebName: "Truvabet",
     WebUrl: "truvabet",
     IsBookmaker: "y",
@@ -5158,7 +5158,7 @@ const BOOKIES_DATA = {
   },
   481: {
     idProvider: "481",
-    logo: "481.png",
+    logo: "481.webp",
     WebName: "BetCity.ru",
     WebUrl: "betcity-ru",
     IsBookmaker: "y",
@@ -5176,7 +5176,7 @@ const BOOKIES_DATA = {
   },
   482: {
     idProvider: "482",
-    logo: "482.png",
+    logo: "482.webp",
     WebName: "BetCity",
     WebUrl: "betcity",
     IsBookmaker: "y",
@@ -5199,7 +5199,7 @@ const BOOKIES_DATA = {
   },
   483: {
     idProvider: "483",
-    logo: "483.png",
+    logo: "483.webp",
     WebName: "Inkabet",
     WebUrl: "inkabet",
     IsBookmaker: "y",
@@ -5217,7 +5217,7 @@ const BOOKIES_DATA = {
   },
   484: {
     idProvider: "484",
-    logo: "484.png",
+    logo: "484.webp",
     WebName: "ParionsSport",
     WebUrl: "parionssport",
     IsBookmaker: "y",
@@ -5235,7 +5235,7 @@ const BOOKIES_DATA = {
   },
   485: {
     idProvider: "485",
-    logo: "485.png",
+    logo: "485.webp",
     WebName: "Smarkets",
     WebUrl: "smarkets",
     IsBookmaker: "n",
@@ -5258,7 +5258,7 @@ const BOOKIES_DATA = {
   },
   486: {
     idProvider: "486",
-    logo: "486.png",
+    logo: "486.webp",
     WebName: "OLIMPBET",
     WebUrl: "olimpbet",
     IsBookmaker: "y",
@@ -5276,7 +5276,7 @@ const BOOKIES_DATA = {
   },
   487: {
     idProvider: "487",
-    logo: "487.png",
+    logo: "487.webp",
     WebName: "Betpas",
     WebUrl: "betpas",
     IsBookmaker: "y",
@@ -5294,7 +5294,7 @@ const BOOKIES_DATA = {
   },
   488: {
     idProvider: "488",
-    logo: "488.png",
+    logo: "488.webp",
     WebName: "Bahis Arena",
     WebUrl: "bahis-arena",
     IsBookmaker: "y",
@@ -5312,7 +5312,7 @@ const BOOKIES_DATA = {
   },
   489: {
     idProvider: "489",
-    logo: "489.png",
+    logo: "489.webp",
     WebName: "Starvegas.it",
     WebUrl: "starvegas-it",
     IsBookmaker: "y",
@@ -5330,7 +5330,7 @@ const BOOKIES_DATA = {
   },
   490: {
     idProvider: "490",
-    // logo: "490.png",
+    // logo: "490.webp",
     WebName: "Bwin.dk",
     WebUrl: "bwin-dk",
     IsBookmaker: "y",
@@ -5348,7 +5348,7 @@ const BOOKIES_DATA = {
   },
   491: {
     idProvider: "491",
-    logo: "491.png",
+    logo: "491.webp",
     WebName: "Parimatch",
     WebUrl: "parimatch",
     IsBookmaker: "y",
@@ -5366,7 +5366,7 @@ const BOOKIES_DATA = {
   },
   492: {
     idProvider: "492",
-    logo: "492.png",
+    logo: "492.webp",
     WebName: "NightRush",
     WebUrl: "nightrush",
     IsBookmaker: "y",
@@ -5384,7 +5384,7 @@ const BOOKIES_DATA = {
   },
   493: {
     idProvider: "493",
-    logo: "493.png",
+    logo: "493.webp",
     WebName: "europebet",
     WebUrl: "europebet",
     IsBookmaker: "y",
@@ -5402,7 +5402,7 @@ const BOOKIES_DATA = {
   },
   494: {
     idProvider: "494",
-    logo: "494.png",
+    logo: "494.webp",
     WebName: "efbet",
     WebUrl: "efbet",
     IsBookmaker: "y",
@@ -5420,7 +5420,7 @@ const BOOKIES_DATA = {
   },
   495: {
     idProvider: "495",
-    logo: "495.png",
+    logo: "495.webp",
     WebName: "CasinoEstoril",
     WebUrl: "casinoestoril",
     IsBookmaker: "y",
@@ -5455,7 +5455,7 @@ const BOOKIES_DATA = {
   },
   497: {
     idProvider: "497",
-    logo: "497.png",
+    logo: "497.webp",
     WebName: "Ligastavok",
     WebUrl: "ligastavok",
     IsBookmaker: "y",
@@ -5473,7 +5473,7 @@ const BOOKIES_DATA = {
   },
   498: {
     idProvider: "498",
-    logo: "498.png",
+    logo: "498.webp",
     WebName: "TippmixPro",
     WebUrl: "tippmixpro",
     IsBookmaker: "y",
@@ -5508,7 +5508,7 @@ const BOOKIES_DATA = {
   },
   500: {
     idProvider: "500",
-    logo: "500.png",
+    logo: "500.webp",
     WebName: "22Bet",
     WebUrl: "22bet",
     IsBookmaker: "y",
@@ -5531,7 +5531,7 @@ const BOOKIES_DATA = {
   },
   501: {
     idProvider: "501",
-    logo: "501.png",
+    logo: "501.webp",
     WebName: "SportPesa.it",
     WebUrl: "sportpesa-it",
     IsBookmaker: "y",
@@ -5549,7 +5549,7 @@ const BOOKIES_DATA = {
   },
   502: {
     idProvider: "502",
-    logo: "502.png",
+    logo: "502.webp",
     WebName: "LV BET",
     WebUrl: "lv-bet",
     IsBookmaker: "y",
@@ -5567,7 +5567,7 @@ const BOOKIES_DATA = {
   },
   503: {
     idProvider: "503",
-    logo: "503.png",
+    logo: "503.webp",
     WebName: "Nairabet",
     WebUrl: "nairabet",
     IsBookmaker: "y",
@@ -5585,7 +5585,7 @@ const BOOKIES_DATA = {
   },
   504: {
     idProvider: "504",
-    logo: "504.png",
+    logo: "504.webp",
     WebName: "Sportimba",
     WebUrl: "sportimba",
     IsBookmaker: "y",
@@ -5603,7 +5603,7 @@ const BOOKIES_DATA = {
   },
   505: {
     idProvider: "505",
-    logo: "505.png",
+    logo: "505.webp",
     WebName: "Marsbahis",
     WebUrl: "marsbahis",
     IsBookmaker: "y",
@@ -5621,7 +5621,7 @@ const BOOKIES_DATA = {
   },
   506: {
     idProvider: "506",
-    logo: "506.png",
+    logo: "506.webp",
     WebName: "Betfarm",
     WebUrl: "betfarm",
     IsBookmaker: "y",
@@ -5639,7 +5639,7 @@ const BOOKIES_DATA = {
   },
   507: {
     idProvider: "507",
-    logo: "507.png",
+    logo: "507.webp",
     WebName: "Betsafe.lv",
     WebUrl: "betsafe-lv",
     IsBookmaker: "y",
@@ -5657,7 +5657,7 @@ const BOOKIES_DATA = {
   },
   508: {
     idProvider: "508",
-    logo: "508.png",
+    logo: "508.webp",
     WebName: "Betsafe.ee",
     WebUrl: "betsafe-ee",
     IsBookmaker: "y",
@@ -5675,7 +5675,7 @@ const BOOKIES_DATA = {
   },
   509: {
     idProvider: "509",
-    logo: "509.png",
+    logo: "509.webp",
     WebName: "Bet9ja",
     WebUrl: "bet9ja",
     IsBookmaker: "y",
@@ -5693,7 +5693,7 @@ const BOOKIES_DATA = {
   },
   510: {
     idProvider: "510",
-    logo: "510.png",
+    logo: "510.webp",
     WebName: "betin.ug",
     WebUrl: "betin-ug",
     IsBookmaker: "y",
@@ -5711,7 +5711,7 @@ const BOOKIES_DATA = {
   },
   511: {
     idProvider: "511",
-    logo: "511.png",
+    logo: "511.webp",
     WebName: "betin.ke",
     WebUrl: "betin-ke",
     IsBookmaker: "y",
@@ -5729,7 +5729,7 @@ const BOOKIES_DATA = {
   },
   512: {
     idProvider: "512",
-    logo: "512.png",
+    logo: "512.webp",
     WebName: "Betsafe.lt",
     WebUrl: "betsafe-lt",
     IsBookmaker: "y",
@@ -5747,7 +5747,7 @@ const BOOKIES_DATA = {
   },
   513: {
     idProvider: "513",
-    logo: "513.png",
+    logo: "513.webp",
     WebName: "Supabets",
     WebUrl: "supabets",
     IsBookmaker: "y",
@@ -5765,7 +5765,7 @@ const BOOKIES_DATA = {
   },
   514: {
     idProvider: "514",
-    logo: "514.png",
+    logo: "514.webp",
     WebName: "BetJoe",
     WebUrl: "betjoe",
     IsBookmaker: "y",
@@ -5788,7 +5788,7 @@ const BOOKIES_DATA = {
   },
   515: {
     idProvider: "515",
-    logo: "515.png",
+    logo: "515.webp",
     WebName: "Kwikbet.co.ke",
     WebUrl: "kwikbet-co-ke",
     IsBookmaker: "y",
@@ -5806,7 +5806,7 @@ const BOOKIES_DATA = {
   },
   516: {
     idProvider: "516",
-    logo: "516.png",
+    logo: "516.webp",
     WebName: "Betano.ro",
     WebUrl: "betano-ro",
     IsBookmaker: "y",
@@ -5824,7 +5824,7 @@ const BOOKIES_DATA = {
   },
   517: {
     idProvider: "517",
-    logo: "517.png",
+    logo: "517.webp",
     WebName: "Profitbet",
     WebUrl: "profitbet",
     IsBookmaker: "y",
@@ -5842,7 +5842,7 @@ const BOOKIES_DATA = {
   },
   518: {
     idProvider: "518",
-    logo: "518.png",
+    logo: "518.webp",
     WebName: "SupabetsZA",
     WebUrl: "supabetsza",
     IsBookmaker: "y",
@@ -5860,7 +5860,7 @@ const BOOKIES_DATA = {
   },
   519: {
     idProvider: "519",
-    logo: "519.png",
+    logo: "519.webp",
     WebName: "GSB.com.ug",
     WebUrl: "gsb-com-ug",
     IsBookmaker: "y",
@@ -5878,7 +5878,7 @@ const BOOKIES_DATA = {
   },
   520: {
     idProvider: "520",
-    logo: "520.png",
+    logo: "520.webp",
     WebName: "KTO",
     WebUrl: "kto",
     IsBookmaker: "y",
@@ -5918,7 +5918,7 @@ const BOOKIES_DATA = {
   },
   522: {
     idProvider: "522",
-    logo: "522.png",
+    logo: "522.webp",
     WebName: "WSB.co.za",
     WebUrl: "wsb-co-za",
     IsBookmaker: "y",
@@ -5936,7 +5936,7 @@ const BOOKIES_DATA = {
   },
   523: {
     idProvider: "523",
-    logo: "523.png",
+    logo: "523.webp",
     WebName: "Wplay.co",
     WebUrl: "wplay-co",
     IsBookmaker: "y",
@@ -5954,7 +5954,7 @@ const BOOKIES_DATA = {
   },
   524: {
     idProvider: "524",
-    logo: "524.png",
+    logo: "524.webp",
     WebName: "Zamba.co",
     WebUrl: "zamba-co",
     IsBookmaker: "y",
@@ -5972,7 +5972,7 @@ const BOOKIES_DATA = {
   },
   525: {
     idProvider: "525",
-    logo: "525.png",
+    logo: "525.webp",
     WebName: "Betrally India",
     WebUrl: "betrally-india",
     IsBookmaker: "y",
@@ -5990,7 +5990,7 @@ const BOOKIES_DATA = {
   },
   526: {
     idProvider: "526",
-    logo: "526.png",
+    logo: "526.webp",
     WebName: "Speedybet",
     WebUrl: "speedybet",
     IsBookmaker: "y",
@@ -6008,7 +6008,7 @@ const BOOKIES_DATA = {
   },
   527: {
     idProvider: "527",
-    logo: "527.png",
+    logo: "527.webp",
     WebName: "Parimatch.ru",
     WebUrl: "parimatch-ru",
     IsBookmaker: "y",
@@ -6026,7 +6026,7 @@ const BOOKIES_DATA = {
   },
   528: {
     idProvider: "528",
-    logo: "528.png",
+    logo: "528.webp",
     WebName: "Snabbare",
     WebUrl: "snabbare",
     IsBookmaker: "y",
@@ -6044,7 +6044,7 @@ const BOOKIES_DATA = {
   },
   529: {
     idProvider: "529",
-    logo: "529.png",
+    logo: "529.webp",
     WebName: "Hajper",
     WebUrl: "hajper",
     IsBookmaker: "y",
@@ -6079,7 +6079,7 @@ const BOOKIES_DATA = {
   },
   531: {
     idProvider: "531",
-    logo: "531.png",
+    logo: "531.webp",
     WebName: "Marathonbet.ru",
     WebUrl: "marathonbet-ru",
     IsBookmaker: "y",
@@ -6102,7 +6102,7 @@ const BOOKIES_DATA = {
   },
   532: {
     idProvider: "532",
-    logo: "532.png",
+    logo: "532.webp",
     WebName: "DoradoBet",
     WebUrl: "doradobet",
     IsBookmaker: "y",
@@ -6120,7 +6120,7 @@ const BOOKIES_DATA = {
   },
   533: {
     idProvider: "533",
-    logo: "533.png",
+    logo: "533.webp",
     WebName: "Betway Africa",
     WebUrl: "betway-africa",
     IsBookmaker: "y",
@@ -6138,7 +6138,7 @@ const BOOKIES_DATA = {
   },
   534: {
     idProvider: "534",
-    logo: "534.png",
+    logo: "534.webp",
     WebName: "SuperSport",
     WebUrl: "supersport",
     IsBookmaker: "y",
@@ -6156,7 +6156,7 @@ const BOOKIES_DATA = {
   },
   535: {
     idProvider: "535",
-    logo: "535.png",
+    logo: "535.webp",
     WebName: "MrGreen",
     WebUrl: "mrgreen",
     IsBookmaker: "y",
@@ -6179,7 +6179,7 @@ const BOOKIES_DATA = {
   },
   536: {
     idProvider: "536",
-    logo: "536.png",
+    logo: "536.webp",
     WebName: "Betbiga",
     WebUrl: "betbiga",
     IsBookmaker: "y",
@@ -6214,7 +6214,7 @@ const BOOKIES_DATA = {
   },
   538: {
     idProvider: "538",
-    logo: "538.png",
+    logo: "538.webp",
     WebName: "Parimatchtz",
     WebUrl: "parimatchtz",
     IsBookmaker: "y",
@@ -6232,7 +6232,7 @@ const BOOKIES_DATA = {
   },
   539: {
     idProvider: "539",
-    logo: "539.png",
+    logo: "539.webp",
     WebName: "Betclic.pl",
     WebUrl: "betclic-pl",
     IsBookmaker: "y",
@@ -6250,7 +6250,7 @@ const BOOKIES_DATA = {
   },
   540: {
     idProvider: "540",
-    logo: "540.png",
+    logo: "540.webp",
     WebName: "10cric",
     WebUrl: "10cric",
     IsBookmaker: "y",
@@ -6268,7 +6268,7 @@ const BOOKIES_DATA = {
   },
   541: {
     idProvider: "541",
-    logo: "541.png",
+    logo: "541.webp",
     WebName: "Rushbet.co",
     WebUrl: "rushbet-co",
     IsBookmaker: "y",
@@ -6303,7 +6303,7 @@ const BOOKIES_DATA = {
   },
   543: {
     idProvider: "543",
-    logo: "543.png",
+    logo: "543.webp",
     WebName: "Betago",
     WebUrl: "betago",
     IsBookmaker: "y",
@@ -6321,7 +6321,7 @@ const BOOKIES_DATA = {
   },
   544: {
     idProvider: "544",
-    logo: "544.png",
+    logo: "544.webp",
     WebName: "Betika",
     WebUrl: "betika",
     IsBookmaker: "y",
@@ -6339,7 +6339,7 @@ const BOOKIES_DATA = {
   },
   545: {
     idProvider: "545",
-    logo: "545.png",
+    logo: "545.webp",
     WebName: "Betano.pt",
     WebUrl: "betano-pt",
     IsBookmaker: "y",
@@ -6357,7 +6357,7 @@ const BOOKIES_DATA = {
   },
   546: {
     idProvider: "546",
-    logo: "546.png",
+    logo: "546.webp",
     WebName: "Kirolbet",
     WebUrl: "kirolbet",
     IsBookmaker: "y",
@@ -6375,7 +6375,7 @@ const BOOKIES_DATA = {
   },
   547: {
     idProvider: "547",
-    logo: "547.png",
+    logo: "547.webp",
     WebName: "Fonbet.kz",
     WebUrl: "fonbet-kz",
     IsBookmaker: "y",
@@ -6393,7 +6393,7 @@ const BOOKIES_DATA = {
   },
   548: {
     idProvider: "548",
-    logo: "548.png",
+    logo: "548.webp",
     WebName: "Domusbet",
     WebUrl: "domusbet",
     IsBookmaker: "y",
@@ -6411,7 +6411,7 @@ const BOOKIES_DATA = {
   },
   549: {
     idProvider: "549",
-    logo: "549.png",
+    logo: "549.webp",
     WebName: "bet365.nj",
     WebUrl: "bet365-nj",
     IsBookmaker: "y",
@@ -6429,7 +6429,7 @@ const BOOKIES_DATA = {
   },
   550: {
     idProvider: "550",
-    logo: "550.png",
+    logo: "550.webp",
     WebName: "GGBET",
     WebUrl: "ggbet",
     IsBookmaker: "y",
@@ -6452,7 +6452,7 @@ const BOOKIES_DATA = {
   },
   551: {
     idProvider: "551",
-    logo: "551.png",
+    logo: "551.webp",
     WebName: "Luckia.pt",
     WebUrl: "luckia-pt",
     IsBookmaker: "y",
@@ -6470,7 +6470,7 @@ const BOOKIES_DATA = {
   },
   552: {
     idProvider: "552",
-    logo: "552.png",
+    logo: "552.webp",
     WebName: "BetAlfa.co",
     WebUrl: "betalfa-co",
     IsBookmaker: "y",
@@ -6488,7 +6488,7 @@ const BOOKIES_DATA = {
   },
   553: {
     idProvider: "553",
-    logo: "553.png",
+    logo: "553.webp",
     WebName: "Circus.pe",
     WebUrl: "circus-pe",
     IsBookmaker: "y",
@@ -6506,7 +6506,7 @@ const BOOKIES_DATA = {
   },
   554: {
     idProvider: "554",
-    logo: "554.png",
+    logo: "554.webp",
     WebName: "Betfan.pl_old",
     WebUrl: "betfan-pl_old",
     IsBookmaker: "y",
@@ -6524,7 +6524,7 @@ const BOOKIES_DATA = {
   },
   555: {
     idProvider: "555",
-    logo: "555.png",
+    logo: "555.webp",
     WebName: "Toto.nederlandse",
     WebUrl: "toto-nederlandse",
     IsBookmaker: "y",
@@ -6542,7 +6542,7 @@ const BOOKIES_DATA = {
   },
   556: {
     idProvider: "556",
-    logo: "556.png",
+    logo: "556.webp",
     WebName: "BetjuegoOld",
     WebUrl: "betjuegoold",
     IsBookmaker: "y",
@@ -6560,7 +6560,7 @@ const BOOKIES_DATA = {
   },
   557: {
     idProvider: "557",
-    logo: "557.png",
+    logo: "557.webp",
     WebName: "Totonederlandse",
     WebUrl: "totonederlandse",
     IsBookmaker: "y",
@@ -6578,7 +6578,7 @@ const BOOKIES_DATA = {
   },
   558: {
     idProvider: "558",
-    logo: "558.png",
+    logo: "558.webp",
     WebName: "GGBET.ru",
     WebUrl: "ggbet-ru",
     IsBookmaker: "y",
@@ -6596,7 +6596,7 @@ const BOOKIES_DATA = {
   },
   559: {
     idProvider: "559",
-    logo: "559.png",
+    logo: "559.webp",
     WebName: "X-bet.co",
     WebUrl: "x-bet-co",
     IsBookmaker: "y",
@@ -6619,7 +6619,7 @@ const BOOKIES_DATA = {
   },
   560: {
     idProvider: "560",
-    logo: "560.png",
+    logo: "560.webp",
     WebName: "Topaz.az",
     WebUrl: "topaz-az",
     IsBookmaker: "y",
@@ -6637,7 +6637,7 @@ const BOOKIES_DATA = {
   },
   561: {
     idProvider: "561",
-    logo: "561.png",
+    logo: "561.webp",
     WebName: "OLIMPBET.kz",
     WebUrl: "olimpbet-kz",
     IsBookmaker: "y",
@@ -6655,7 +6655,7 @@ const BOOKIES_DATA = {
   },
   562: {
     idProvider: "562",
-    logo: "562.png",
+    logo: "562.webp",
     WebName: "Yajuego",
     WebUrl: "yajuego",
     IsBookmaker: "y",
@@ -6707,7 +6707,7 @@ const BOOKIES_DATA = {
   },
   565: {
     idProvider: "565",
-    logo: "565.png",
+    logo: "565.webp",
     WebName: "BetAndYou",
     WebUrl: "betandyou",
     IsBookmaker: "y",
@@ -6725,7 +6725,7 @@ const BOOKIES_DATA = {
   },
   566: {
     idProvider: "566",
-    logo: "566.png",
+    logo: "566.webp",
     WebName: "Placard",
     WebUrl: "placard",
     IsBookmaker: "y",
@@ -6743,7 +6743,7 @@ const BOOKIES_DATA = {
   },
   567: {
     idProvider: "567",
-    logo: "567.png",
+    logo: "567.webp",
     WebName: "BetBoom",
     WebUrl: "betboom",
     IsBookmaker: "y",
@@ -6761,7 +6761,7 @@ const BOOKIES_DATA = {
   },
   568: {
     idProvider: "568",
-    logo: "568.png",
+    logo: "568.webp",
     WebName: "Bilyoner",
     WebUrl: "bilyoner",
     IsBookmaker: "y",
@@ -6779,7 +6779,7 @@ const BOOKIES_DATA = {
   },
   569: {
     idProvider: "569",
-    logo: "569.png",
+    logo: "569.webp",
     WebName: "PZBuk",
     WebUrl: "pzbuk",
     IsBookmaker: "y",
@@ -6797,7 +6797,7 @@ const BOOKIES_DATA = {
   },
   570: {
     idProvider: "570",
-    logo: "570.png",
+    logo: "570.webp",
     WebName: "Sts.bet.com",
     WebUrl: "sts-bet-com",
     IsBookmaker: "y",
@@ -6815,7 +6815,7 @@ const BOOKIES_DATA = {
   },
   571: {
     idProvider: "571",
-    logo: "571.png",
+    logo: "571.webp",
     WebName: "Sts.co.uk",
     WebUrl: "sts-co-uk",
     IsBookmaker: "y",
@@ -6833,7 +6833,7 @@ const BOOKIES_DATA = {
   },
   572: {
     idProvider: "572",
-    logo: "572.png",
+    logo: "572.webp",
     WebName: "BETFAN",
     WebUrl: "betfan",
     IsBookmaker: "y",
@@ -6851,7 +6851,7 @@ const BOOKIES_DATA = {
   },
   573: {
     idProvider: "573",
-    logo: "573.png",
+    logo: "573.webp",
     WebName: "MELbet",
     WebUrl: "melbet",
     IsBookmaker: "y",
@@ -6874,7 +6874,7 @@ const BOOKIES_DATA = {
   },
   574: {
     idProvider: "574",
-    logo: "574.png",
+    logo: "574.webp",
     WebName: "Betano.br",
     WebUrl: "betano-br",
     IsBookmaker: "y",
@@ -6892,7 +6892,7 @@ const BOOKIES_DATA = {
   },
   575: {
     idProvider: "575",
-    logo: "575.png",
+    logo: "575.webp",
     WebName: "BetInAsia",
     WebUrl: "betinasia",
     IsBookmaker: "y",
@@ -6915,7 +6915,7 @@ const BOOKIES_DATA = {
   },
   576: {
     idProvider: "576",
-    logo: "576.png",
+    logo: "576.webp",
     WebName: "Fastbet",
     WebUrl: "fastbet",
     IsBookmaker: "y",
@@ -6933,7 +6933,7 @@ const BOOKIES_DATA = {
   },
   577: {
     idProvider: "577",
-    logo: "577.png",
+    logo: "577.webp",
     WebName: "Betsensation",
     WebUrl: "betsensation",
     IsBookmaker: "y",
@@ -6956,7 +6956,7 @@ const BOOKIES_DATA = {
   },
   578: {
     idProvider: "578",
-    logo: "578.png",
+    logo: "578.webp",
     WebName: "Betmaster",
     WebUrl: "betmaster",
     IsBookmaker: "y",
@@ -6979,7 +6979,7 @@ const BOOKIES_DATA = {
   },
   579: {
     idProvider: "579",
-    logo: "579.png",
+    logo: "579.webp",
     WebName: "BetPlanet",
     WebUrl: "betplanet",
     IsBookmaker: "y",
@@ -6997,7 +6997,7 @@ const BOOKIES_DATA = {
   },
   581: {
     idProvider: "581",
-    logo: "581.png",
+    logo: "581.webp",
     WebName: "10x10bet",
     WebUrl: "10x10bet",
     IsBookmaker: "y",
@@ -7015,7 +7015,7 @@ const BOOKIES_DATA = {
   },
   582: {
     idProvider: "582",
-    logo: "582.png",
+    logo: "582.webp",
     WebName: "Soccabet",
     WebUrl: "soccabet",
     IsBookmaker: "y",
@@ -7033,7 +7033,7 @@ const BOOKIES_DATA = {
   },
   583: {
     idProvider: "583",
-    logo: "583.png",
+    logo: "583.webp",
     WebName: "Curebet",
     WebUrl: "curebet",
     IsBookmaker: "y",
@@ -7051,7 +7051,7 @@ const BOOKIES_DATA = {
   },
   584: {
     idProvider: "584",
-    logo: "584.png",
+    logo: "584.webp",
     WebName: "Lasbet",
     WebUrl: "lasbet",
     IsBookmaker: "y",
@@ -7069,7 +7069,7 @@ const BOOKIES_DATA = {
   },
   585: {
     idProvider: "585",
-    logo: "585.png",
+    logo: "585.webp",
     WebName: "Betika.com.gh",
     WebUrl: "betika-com-gh",
     IsBookmaker: "y",
@@ -7087,7 +7087,7 @@ const BOOKIES_DATA = {
   },
   586: {
     idProvider: "586",
-    logo: "586.png",
+    logo: "586.webp",
     WebName: "Circus",
     WebUrl: "circus",
     IsBookmaker: "y",
@@ -7105,7 +7105,7 @@ const BOOKIES_DATA = {
   },
   587: {
     idProvider: "587",
-    logo: "587.png",
+    logo: "587.webp",
     WebName: "Betway PT",
     WebUrl: "betway-pt",
     IsBookmaker: "y",
@@ -7123,7 +7123,7 @@ const BOOKIES_DATA = {
   },
   588: {
     idProvider: "588",
-    logo: "588.png",
+    logo: "588.webp",
     WebName: "FEZbet",
     WebUrl: "fezbet",
     IsBookmaker: "y",
@@ -7146,7 +7146,7 @@ const BOOKIES_DATA = {
   },
   589: {
     idProvider: "589",
-    logo: "589.png",
+    logo: "589.webp",
     WebName: "Betway Africa Mozambique",
     WebUrl: "betway-africa-mozambique",
     IsBookmaker: "y",
@@ -7164,7 +7164,7 @@ const BOOKIES_DATA = {
   },
   590: {
     idProvider: "590",
-    logo: "590.png",
+    logo: "590.webp",
     WebName: "Rojabet",
     WebUrl: "rojabet",
     IsBookmaker: "y",
@@ -7182,7 +7182,7 @@ const BOOKIES_DATA = {
   },
   591: {
     idProvider: "591",
-    logo: "591.png",
+    logo: "591.webp",
     WebName: "Superbet.pl",
     WebUrl: "superbet-pl",
     IsBookmaker: "y",
@@ -7200,7 +7200,7 @@ const BOOKIES_DATA = {
   },
   592: {
     idProvider: "592",
-    logo: "592.png",
+    logo: "592.webp",
     WebName: "Superbet.ro",
     WebUrl: "superbet-ro",
     IsBookmaker: "y",
@@ -7218,7 +7218,7 @@ const BOOKIES_DATA = {
   },
   593: {
     idProvider: "593",
-    logo: "593.png",
+    logo: "593.webp",
     WebName: "Tennisi.kz",
     WebUrl: "tennisi-kz",
     IsBookmaker: "y",
@@ -7236,7 +7236,7 @@ const BOOKIES_DATA = {
   },
   594: {
     idProvider: "594",
-    logo: "594.png",
+    logo: "594.webp",
     WebName: "BetFinal",
     WebUrl: "betfinal",
     IsBookmaker: "y",
@@ -7259,7 +7259,7 @@ const BOOKIES_DATA = {
   },
   595: {
     idProvider: "595",
-    logo: "595.png",
+    logo: "595.webp",
     WebName: "Solverde.pt",
     WebUrl: "solverde-pt",
     IsBookmaker: "y",
@@ -7277,7 +7277,7 @@ const BOOKIES_DATA = {
   },
   596: {
     idProvider: "596",
-    logo: "596.png",
+    logo: "596.webp",
     WebName: "bet365.ru",
     WebUrl: "bet365-ru",
     IsBookmaker: "y",
@@ -7295,7 +7295,7 @@ const BOOKIES_DATA = {
   },
   597: {
     idProvider: "597",
-    logo: "597.png",
+    logo: "597.webp",
     WebName: "Latribet",
     WebUrl: "latribet",
     IsBookmaker: "y",
@@ -7313,7 +7313,7 @@ const BOOKIES_DATA = {
   },
   598: {
     idProvider: "598",
-    logo: "598.png",
+    logo: "598.webp",
     WebName: "Bwin.co",
     WebUrl: "bwin-co",
     IsBookmaker: "y",
@@ -7331,7 +7331,7 @@ const BOOKIES_DATA = {
   },
   599: {
     idProvider: "599",
-    logo: "599.png",
+    logo: "599.webp",
     WebName: "MSport",
     WebUrl: "msport",
     IsBookmaker: "y",
@@ -7349,7 +7349,7 @@ const BOOKIES_DATA = {
   },
   600: {
     idProvider: "600",
-    logo: "600.png",
+    logo: "600.webp",
     WebName: "Chezacash",
     WebUrl: "chezacash",
     IsBookmaker: "y",
@@ -7367,7 +7367,7 @@ const BOOKIES_DATA = {
   },
   601: {
     idProvider: "601",
-    logo: "601.png",
+    logo: "601.webp",
     WebName: "GreatOdds",
     WebUrl: "greatodds",
     IsBookmaker: "y",
@@ -7402,7 +7402,7 @@ const BOOKIES_DATA = {
   },
   603: {
     idProvider: "603",
-    logo: "603.png",
+    logo: "603.webp",
     WebName: "CasaPariurilor",
     WebUrl: "casapariurilor",
     IsBookmaker: "y",
@@ -7420,7 +7420,7 @@ const BOOKIES_DATA = {
   },
   604: {
     idProvider: "604",
-    logo: "604.png",
+    logo: "604.webp",
     WebName: "Fonbet.by",
     WebUrl: "fonbet-by",
     IsBookmaker: "y",
@@ -7438,7 +7438,7 @@ const BOOKIES_DATA = {
   },
   605: {
     idProvider: "605",
-    logo: "605.png",
+    logo: "605.webp",
     WebName: "bet365.nl",
     WebUrl: "bet365-nl",
     IsBookmaker: "y",
@@ -7456,7 +7456,7 @@ const BOOKIES_DATA = {
   },
   608: {
     idProvider: "608",
-    logo: "608.png",
+    logo: "608.webp",
     WebName: "efbet.it",
     WebUrl: "efbet-it",
     IsBookmaker: "y",
@@ -7474,7 +7474,7 @@ const BOOKIES_DATA = {
   },
   609: {
     idProvider: "609",
-    logo: "609.png",
+    logo: "609.webp",
     WebName: "N1 Bet",
     WebUrl: "n1-bet",
     IsBookmaker: "y",
@@ -7497,7 +7497,7 @@ const BOOKIES_DATA = {
   },
   610: {
     idProvider: "610",
-    logo: "610.png",
+    logo: "610.webp",
     WebName: "Favbet",
     WebUrl: "favbet",
     IsBookmaker: "y",
@@ -7515,7 +7515,7 @@ const BOOKIES_DATA = {
   },
   611: {
     idProvider: "611",
-    logo: "611.png",
+    logo: "611.webp",
     WebName: "Golpas",
     WebUrl: "golpas",
     IsBookmaker: "y",
@@ -7533,7 +7533,7 @@ const BOOKIES_DATA = {
   },
   612: {
     idProvider: "612",
-    logo: "612.png",
+    logo: "612.webp",
     WebName: "Ditobet",
     WebUrl: "ditobet",
     IsBookmaker: "y",
@@ -7556,7 +7556,7 @@ const BOOKIES_DATA = {
   },
   613: {
     idProvider: "613",
-    logo: "613.png",
+    logo: "613.webp",
     WebName: "Efbet RO",
     WebUrl: "efbet-ro",
     IsBookmaker: "y",
@@ -7574,7 +7574,7 @@ const BOOKIES_DATA = {
   },
   614: {
     idProvider: "614",
-    logo: "614.png",
+    logo: "614.webp",
     WebName: "Betring",
     WebUrl: "betring",
     IsBookmaker: "y",
@@ -7609,7 +7609,7 @@ const BOOKIES_DATA = {
   },
   616: {
     idProvider: "616",
-    logo: "616.png",
+    logo: "616.webp",
     WebName: "OlyBet.it",
     WebUrl: "olybet-it",
     IsBookmaker: "y",
@@ -7627,7 +7627,7 @@ const BOOKIES_DATA = {
   },
   617: {
     idProvider: "617",
-    logo: "617.png",
+    logo: "617.webp",
     WebName: "VOBET",
     WebUrl: "vobet",
     IsBookmaker: "y",
@@ -7645,7 +7645,7 @@ const BOOKIES_DATA = {
   },
   618: {
     idProvider: "618",
-    logo: "618.png",
+    logo: "618.webp",
     WebName: "Betera",
     WebUrl: "betera",
     IsBookmaker: "y",
@@ -7663,7 +7663,7 @@ const BOOKIES_DATA = {
   },
   619: {
     idProvider: "619",
-    logo: "619.png",
+    logo: "619.webp",
     WebName: "Unibetbe",
     WebUrl: "unibetbe",
     IsBookmaker: "y",
@@ -7681,7 +7681,7 @@ const BOOKIES_DATA = {
   },
   620: {
     idProvider: "620",
-    logo: "620.png",
+    logo: "620.webp",
     WebName: "Unibetdk",
     WebUrl: "unibetdk",
     IsBookmaker: "y",
@@ -7699,7 +7699,7 @@ const BOOKIES_DATA = {
   },
   621: {
     idProvider: "621",
-    logo: "621.png",
+    logo: "621.webp",
     WebName: "Unibetnl",
     WebUrl: "unibetnl",
     IsBookmaker: "y",
@@ -7717,7 +7717,7 @@ const BOOKIES_DATA = {
   },
   622: {
     idProvider: "622",
-    logo: "622.png",
+    logo: "622.webp",
     WebName: "Unibetca",
     WebUrl: "unibetca",
     IsBookmaker: "y",
@@ -7735,7 +7735,7 @@ const BOOKIES_DATA = {
   },
   623: {
     idProvider: "623",
-    logo: "623.png",
+    logo: "623.webp",
     WebName: "Unibetro",
     WebUrl: "unibetro",
     IsBookmaker: "y",
@@ -7753,7 +7753,7 @@ const BOOKIES_DATA = {
   },
   624: {
     idProvider: "624",
-    logo: "624.png",
+    logo: "624.webp",
     WebName: "Unibetse",
     WebUrl: "unibetse",
     IsBookmaker: "y",
@@ -7771,7 +7771,7 @@ const BOOKIES_DATA = {
   },
   625: {
     idProvider: "625",
-    logo: "625.png",
+    logo: "625.webp",
     WebName: "Unibetuk",
     WebUrl: "unibetuk",
     IsBookmaker: "y",
@@ -7789,7 +7789,7 @@ const BOOKIES_DATA = {
   },
   626: {
     idProvider: "626",
-    logo: "626.png",
+    logo: "626.webp",
     WebName: "Unibethu",
     WebUrl: "unibethu",
     IsBookmaker: "y",
@@ -7807,7 +7807,7 @@ const BOOKIES_DATA = {
   },
   627: {
     idProvider: "627",
-    logo: "627.png",
+    logo: "627.webp",
     WebName: "Unibetee",
     WebUrl: "unibetee",
     IsBookmaker: "y",
@@ -7825,7 +7825,7 @@ const BOOKIES_DATA = {
   },
   628: {
     idProvider: "628",
-    logo: "628.png",
+    logo: "628.webp",
     WebName: "Unibetau",
     WebUrl: "unibetau",
     IsBookmaker: "y",
@@ -7860,7 +7860,7 @@ const BOOKIES_DATA = {
   },
   630: {
     idProvider: "630",
-    logo: "630.png",
+    logo: "630.webp",
     WebName: "Winnermx",
     WebUrl: "winnermx",
     IsBookmaker: "y",
@@ -7878,7 +7878,7 @@ const BOOKIES_DATA = {
   },
   631: {
     idProvider: "631",
-    logo: "630.png",
+    logo: "630.webp",
     WebName: "Calientemx",
     WebUrl: "calientemx",
     IsBookmaker: "y",
@@ -7896,7 +7896,7 @@ const BOOKIES_DATA = {
   },
   632: {
     idProvider: "632",
-    logo: "632.png",
+    logo: "632.webp",
     WebName: "Novibet",
     WebUrl: "novibet",
     IsBookmaker: "y",
@@ -7914,7 +7914,7 @@ const BOOKIES_DATA = {
   },
   634: {
     idProvider: "634",
-    logo: "634.png",
+    logo: "634.webp",
     WebName: "Betssonco",
     WebUrl: "betssonco",
     IsBookmaker: "y",
@@ -7932,7 +7932,7 @@ const BOOKIES_DATA = {
   },
   635: {
     idProvider: "635",
-    logo: "635.png",
+    logo: "635.webp",
     WebName: "BC.Game",
     WebUrl: "bc-game",
     IsBookmaker: "y",
@@ -7950,7 +7950,7 @@ const BOOKIES_DATA = {
   },
   636: {
     idProvider: "636",
-    logo: "636.png",
+    logo: "636.webp",
     WebName: "Starcasinoit",
     WebUrl: "starcasinoit",
     IsBookmaker: "y",
@@ -7985,7 +7985,7 @@ const BOOKIES_DATA = {
   },
   638: {
     idProvider: "638",
-    logo: "638.png",
+    logo: "638.webp",
     WebName: "Alphabet",
     WebUrl: "alphabet",
     IsBookmaker: "y",
@@ -8020,7 +8020,7 @@ const BOOKIES_DATA = {
   },
   640: {
     idProvider: "640",
-    logo: "640.png",
+    logo: "640.webp",
     WebName: "Pinup",
     WebUrl: "pinup",
     IsBookmaker: "y",
@@ -8038,7 +8038,7 @@ const BOOKIES_DATA = {
   },
   641: {
     idProvider: "641",
-    logo: "641.png",
+    logo: "641.webp",
     WebName: "Suprabets",
     WebUrl: "suprabets",
     IsBookmaker: "y",
@@ -8061,7 +8061,7 @@ const BOOKIES_DATA = {
   },
   642: {
     idProvider: "642",
-    logo: "642.png",
+    logo: "642.webp",
     WebName: "Golden Palace",
     WebUrl: "golden-palace",
     IsBookmaker: "y",
@@ -8079,7 +8079,7 @@ const BOOKIES_DATA = {
   },
   643: {
     idProvider: "643",
-    logo: "643.png",
+    logo: "643.webp",
     WebName: "Fonbet.ca",
     WebUrl: "fonbet-ca",
     IsBookmaker: "y",
@@ -8097,7 +8097,7 @@ const BOOKIES_DATA = {
   },
   644: {
     idProvider: "644",
-    logo: "644.png",
+    logo: "644.webp",
     WebName: "Vincitu",
     WebUrl: "vincitu",
     IsBookmaker: "y",
@@ -8115,7 +8115,7 @@ const BOOKIES_DATA = {
   },
   645: {
     idProvider: "645",
-    logo: "645.png",
+    logo: "645.webp",
     WebName: "bet-at-home.de",
     WebUrl: "bet-at-home-de",
     IsBookmaker: "y",
@@ -8133,7 +8133,7 @@ const BOOKIES_DATA = {
   },
   646: {
     idProvider: "646",
-    logo: "646.png",
+    logo: "646.webp",
     WebName: "Mozzartbetke",
     WebUrl: "mozzartbetke",
     IsBookmaker: "y",
@@ -8151,7 +8151,7 @@ const BOOKIES_DATA = {
   },
   647: {
     idProvider: "647",
-    logo: "647.png",
+    logo: "647.webp",
     WebName: "Mozzartbetrs",
     WebUrl: "mozzartbetrs",
     IsBookmaker: "y",
@@ -8169,7 +8169,7 @@ const BOOKIES_DATA = {
   },
   648: {
     idProvider: "648",
-    logo: "648.png",
+    logo: "648.webp",
     WebName: "Mozzartbetro",
     WebUrl: "mozzartbetro",
     IsBookmaker: "y",
@@ -8187,7 +8187,7 @@ const BOOKIES_DATA = {
   },
   649: {
     idProvider: "649",
-    logo: "649.png",
+    logo: "649.webp",
     WebName: "Betssonmx",
     WebUrl: "betssonmx",
     IsBookmaker: "y",
@@ -8205,7 +8205,7 @@ const BOOKIES_DATA = {
   },
   650: {
     idProvider: "650",
-    logo: "650.png",
+    logo: "650.webp",
     WebName: "Aposta Ganha",
     WebUrl: "aposta-ganha",
     IsBookmaker: "y",
@@ -8240,7 +8240,7 @@ const BOOKIES_DATA = {
   },
   652: {
     idProvider: "652",
-    logo: "652.png",
+    logo: "652.webp",
     WebName: "Expektse",
     WebUrl: "expektse",
     IsBookmaker: "y",
@@ -8258,7 +8258,7 @@ const BOOKIES_DATA = {
   },
   653: {
     idProvider: "653",
-    logo: "653.png",
+    logo: "653.webp",
     WebName: "Expektdk",
     WebUrl: "expektdk",
     IsBookmaker: "y",
@@ -8276,7 +8276,7 @@ const BOOKIES_DATA = {
   },
   654: {
     idProvider: "654",
-    logo: "654.png",
+    logo: "654.webp",
     WebName: "Spinbookie",
     WebUrl: "spinbookie",
     IsBookmaker: "y",
@@ -8294,7 +8294,7 @@ const BOOKIES_DATA = {
   },
   655: {
     idProvider: "655",
-    logo: "655.png",
+    logo: "655.webp",
     WebName: "Betclic.ci",
     WebUrl: "betclic-ci",
     IsBookmaker: "y",
@@ -8312,7 +8312,7 @@ const BOOKIES_DATA = {
   },
   656: {
     idProvider: "656",
-    logo: "656.png",
+    logo: "656.webp",
     WebName: "Stoiximan.cy",
     WebUrl: "stoiximan-cy",
     IsBookmaker: "y",
@@ -8330,7 +8330,7 @@ const BOOKIES_DATA = {
   },
   657: {
     idProvider: "657",
-    logo: "657.png",
+    logo: "657.webp",
     WebName: "Betano.cz",
     WebUrl: "betano-cz",
     IsBookmaker: "y",
@@ -8348,7 +8348,7 @@ const BOOKIES_DATA = {
   },
   658: {
     idProvider: "658",
-    logo: "658.png",
+    logo: "658.webp",
     WebName: "Betano.de",
     WebUrl: "betano-de",
     IsBookmaker: "y",
@@ -8366,7 +8366,7 @@ const BOOKIES_DATA = {
   },
   659: {
     idProvider: "659",
-    logo: "659.png",
+    logo: "659.webp",
     WebName: "Betano.cl",
     WebUrl: "betano-cl",
     IsBookmaker: "y",
@@ -8384,7 +8384,7 @@ const BOOKIES_DATA = {
   },
   660: {
     idProvider: "660",
-    logo: "660.png",
+    logo: "660.webp",
     WebName: "Betano.pe",
     WebUrl: "betano-pe",
     IsBookmaker: "y",
@@ -8402,7 +8402,7 @@ const BOOKIES_DATA = {
   },
   661: {
     idProvider: "661",
-    logo: "661.png",
+    logo: "661.webp",
     WebName: "Betano.ec",
     WebUrl: "betano-ec",
     IsBookmaker: "y",
@@ -8420,7 +8420,7 @@ const BOOKIES_DATA = {
   },
   662: {
     idProvider: "662",
-    logo: "662.png",
+    logo: "662.webp",
     WebName: "Betano.ng",
     WebUrl: "betano-ng",
     IsBookmaker: "y",
@@ -8438,7 +8438,7 @@ const BOOKIES_DATA = {
   },
   663: {
     idProvider: "663",
-    logo: "663.png",
+    logo: "663.webp",
     WebName: "Betano.bg",
     WebUrl: "betano-bg",
     IsBookmaker: "y",
@@ -8456,7 +8456,7 @@ const BOOKIES_DATA = {
   },
   664: {
     idProvider: "664",
-    logo: "664.png",
+    logo: "664.webp",
     WebName: "Ibet",
     WebUrl: "ibet",
     IsBookmaker: "y",
@@ -8474,7 +8474,7 @@ const BOOKIES_DATA = {
   },
   665: {
     idProvider: "665",
-    logo: "665.png",
+    logo: "665.webp",
     WebName: "Betano.ca (Ontario)",
     WebUrl: "betano-ca-ontario",
     IsBookmaker: "y",
@@ -8492,7 +8492,7 @@ const BOOKIES_DATA = {
   },
   666: {
     idProvider: "666",
-    logo: "666.png",
+    logo: "666.webp",
     WebName: "Betano.ca (rest of canada)",
     WebUrl: "betano-ca-rest-of-canada",
     IsBookmaker: "y",
@@ -8510,7 +8510,7 @@ const BOOKIES_DATA = {
   },
   667: {
     idProvider: "667",
-    logo: "667.png",
+    logo: "667.webp",
     WebName: "Zebet",
     WebUrl: "zebet",
     IsBookmaker: "y",
@@ -8528,7 +8528,7 @@ const BOOKIES_DATA = {
   },
   668: {
     idProvider: "668",
-    logo: "668.png",
+    logo: "668.webp",
     WebName: "VbetFR",
     WebUrl: "vbetfr",
     IsBookmaker: "y",
@@ -8580,7 +8580,7 @@ const BOOKIES_DATA = {
   },
   707: {
     idProvider: "707",
-    logo: "707.png",
+    logo: "707.webp",
     WebName: "BetMGM",
     WebUrl: "betmgm",
     IsBookmaker: "y",
@@ -8615,7 +8615,7 @@ const BOOKIES_DATA = {
   },
   711: {
     idProvider: "711",
-    logo: "711.png",
+    logo: "711.webp",
     WebName: "Germania",
     WebUrl: "germania",
     IsBookmaker: "y",
@@ -8633,7 +8633,7 @@ const BOOKIES_DATA = {
   },
   713: {
     idProvider: "713",
-    logo: "713.png",
+    logo: "713.webp",
     WebName: "CoolbetLATAM",
     WebUrl: "coolbetlatam",
     IsBookmaker: "y",
@@ -8651,7 +8651,7 @@ const BOOKIES_DATA = {
   },
   715: {
     idProvider: "715",
-    // logo: "715.png",
+    // logo: "715.webp",
     WebName: "PerformanceTest",
     WebUrl: "performancetest",
     IsBookmaker: "y",
@@ -8669,7 +8669,7 @@ const BOOKIES_DATA = {
   },
   723: {
     idProvider: "723",
-    logo: "723.png",
+    logo: "723.webp",
     WebName: "Winlinekz",
     WebUrl: "winlinekz",
     IsBookmaker: "y",
@@ -8687,7 +8687,7 @@ const BOOKIES_DATA = {
   },
   727: {
     idProvider: "727",
-    logo: "727.png",
+    logo: "727.webp",
     WebName: "Winlineby",
     WebUrl: "winlineby",
     IsBookmaker: "y",

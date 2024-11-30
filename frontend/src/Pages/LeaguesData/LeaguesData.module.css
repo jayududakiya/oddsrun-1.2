@@ -50,6 +50,7 @@
   font-size: var(--font-size-xsm);
   font-weight: 500;
   text-transform: capitalize;
+  align-items: center;
 }
 
 .bookmakersStatus {

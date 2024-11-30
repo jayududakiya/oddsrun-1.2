@@ -233,10 +233,10 @@ const LeagueMatchItem = (props) => {
   useMetaTags(metaTags, meta.title);
 
   return (
-    <div className='p-2' key={matchIndex}>
+    <div className="p-2" key={matchIndex}>
       <div className={dateMatches.length - 1 == matchIndex ? "" : styles.b}>
         <Row className={`${styles.dataItem} gy-2`}>
-          <Col xs={12} xl={6}>
+          <Col xs={12} xl={cols.length === 2 ? 8 : 6}>
             <Stack
               direction="horizontal"
               gap={3}
@@ -317,6 +317,7 @@ const LeagueMatchItem = (props) => {
                                 match.match["home-participant-images"]
                               )}
                               alt="home-participant-images"
+                              loading="lazy"
                             />
                           </div>
                         )}
@@ -362,7 +363,9 @@ const LeagueMatchItem = (props) => {
                       <span className={homeStyle.displayNone}>-</span>
                     )}
                   </Stack>
-                  <div className={`d-flex ${styles.marginLeft15}`}>
+                  <div
+                    className={`d-flex ${styles.marginLeft15} align-items-center gap-3`}
+                  >
                     {sport == "Tennis" ||
                     sport == "Boxing" ||
                     sport == "Darts" ||
@@ -385,6 +388,7 @@ const LeagueMatchItem = (props) => {
                           )}
                           className={`${styles.paddingTop10}  ${styles.msSet} playerImage`}
                           alt="away-participant-images"
+                          loading="lazy"
                         />
                       </div>
                     )}
@@ -414,7 +418,8 @@ const LeagueMatchItem = (props) => {
             </Stack>
           </Col>
           <Col
-           xs={12} xl={6}
+            xs={12}
+            xl={cols.length === 2 ? 4 : 6}
             className={styles.matchPointMargin}
           >
             <div className={styles.matchPoint}>

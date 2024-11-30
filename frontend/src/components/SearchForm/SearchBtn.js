@@ -64,6 +64,7 @@ const SearchBtn = (props) => {
                 >
                   <Stack className="mt-3" direction="horizontal" gap={2}>
                     <img
+                      loading="lazy"
                       height={24}
                       width={"auto"}
                       src={getAssetImage(

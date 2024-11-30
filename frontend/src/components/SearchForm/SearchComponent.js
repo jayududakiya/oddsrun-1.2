@@ -87,7 +87,7 @@ const SearchComponent = (props) => {
                   direction="horizontal"
                   gap={2}
                 >
-                  <img
+                  <img loading="lazy"
                     height={24}
                     width={"auto"}
                     src={getAssetImage(

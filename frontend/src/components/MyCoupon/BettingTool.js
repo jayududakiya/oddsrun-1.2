@@ -8,10 +8,19 @@ const BettingTool = () => {
     const script = document.createElement("script");
     script.src = "https://ggbetpro.com/l/6700ecd72ca24576c408c63b";
     script.async = true;
+
     const adminBroBox = document.getElementById("banner_img");
     if (adminBroBox) {
       adminBroBox.appendChild(script);
     }
+
+    script.onload = () => {
+      // Wait for the script to load and add the alt attribute to the image
+      const imgTag = adminBroBox.querySelector("img"); // Assuming the script injects an <img> inside #banner_img
+      if (imgTag) {
+        imgTag.alt = "banner"; // Replace with your desired alt text
+      }
+    };
 
     return () => {
       if (script.parentNode) {

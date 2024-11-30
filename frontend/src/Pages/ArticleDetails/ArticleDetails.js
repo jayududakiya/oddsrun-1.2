@@ -53,6 +53,7 @@ const ArticleDetails = () => {
                       src={ASSETS_URL + articleDetails?.image}
                       className={styles.cardImg}
                       alt={articleDetails.title}
+                      loading="lazy"
                     />
                   </div>
 

@@ -17,6 +17,7 @@ import { getFlagIconKey } from "../../data/flag";
 import { toast } from "react-toastify";
 import Loading from "../../Loader/Loading";
 import { getDateAndTime, stringToSlug } from "../../data/formater";
+import { Virtuoso } from "react-virtuoso";
 
 const timeFilter = [
   {
@@ -202,7 +203,7 @@ const DroppingOddsComponent = (props) => {
           >
             <h5
               onClick={() => handleOnSportChange("All")}
-              className={`${styles.pointer} ${
+              className={`text-nowrap ${styles.pointer} ${
                 activeTab === "All" ? styles.activeAll : null
               }`}
             >
@@ -215,47 +216,56 @@ const DroppingOddsComponent = (props) => {
         {isLoader ? (
           <Loading height={50} width={50} />
         ) : (
-          _droppingOdds?.map((droppingOdd, index) => {
-            if (!droppingOdd.matchDetails) return null;
+          <Virtuoso
+            useWindowScroll
+            totalCount={(_droppingOdds && _droppingOdds?.length) || 0}
+            data={_droppingOdds}
+            overscan={3}
+            initialItemCount={_droppingOdds.length}
+            itemContent={(index, droppingOdd) => {
+              if (!droppingOdd.matchDetails) return null;
 
-            return (
-              <div className="mt-4" key={index}>
-                <SportsNav
-                  icon={getSportsIcon(
-                    droppingOdd.matchDetails.match.breadcrumbs.sport.name
-                  )}
-                  title={droppingOdd.matchDetails.match.breadcrumbs.sport.name}
-                  countryIcon={getFlagIconKey(
-                    droppingOdd.matchDetails.match["country-name"]
-                  )}
-                  countryName={droppingOdd.matchDetails.match["country-name"]}
-                  language={droppingOdd.matchDetails.match["tournament-name"]}
-                />
+              return (
+                <div className="mt-4" key={index}>
+                  <SportsNav
+                    icon={getSportsIcon(
+                      droppingOdd.matchDetails.match.breadcrumbs.sport.name
+                    )}
+                    title={
+                      droppingOdd.matchDetails.match.breadcrumbs.sport.name
+                    }
+                    countryIcon={getFlagIconKey(
+                      droppingOdd.matchDetails.match["country-name"]
+                    )}
+                    countryName={droppingOdd.matchDetails.match["country-name"]}
+                    language={droppingOdd.matchDetails.match["tournament-name"]}
+                  />
 
-                <SportDetails
-                  isDroppingOdds={true}
-                  market={`${getMarketNameFromKey(
-                    droppingOdd.market == "ha" ? "haot" : droppingOdd.market
-                  )} ${
-                    droppingOdd.subMarket && droppingOdd.subMarket != ""
-                      ? `- ${droppingOdd.subMarket}`
-                      : ""
-                  }`}
-                  countryOne={droppingOdd.matchDetails.match["home-name"]}
-                  countryTwo={droppingOdd.matchDetails.match["away-name"]}
-                  timing={getDateAndTime(
-                    droppingOdd.matchDetails.match["date-start-timestamp"]
-                  )}
-                  minus={droppingOdd}
-                  display={true}
-                  match={droppingOdd.matchDetails}
-                  pastOdds={droppingOdd.pastOdds}
-                  currentOdds={droppingOdd.odds}
-                  isSaveable={false}
-                />
-              </div>
-            );
-          })
+                  <SportDetails
+                    isDroppingOdds={true}
+                    market={`${getMarketNameFromKey(
+                      droppingOdd.market == "ha" ? "haot" : droppingOdd.market
+                    )} ${
+                      droppingOdd.subMarket && droppingOdd.subMarket != ""
+                        ? `- ${droppingOdd.subMarket}`
+                        : ""
+                    }`}
+                    countryOne={droppingOdd.matchDetails.match["home-name"]}
+                    countryTwo={droppingOdd.matchDetails.match["away-name"]}
+                    timing={getDateAndTime(
+                      droppingOdd.matchDetails.match["date-start-timestamp"]
+                    )}
+                    minus={droppingOdd}
+                    display={true}
+                    match={droppingOdd.matchDetails}
+                    pastOdds={droppingOdd.pastOdds}
+                    currentOdds={droppingOdd.odds}
+                    isSaveable={false}
+                  />
+                </div>
+              );
+            }}
+          />
         )}
       </div>
     </div>

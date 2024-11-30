@@ -58,28 +58,52 @@ const Footer = () => {
             className=" justify-content-center mt-3 flex-wrap"
             gap={2}
           >
-            <div className={styles.logoNotDisplay}>
-              <img src={LOGO} height={65} alt="LOGO" />
+            <div className={`${styles.logoNotDisplay}`}>
+              <img src={LOGO} alt="LOGO" loading="lazy" className={styles.logoImage} />
             </div>
-            <a href="#" className={styles.footerSocialMedia}>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footerSocialMedia}
+              aria-label="Social Media"
+            >
               <Icon
                 icon="mingcute:twitter-fill"
                 className={styles.socialMediaIcon}
               />
             </a>
-            <a href="#" className={styles.footerSocialMedia}>
+            <a
+              href="mailto:test@example.com"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footerSocialMedia}
+              aria-label="Social Media"
+            >
               <Icon
                 icon="iconoir:mail-solid"
                 className={styles.socialMediaIcon}
               />
             </a>
-            <a href="#" className={styles.footerSocialMedia}>
+            <a
+              href="https://www.linkedin.com"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footerSocialMedia}
+              aria-label="Social Media"
+            >
               <Icon
                 icon="flowbite:linkedin-solid"
                 className={styles.socialMediaIcon}
               />
             </a>
-            <a href="#" className={styles.footerSocialMedia}>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noreferrer"
+              className={styles.footerSocialMedia}
+              aria-label="Social Media"
+            >
               <Icon
                 icon="lucide:instagram"
                 className={styles.socialMediaIcon}
@@ -87,7 +111,7 @@ const Footer = () => {
             </a>
           </Stack>
           <div className={styles.footerLogo}>
-            <img src={LOGO} height={50} alt="LOGO" />
+            <img src={LOGO} height={50} alt="LOGO" loading="lazy" />
           </div>
         </Stack>
         <hr></hr>

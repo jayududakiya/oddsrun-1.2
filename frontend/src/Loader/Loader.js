@@ -1,12 +1,18 @@
 import React from "react";
 import styles from "./Loader.module.css";
-import LOADER from "../assets/loderGif.gif";
-
+import LOADER_VIDEO from "../assets/loderGif.mp4";
 const Loader = () => {
   return (
     <div className={styles.loaderMain}>
-      <img src={LOADER} alt="LOADER" />
-    </div>
+    <video
+      src={LOADER_VIDEO}
+      autoPlay
+      loop
+      muted
+      playsInline
+      className={styles.loaderVideo}
+    />
+  </div>
   );
 };
 

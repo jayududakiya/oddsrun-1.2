@@ -236,6 +236,7 @@ const BookmarkerItem = (props) => {
                 src={require(`../../assets/bookmarkers/${bookmarker.logo}`)}
                 alt={bookmarker.name}
                 className={styles.betLogo}
+                loading="lazy"
               />
             )}
 
@@ -813,6 +814,7 @@ const BookMakers = () => {
                 )}
                 className="ps-3 pe-3"
                 alt="home-participant-images_0"
+                loading="lazy"
               />
             </div>
             <div>
@@ -823,6 +825,7 @@ const BookMakers = () => {
                 src={getAssetImage(
                   _matchDetails.matchData["away-participant-images"][0]
                 )}
+                loading="lazy"
                 className="ps-3 pe-3"
                 alt="away-participant-images_0"
               />

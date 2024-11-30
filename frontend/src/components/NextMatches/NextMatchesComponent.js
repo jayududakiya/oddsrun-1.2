@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../Pages/NextMatches/NextMatches.module.css";
 import PagesNav from "../DroppingOdds/PagesNav";
 import AboutDroppingOdds from "../DroppingOdds/AboutDroppingOdds";
@@ -9,11 +9,12 @@ import SportsNav from "../DroppingOdds/SportsNav";
 import { useDispatch, useSelector } from "react-redux";
 import { getSportsIcon } from "../../data/SportsIcon";
 import { getFlagIconKey } from "../../data/flag";
-import { loadMoreNextMatches, loadNextMatches } from "../../store/data.action";
+import { loadNextMatches } from "../../store/data.action";
 import Loading from "../../Loader/Loading";
 import moment from "moment";
 import { getDateAndTime, stringToSlug } from "../../data/formater";
 import LeagueMatchItem from "../LeaguesData/LeagueMatchItem";
+import { Virtuoso } from "react-virtuoso";
 
 const NextMatchesComponent = (props) => {
   const _nextMatches = useSelector((state) => state.dataReducer.nextMatches);
@@ -33,14 +34,14 @@ const NextMatchesComponent = (props) => {
   const yesterday = getDateAndTime(moment().add(-1, "days").unix(), "YYYYMMDD");
   const today = getDateAndTime(moment().unix(), "YYYYMMDD");
   const tomorrow = getDateAndTime(moment().add(1, "days").unix(), "YYYYMMDD");
-  const dayAfterTomorrow = getDateAndTime(
-    moment().add(2, "days").unix(),
-    "YYYYMMDD"
-  );
-  const dayAfterDayTomorrow = getDateAndTime(
-    moment().add(3, "days").unix(),
-    "YYYYMMDD"
-  );
+  // const dayAfterTomorrow = getDateAndTime(
+  //   moment().add(2, "days").unix(),
+  //   "YYYYMMDD"
+  // );
+  // const dayAfterDayTomorrow = getDateAndTime(
+  //   moment().add(3, "days").unix(),
+  //   "YYYYMMDD"
+  // );
 
   const [isEvent, setIsEvent] = useState(false);
 
@@ -88,6 +89,21 @@ const NextMatchesComponent = (props) => {
   useEffect(() => {
     setIsLoading(_isNextMatchLoading);
   }, [_isNextMatchLoading]);
+
+  // Unique matches calculation
+  const getUniqueMatches = (matches) => {
+    const filteredMatches = matches.filter(
+      (match) =>
+        getDateAndTime(match.match["date-start-timestamp"], "YYYYMMDD") ===
+          activeDate &&
+        match.odds &&
+        match.odds.length !== 0 &&
+        match.odds[0]?.local?.avg
+    );
+    return Array.from(
+      new Set(filteredMatches.map((match) => match.match.id))
+    ).map((id) => filteredMatches.find((match) => match.match.id === id));
+  };
 
   return (
     <div className={styles.nextMatches}>
@@ -211,66 +227,57 @@ const NextMatchesComponent = (props) => {
 
       {isLoading && <Loading height={50} width={50} />}
 
-      {!isLoading && _nextMatches && !_nextMatches?.matches && (
-        <Fragment>
-          {_nextMatches.map((league, index) => {
-            var matches = league.matches;
-            var filteredMatches = matches.filter(
-              (match) =>
-                getDateAndTime(
-                  match.match["date-start-timestamp"],
-                  "YYYYMMDD"
-                ) == activeDate &&
-                match.odds &&
-                match.odds.length !== 0 &&
-                match.odds[0]?.local?.avg
-            );
-            var unique = Array.from(
-              new Set(filteredMatches.map((match) => match.match.id))
-            ).map((id) =>
-              filteredMatches.find((match) => match.match.id === id)
-            );
-            if (unique.length === 0) return null;
-            const matchDetails = unique[0];
+      {!isLoading && (
+        <Virtuoso
+        style={{ height: '100%', marginBottom: '50px' }}
+          useWindowScroll
+          totalCount={(_nextMatches && _nextMatches?.length) || 0}
+          data={_nextMatches}
+          overscan={3}
+          initialItemCount={_nextMatches.length}
+          itemContent={(index, league) => {
+            if (!league) return null;
+            const uniqueMatches = getUniqueMatches(league.matches);
+
+            if (!uniqueMatches.length) return null;
+            const matchDetails = uniqueMatches[0];
 
             return (
-              <Fragment key={index}>
-                <Stack
-                  direction="horizontal"
-                  className={`mt-4 ${styles.myMatches}`}
-                >
-                  <SportsNav
-                    icon={getSportsIcon(
-                      matchDetails.match.breadcrumbs.sport.name
-                    )}
-                    title={matchDetails.match.breadcrumbs.sport.name}
-                    countryIcon={getFlagIconKey(
-                      matchDetails.match["country-name"]
-                    )}
-                    countryName={matchDetails.match["country-name"]}
-                    language={matchDetails.match["tournament-name"]}
-                    tournamentUrl={league.tournamentUrl}
-                  />
-                </Stack>
+              <Stack
+                direction="vertical"
+                className={`mt-4 ${styles.myMatches}`}
+                key={index}
+              >
+                <SportsNav
+                  icon={getSportsIcon(
+                    matchDetails.match.breadcrumbs.sport.name
+                  )}
+                  title={matchDetails.match.breadcrumbs.sport.name}
+                  countryIcon={getFlagIconKey(
+                    matchDetails.match["country-name"]
+                  )}
+                  countryName={matchDetails.match["country-name"]}
+                  language={matchDetails.match["tournament-name"]}
+                  tournamentUrl={league.tournamentUrl}
+                />
 
                 <div className={styles.dataItemBorder}>
-                  {unique.map((match, matchIndex) => (
+                  {uniqueMatches.map((match, idx) => (
                     <LeagueMatchItem
-                      dateMatches={matches}
-                      key={matchIndex}
-                      matchIndex={matchIndex}
+                      key={idx}
+                      dateMatches={league.matches}
                       match={match}
-                      isSaveable={true}
-                      showWinder={true}
+                      isSaveable
+                      showWinder
                       timeFrom={match.match["homeResult"]}
                       timeTo={match.match["awayResult"]}
                     />
                   ))}
                 </div>
-              </Fragment>
+              </Stack>
             );
-          })}
-        </Fragment>
+          }}
+        />
       )}
     </div>
   );

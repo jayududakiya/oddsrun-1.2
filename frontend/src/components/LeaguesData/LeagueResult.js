@@ -6,6 +6,7 @@ import styles from "../../Pages/LeaguesData/LeaguesData.module.css";
 import { getFlagIconKey } from "../../data/flag";
 import MycouponMsgBtn from "../MyCoupon/MycouponMsgBtn";
 import LeagueMatchItem from "./LeagueMatchItem";
+import { Virtuoso } from "react-virtuoso";
 
 const LeagueResult = (props) => {
   const { params, matches } = props;
@@ -29,20 +30,27 @@ const LeagueResult = (props) => {
             <MycouponMsgBtn bg={true} title={matchKey} />
 
             <div className={styles.dataItemBorder}>
-              {dateMatches.map((match, matchIndex) => {
-                return (
-                  <LeagueMatchItem
-                    isSaveable={true}
-                    showWinder={true}
-                    dateMatches={dateMatches}
-                    key={matchIndex}
-                    matchIndex={matchIndex}
-                    match={match}
-                    timeFrom={match.match["homeResult"]}
-                    timeTo={match.match["awayResult"]}
-                  />
-                );
-              })}
+              <Virtuoso
+                useWindowScroll
+                totalCount={(dateMatches && dateMatches?.length) || 0}
+                data={dateMatches}
+                overscan={3}
+                initialItemCount={dateMatches.length}
+                itemContent={(index, match) => {
+                  return (
+                    <LeagueMatchItem
+                      isSaveable={true}
+                      showWinder={true}
+                      dateMatches={dateMatches}
+                      key={index}
+                      matchIndex={index}
+                      match={match}
+                      timeFrom={match.match["homeResult"]}
+                      timeTo={match.match["awayResult"]}
+                    />
+                  );
+                }}
+              />
             </div>
           </div>
         );

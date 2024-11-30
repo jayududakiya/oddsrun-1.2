@@ -433,6 +433,7 @@ const CompareBookmakers = () => {
                                     src={require(`../../assets/bookmarkers/${bookie.logo}`)}
                                     className={matchWithoddStyle.betLogo}
                                     alt={bookie.logo}
+                                    loading="lazy"
                                   />
                                 )}
                                 <span>{bookie.WebName}</span>

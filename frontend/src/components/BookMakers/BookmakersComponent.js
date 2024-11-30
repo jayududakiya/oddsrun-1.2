@@ -4,6 +4,7 @@ import AboutDroppingOdds from "../DroppingOdds/AboutDroppingOdds";
 import droppingStyle from "../../Pages/DroppingOdds/DroppingOdds.module.css";
 import PostRequest from "../../services/PostRequest";
 import axios from "axios";
+import { Virtuoso } from "react-virtuoso";
 
 const BookmakersComponent = () => {
   const [loading, setLoading] = useState(true);
@@ -59,8 +60,14 @@ const BookmakersComponent = () => {
       {loading ? (
         <p>Loading...</p>
       ) : bookies.length > 0 ? (
-        bookies.map((booky, index) => {
-          if (booky.fullDescriptions) {
+        <Virtuoso
+          useWindowScroll
+          totalCount={(bookies && bookies?.length) || 0}
+          data={bookies}
+          overscan={3}
+          initialItemCount={bookies.length}
+          itemContent={(index, booky) => {
+            if (!booky.fullDescriptions) return null;
             return (
               <div
                 key={index}
@@ -69,9 +76,8 @@ const BookmakersComponent = () => {
                 }}
               ></div>
             );
-          }
-          return null;
-        })
+          }}
+        />
       ) : (
         <p>No bookmakers available.</p>
       )}
