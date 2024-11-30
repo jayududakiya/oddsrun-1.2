@@ -61,7 +61,7 @@ const TopEvent = (props) => {
 
       <div className={styles.sportsName}>
         <Row>
-          {events.map((event, eventIndex) => {
+          {/* {events.map((event, eventIndex) => {
             return (
               <Col md={6} key={eventIndex}>
                 <div
@@ -81,6 +81,41 @@ const TopEvent = (props) => {
                     <BettingToolItem
                       icon={getSportsIcon(event.sport)}
                       title={event.name}
+                    />
+                  </NavLink>
+                </div>
+              </Col>
+            );
+          })}
+           */}
+
+          {events.map((event, eventIndex) => {
+            return (
+              <Col md={6} key={eventIndex}>
+                <div
+                  key={eventIndex}
+                  className={`${styles.eventContainer} ${
+                    isMobile
+                      ? eventIndex % 2 === 0
+                        ? styles.bgTopEvents
+                        : styles.SetPlace
+                      : [0, 1, 4, 5, 8, 9].includes(eventIndex)
+                      ? styles.bgTopEvents
+                      : styles.SetPlace
+                  }`}
+                  style={{
+                    minHeight: "50px",
+                  }}
+                >
+                  <NavLink to={`/matches${event.url}`}>
+                    <BettingToolItem
+                      icon={getSportsIcon(event.sport)}
+                      title={event.name}
+                      style={{
+                        minHeight: "50px",
+                        display: "flex",
+                        alignItems: "center",
+                      }}
                     />
                   </NavLink>
                 </div>

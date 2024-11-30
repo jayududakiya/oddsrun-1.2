@@ -59,7 +59,12 @@ const Footer = () => {
             gap={2}
           >
             <div className={styles.logoNotDisplay}>
-              <img src={LOGO} height={65} alt="LOGO" />
+              <img
+                src={LOGO}
+                loading="lazy"
+                style={{ height: "65px" , width:"300px" }}
+                alt="LOGO"
+              />
             </div>
             <a href="#" className={styles.footerSocialMedia}>
               <Icon
@@ -87,7 +92,12 @@ const Footer = () => {
             </a>
           </Stack>
           <div className={styles.footerLogo}>
-            <img src={LOGO} height={50} alt="LOGO" />
+            <img
+              loading="lazy"
+              src={LOGO}
+              style={{ height: "65px",  width:"280px"}}
+              alt="LOGO"
+            />
           </div>
         </Stack>
         <hr></hr>

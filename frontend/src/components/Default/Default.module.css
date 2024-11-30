@@ -6,8 +6,10 @@
 
 .mainBg {
   background-color: var(--light-odds);
-  font-family: Poppins !important;
+  /* font-family: Poppins !important; */
+  /* font-display: swap; */
 }
+
 .responsiveHeader {
   height: 64px;
   background-color: var(--dark-blue);
@@ -16,17 +18,21 @@
   padding: 20px;
   display: none;
 }
+
 .menuIconFontRH {
   font-size: var(--font-size-5xl);
 }
+
 .secrchIconRH {
   margin-right: 20px;
 }
+
 .logoRH {
   font-size: 18px;
   font-weight: bold;
   margin-left: 8px;
 }
+
 .openMenu {
   position: absolute;
   z-index: 11;
@@ -42,12 +48,15 @@
   .noScroll {
     overflow-y: hidden;
   }
+
   .sidebar {
     display: none;
   }
+
   .padingStart {
     padding-left: 10px !important;
   }
+
   .responsiveHeader {
     display: block !important;
   }

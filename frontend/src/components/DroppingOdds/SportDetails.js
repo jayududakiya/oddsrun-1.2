@@ -159,6 +159,7 @@ const SportDetails = (props) => {
                         match.match["home-participant-images"]
                       )}
                       className="playerImage"
+                      loading="lazy"
                       alt="home-participant-images"
                     />
                   )}
@@ -186,6 +187,7 @@ const SportDetails = (props) => {
                       src={getAssetImage(
                         match.match["away-participant-images"]
                       )}
+                      loading="lazy"
                       className="playerImage"
                       alt="away-participant-images"
                     />
@@ -200,11 +202,7 @@ const SportDetails = (props) => {
             </NavLink>
 
             <div className="d-flex align-items-center ">
-              <div
-                className={`${
-                  props.display && styles.marginTop0
-                }`}
-              >
+              <div className={`${props.display && styles.marginTop0}`}>
                 <MycouponMsgBtn title={props.timing} bg={true} />
               </div>
               {isDroppingOdds && market && (
