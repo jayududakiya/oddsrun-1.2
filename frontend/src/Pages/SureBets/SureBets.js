@@ -29,6 +29,7 @@ const SureBets = () => {
   }, []);
   return (
     <Default>
+       <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0 text-capitalize">sure-bets</h1>
       <Row>
         <Col xs={12} lg={8}>
           <SureBetsComponent isLoader={isLoader} setIsLoader={setIsLoader} />

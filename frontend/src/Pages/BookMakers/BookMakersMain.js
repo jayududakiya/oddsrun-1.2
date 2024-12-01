@@ -7,15 +7,16 @@ import BookmakersComponent from "../../components/BookMakers/BookmakersComponent
 const BookMakersMain = () => {
   useEffect(() => {
     // Create the script element
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
+    const script = document.createElement("script");
+    script.type = "application/ld+json";
     script.text = JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebPage",
       "@id": "https://www.oddsrun.com/bookmakers",
-      "name": "Bookmakers Odds Comparison | Find Top Betting Sites",
-      "description": "Compare bookmakers odds for the best betting sites. Get top odds, bonuses, and more with our bookmakers odds comparison for the highest returns on your wagers.",
-      "url": "https://www.oddsrun.com/bookmakers"  
+      name: "Bookmakers Odds Comparison | Find Top Betting Sites",
+      description:
+        "Compare bookmakers odds for the best betting sites. Get top odds, bonuses, and more with our bookmakers odds comparison for the highest returns on your wagers.",
+      url: "https://www.oddsrun.com/bookmakers",
     });
 
     // Append the script to the document head
@@ -28,6 +29,9 @@ const BookMakersMain = () => {
   }, []);
   return (
     <Default>
+      <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0 text-capitalize">
+        bookmakers
+      </h1>
       <Row>
         <Col xs={12} lg={8}>
           <BookmakersComponent />

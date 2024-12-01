@@ -97,7 +97,7 @@ const Sidebar = (props) => {
       <div>
         <div className={styles.logo}>
           <NavLink to={"/home"}>
-            <h1>OddsRun</h1>
+            <h4>OddsRun</h4>
           </NavLink>
           <div className={styles.decorationLine}></div>
         </div>

@@ -70,7 +70,7 @@ const Home = () => {
       url: "https://www.oddsrun.com/",
     });
 
-    console.log('script', script)
+    console.log("script", script);
 
     // Append the script to the document head
     document.head.appendChild(script);
@@ -83,6 +83,9 @@ const Home = () => {
 
   return (
     <Default>
+      <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0  text-capitalize">
+        Best Sports Betting Odds
+      </h1>
       <Row>
         <Col xs={12} lg={8}>
           <HomeComponent

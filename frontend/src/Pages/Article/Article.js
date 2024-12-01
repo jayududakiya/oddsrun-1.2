@@ -54,9 +54,12 @@ const Article = () => {
 
   return (
     <Default>
+      <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0 text-capitalize">
+        article
+      </h1>
       <div className="mb-5 container">
         <Row>
-          {articles.map((article, index) => (
+          {articles?.map((article, index) => (
             <Col md={4} key={index}>
               <NavLink
                 to={`/article-details/${stringToSlug(article.title)}/${

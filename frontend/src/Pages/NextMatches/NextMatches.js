@@ -23,6 +23,9 @@ const NextMatches = () => {
 
   return (
     <Default>
+      <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0  text-capitalize">
+        Upcoming Matches & Odds
+      </h1>
       <Row>
         <Col xs={12} lg={8}>
           <NextMatchesComponent

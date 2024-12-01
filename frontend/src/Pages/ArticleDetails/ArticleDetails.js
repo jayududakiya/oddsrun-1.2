@@ -149,9 +149,50 @@ function generateJsonLd(targetUrl) {
   }
 }
 
+const articlesDetailsHeading = [
+  {
+    id: "are-paid-tips-worth-it-/6723a82deefe2529cc4b204f",
+    value: "Are Paid Tips Worth It ?",
+  },
+  {
+    id: "finding-the-best-odds/67236cf7eefe2529cc4b128e",
+    value: "Finding the Best Odds",
+  },
+  {
+    id: "best-tennis-betting-lines/66a402364de18bbf06008f3d",
+    value: "Best Tennis Betting Lines",
+  },
+  {
+    id: "comparing-betting-odds/6654313afe967ccdad404fe2",
+    value: "Comparing Betting Odds",
+  },
+  {
+    id: "how-to-beat-the-bookmaker/664d0e315a95874e8bdf477b",
+    value: "How to Beat the Bookmaker",
+  },
+  {
+    id: "understanding-handicaps-in-sports-betting/664a22eab71db23ecff9d974",
+    value: "Understanding Handicaps in Sports Betting",
+  },
+  {
+    id: "understanding-bookmakers-margin/663e728bf634d43053ace4cb",
+    value: "Understanding Bookmakers Margin",
+  },
+  {
+    id: "which-sport-offers-the-best-betting-value/6637b8761444eba6ef511a11",
+    value: "Which Sport Offers the Best Betting Value?",
+  },
+  {
+    id: "the-essence-of-value-bets/6633f90c188933c29c47d162",
+    value: "The Essence of Value Bets",
+  },
+];
+
 const ArticleDetails = () => {
   const [articleDetails, setArticleDetails] = useState({});
   const [isLoading, setIsLoading] = useState(false);
+  const [articlesDetailsPageHeading, setArticlesDetailsPageHeading] =
+    useState("");
 
   const params = useParams();
 
@@ -177,6 +218,15 @@ const ArticleDetails = () => {
     const URL = `/article-details/${params.title}/${params.id}`;
     const jsonLdData = JSON.parse(generateJsonLd(URL));
 
+    // find page heading
+    const pageHeading = articlesDetailsHeading.find(
+      (article) => article.id === `${params.title}/${params.id}`
+    );
+
+    if (pageHeading) {
+      setArticlesDetailsPageHeading(pageHeading.value);
+    }
+
     if (jsonLdData) {
       const script = document.createElement("script");
       script.type = "application/ld+json";
@@ -194,6 +244,9 @@ const ArticleDetails = () => {
 
   return (
     <Default>
+      <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0 text-capitalize">
+        {articlesDetailsPageHeading !== "" ? articlesDetailsPageHeading : null}
+      </h1>
       <div className="container mb-5">
         <div className={styles.articleBg}>
           <Row>
