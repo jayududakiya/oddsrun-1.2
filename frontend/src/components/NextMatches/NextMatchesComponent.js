@@ -227,19 +227,36 @@ const NextMatchesComponent = (props) => {
 
       {isLoading && <Loading height={50} width={50} />}
 
-      {!isLoading && (
+      {!isLoading && _nextMatches?.length > 0 && (
+        // Filter out leagues without unique matches
         <Virtuoso
-        style={{ height: '100%', marginBottom: '50px' }}
+          style={{ height: "100%", marginBottom: "50px" }}
           useWindowScroll
-          totalCount={(_nextMatches && _nextMatches?.length) || 0}
-          data={_nextMatches}
+          totalCount={
+            _nextMatches.filter(
+              (league) => getUniqueMatches(league.matches).length > 0
+            ).length
+          }
+          data={_nextMatches.filter(
+            (league) => getUniqueMatches(league.matches).length > 0
+          )}
           overscan={3}
-          initialItemCount={_nextMatches.length}
+          initialItemCount={
+            _nextMatches.filter(
+              (league) => getUniqueMatches(league.matches).length > 0
+            ).length
+          }
           itemContent={(index, league) => {
-            if (!league) return null;
+            if (!league) {
+              console.log(league);
+              return null;
+            }
             const uniqueMatches = getUniqueMatches(league.matches);
 
-            if (!uniqueMatches.length) return null;
+            if (!uniqueMatches.length) {
+              console.log(uniqueMatches);
+              return null;
+            }
             const matchDetails = uniqueMatches[0];
 
             return (

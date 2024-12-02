@@ -126,26 +126,26 @@ const LeagueMatchItem = (props) => {
   const location = useLocation();
 
   const soccerNextMatches = {
-    title: `Next matches betting odds in football, tennis, basketball – order of play, schedule`,
-    description: `Discover all next matches betting odds and compare lines - football, tennis, basketball – order of play, schedule`,
+    title: `Upcoming Sports Events | Next Matches Odds & Betting`,
+    description: `Discover upcoming sports events and compare odds from top bookmakers for the best betting opportunities on the next matches. Stay informed and bet smarter.`,
     keyword: `Next matches, order of play, schedule, football, soccer, tennis, basketball, leagues, tournaments, odds comparison, matched betting, compare sport odds, betting lines`,
   };
 
   const droppingOdds = {
-    title: `Track Betting Odds Movements | Comparison and Dropping odds`,
-    description: `Monitor live betting odds changes with our advanced tracker. Stay informed and makes smarter bets with comparison real-time updates. Perfect dropping odds`,
+    title: `Dropping Odds | Track Sports Betting Trends & Maximize Wins`,
+    description: `Stay ahead in betting with Dropping Odds. Monitor market shifts and spot opportunities to secure the highest odds for maximum returns.`,
     keyword: `dropping odds, arbitrage sports odds, comparison football odds, odds tracker, odds movement, compare betting`,
   };
 
   const sureBets = {
-    title: `Sports Arbitrage Betting Guide | Maximize Your Betting Profits`,
-    description: `Learn how to profit from sports arbitrage betting with our comprehensive guide. Get tips, strategies, sure bets and real-time updates to make risk-free bets across various sports.`,
+    title: `Sure Bets | Maximize Profit with Arbitrage Betting`,
+    description: `Explore sure bets and arbitrage betting strategies to guarantee profits, minimize risks, and maximize returns with the best odds at OddsRun.`,
     keyword: `arbitrage sports odds, sure bets, best odds, best betting odds`,
   };
 
   const bookMakers = {
-    title: `Best Betting Bookmakers | Top-Rated Sites & Reviews`,
-    description: `Find the best betting bookmakers with our expert reviews. Discover top-rated sites offering great odds, bonuses, and user-friendly interfaces for all your betting needs.`,
+    title: `Bookmakers Odds Comparison | Find Top Betting Sites`,
+    description: `Compare bookmakers odds for the best betting sites. Get top odds, bonuses, and more with our bookmakers odds comparison for the highest returns on your wagers.`,
     keyword: `list of bookies, best bookmakers, top rated bookmakers, top betting sites, betting bookies, sports bookmakers, esport bookmakers`,
   };
 

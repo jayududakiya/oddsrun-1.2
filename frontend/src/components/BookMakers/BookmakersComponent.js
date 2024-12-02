@@ -62,12 +62,13 @@ const BookmakersComponent = () => {
       ) : bookies.length > 0 ? (
         <Virtuoso
           useWindowScroll
-          totalCount={(bookies && bookies?.length) || 0}
-          data={bookies}
+          totalCount={bookies.filter((booky) => booky.fullDescriptions).length}
+          data={bookies.filter((booky) => booky.fullDescriptions)}
           overscan={3}
-          initialItemCount={bookies.length}
+          initialItemCount={
+            bookies.filter((booky) => booky.fullDescriptions).length
+          }
           itemContent={(index, booky) => {
-            if (!booky.fullDescriptions) return null;
             return (
               <div
                 key={index}

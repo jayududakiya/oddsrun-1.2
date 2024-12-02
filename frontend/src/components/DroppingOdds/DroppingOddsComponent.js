@@ -215,16 +215,22 @@ const DroppingOddsComponent = (props) => {
         </div>
         {isLoader ? (
           <Loading height={50} width={50} />
-        ) : (
+        ) : _droppingOdds?.length > 0 ? (
           <Virtuoso
             useWindowScroll
-            totalCount={(_droppingOdds && _droppingOdds?.length) || 0}
-            data={_droppingOdds}
+            totalCount={
+              _droppingOdds.filter((droppingOdd) => droppingOdd.matchDetails)
+                .length
+            }
+            data={_droppingOdds.filter(
+              (droppingOdd) => droppingOdd.matchDetails
+            )}
             overscan={3}
-            initialItemCount={_droppingOdds.length}
+            initialItemCount={
+              _droppingOdds.filter((droppingOdd) => droppingOdd.matchDetails)
+                .length
+            }
             itemContent={(index, droppingOdd) => {
-              if (!droppingOdd.matchDetails) return null;
-
               return (
                 <div className="mt-4" key={index}>
                   <SportsNav
@@ -266,7 +272,7 @@ const DroppingOddsComponent = (props) => {
               );
             }}
           />
-        )}
+        ) : null}
       </div>
     </div>
   );

@@ -30,27 +30,31 @@ const LeagueResult = (props) => {
             <MycouponMsgBtn bg={true} title={matchKey} />
 
             <div className={styles.dataItemBorder}>
-              <Virtuoso
-                useWindowScroll
-                totalCount={(dateMatches && dateMatches?.length) || 0}
-                data={dateMatches}
-                overscan={3}
-                initialItemCount={dateMatches.length}
-                itemContent={(index, match) => {
-                  return (
-                    <LeagueMatchItem
-                      isSaveable={true}
-                      showWinder={true}
-                      dateMatches={dateMatches}
-                      key={index}
-                      matchIndex={index}
-                      match={match}
-                      timeFrom={match.match["homeResult"]}
-                      timeTo={match.match["awayResult"]}
-                    />
-                  );
-                }}
-              />
+              {dateMatches && dateMatches.length > 0 ? (
+                <Virtuoso
+                  useWindowScroll
+                  totalCount={(dateMatches && dateMatches?.length) || 0}
+                  data={dateMatches}
+                  overscan={3}
+                  initialItemCount={dateMatches.length}
+                  itemContent={(index, match) => {
+                    return (
+                      <LeagueMatchItem
+                        isSaveable={true}
+                        showWinder={true}
+                        dateMatches={dateMatches}
+                        key={index}
+                        matchIndex={index}
+                        match={match}
+                        timeFrom={match.match["homeResult"]}
+                        timeTo={match.match["awayResult"]}
+                      />
+                    );
+                  }}
+                />
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         );
