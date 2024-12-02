@@ -18,7 +18,7 @@ export default function ManullyTags() {
     }
 
     const sureBets = {
-        title: `Sure Bets | Maximize Profit with Arbitrage Betting`,
+        title: `Sure Bets | Maximize Profit with Arbitrage Betting`,    
         description: `Explore sure bets and arbitrage betting strategies to guarantee profits, minimize risks, and maximize returns with the best odds at OddsRun.`,
         keyword: `arbitrage sports odds, sure bets, best odds, best betting odds`
     }
@@ -26,6 +26,12 @@ export default function ManullyTags() {
     const bookMakers = {
         title: `Bookmakers Odds Comparison | Find Top Betting Sites`,
         description: `Compare bookmakers odds for the best betting sites. Get top odds, bonuses, and more with our bookmakers odds comparison for the highest returns on your wagers.`,
+        keyword: `list of bookies, best bookmakers, top rated bookmakers, top betting sites, betting bookies, sports bookmakers, esport bookmakers`
+    }
+
+    const article = {
+        title: `Expert Tips and Insights on Betting Trends | OddsRun`,
+        description: `Explore expert insights, trends, and tips on betting with the latest articles from OddsRun. Stay informed and make smarter decisions.`,
         keyword: `list of bookies, best bookmakers, top rated bookmakers, top betting sites, betting bookies, sports bookmakers, esport bookmakers`
     }
 
@@ -74,6 +80,8 @@ export default function ManullyTags() {
             return sureBets
         } else if (location.pathname === "/bookmakers") {
             return bookMakers
+        } else if (location.pathname === "/article") {
+            return article
         }else if(location.pathname === "/cricket/next-matches"){
             return cricketNextMatches
         }else if(location.pathname === "/tennis/next-matches"){

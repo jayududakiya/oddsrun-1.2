@@ -8,6 +8,7 @@ import { toast } from "react-toastify";
 import moment from "moment";
 import { ASSETS_URL } from "../../config/Api_Url";
 import Loading from "../../Loader/Loading";
+import { Helmet } from "react-helmet";
 
 const articlesDetailsSchemaMarkups = [
   {
@@ -242,8 +243,24 @@ const ArticleDetails = () => {
     }
   }, [params]);
 
+  const stripHtmlTags = (html) => {
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = html;
+    return tempDiv.textContent || tempDiv.innerText || "";
+  };
+
   return (
     <Default>
+      <Helmet>
+        <title>{articleDetails.title}</title>
+        <meta
+          name="description"
+          content={
+            articleDetails.sortDesccription ||
+            stripHtmlTags(ArticleDetails.fullDescriptions)
+          }
+        />
+      </Helmet>
       <h1 className="fs-3 fw-bold pt-3 px-2 pb-0 mb-0 text-capitalize">
         {articlesDetailsPageHeading !== "" ? articlesDetailsPageHeading : null}
       </h1>

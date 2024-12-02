@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useEffect, useState } from "react";
 import styles from "../../Pages/LeaguesData/LeaguesData.module.css";
 import { Col, Row, Stack } from "react-bootstrap";
 import MycouponMsgBtn from "../MyCoupon/MycouponMsgBtn";
@@ -23,6 +23,7 @@ import ReactTooltip from "react-tooltip";
 import useMetaTags from "../../hooks/useMetaTags";
 
 const LeagueMatchItem = (props) => {
+  const [metaTitle, setMetaTitle] = useState();
   const getGreenIndex = (match, colsCount) => {
     if (match["home-winner"] == "win") {
       return 0;
@@ -230,7 +231,17 @@ const LeagueMatchItem = (props) => {
     { name: "keywords", content: meta.meta.name.keywords },
   ];
 
-  useMetaTags(metaTags, meta.title);
+  useEffect(() => {
+    const { breadcrumbs } = match.match;
+    const countryName = !breadcrumbs.country.name
+      ? ""
+      : breadcrumbs.country.name;
+    const tournamentName = !breadcrumbs.tournament.name
+      ? ""
+      : breadcrumbs.tournament.name;
+    setMetaTitle(`${countryName} - ${tournamentName}`);
+  }, []);
+  useMetaTags(metaTags, metaTitle || meta.title);
 
   return (
     <div className="p-2" key={matchIndex}>
